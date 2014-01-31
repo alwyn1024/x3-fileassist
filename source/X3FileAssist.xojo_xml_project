@@ -1047,12 +1047,8 @@
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>v = new X3Core.X3Vector(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine>'v.Normalize()</SourceLine>
+   <SourceLine>v.Normalize()</SourceLine>
    <SourceLine>model.Normal.Append v</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 2) = "vp" then ' parameter space vertex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' todo</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Left(sLine, 2) = "vt" then ' uv (texture) coordinate</SourceLine>
    <SourceLine></SourceLine>
@@ -7685,9 +7681,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>ToolbarMain</EditorLocation>
+    <EditorLocation>FileAssist.LoadModelFromOBJ</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1324312575</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
