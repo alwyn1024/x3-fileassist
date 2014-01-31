@@ -4,8 +4,8 @@
  <ProjectSavedInVers>2013.041</ProjectSavedInVers>
  <ProjMgrUser></ProjMgrUser>
  <ProjMgrServer></ProjMgrServer>
- <MajorVersion>1</MajorVersion>
- <MinorVersion>0</MinorVersion>
+ <MajorVersion>0</MajorVersion>
+ <MinorVersion>2</MinorVersion>
  <SubVersion>0</SubVersion>
  <Release>0</Release>
  <NonRelease>0</NonRelease>
@@ -7679,9 +7679,8 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.LoadModelFromOBJ</EditorLocation>
+    <EditorLocation></EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
