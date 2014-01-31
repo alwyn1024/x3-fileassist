@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -289,7 +289,7 @@
    <SourceLine></SourceLine>
    <SourceLine>if Right(modFile.Name, 4) = ".x3m" then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>CurrentModel = X3IO_LoadModel(modFile, nil) ' .x3m</SourceLine>
+   <SourceLine>CurrentModel = LoadModel(modFile, nil) ' .x3m</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(modFile.Name, 4) = ".obj" then</SourceLine>
    <SourceLine></SourceLine>
@@ -353,7 +353,7 @@
    <SourceLine>lblFilename.TextColor = RGB(200, 0, 0)</SourceLine>
    <SourceLine>lblFilename.Refresh</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>X3IO_SaveModel(CurrentModel, modFile) ' save the model to the selected flie</SourceLine>
+   <SourceLine>SaveModel(CurrentModel, modFile) ' save the model to the selected flie</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentFilename = modFile.Name</SourceLine>
    <SourceLine></SourceLine>
@@ -795,17 +795,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -813,54 +813,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">lstModelInfo</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -868,39 +868,39 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -1843,7 +1843,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1975449599">
+<block type="Module" ID="229885951">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -2810,12 +2810,12 @@
   <ItemResult>X3Core.X3Polygon</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchUVIndex</ItemName>
+  <ItemName>matchUVIndex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchUVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>Function matchUVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -2834,7 +2834,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -2869,12 +2869,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchColorPal</ItemName>
+  <ItemName>matchColorPal</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchColorPal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchColorPal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -2897,7 +2897,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpR)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -2911,7 +2911,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpG)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -2925,7 +2925,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpB)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -2939,7 +2939,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpA)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -2976,108 +2976,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchDouble</ItemName>
+  <ItemName>matchInteger</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchDouble(mp As Ptr, ByRef pos As Integer, ByRef value As Double) As Boolean</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim sPosInt As Integer</SourceLine>
-   <SourceLine>Dim ePosInt As Integer</SourceLine>
-   <SourceLine>Dim sPosFrac As Integer</SourceLine>
-   <SourceLine>Dim ePosFrac As Integer</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim exp As Integer</SourceLine>
-   <SourceLine>Dim minus As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>value = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 45 then ' minus</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip sign</SourceLine>
-   <SourceLine>minus = -1</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>minus = 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>sPosInt = pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>while ((mp.Byte(pos) &gt;= 48) and (mp.Byte(pos) &lt;= 57))</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>ePosInt = pos - 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 46 then ' .</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>sPosFrac = pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>while ((mp.Byte(pos) &gt;= 48) and (mp.Byte(pos) &lt;= 57))</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>ePosFrac = pos - 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>sPosFrac = -1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' integer part</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if ePosInt &gt;= sPosInt then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>exp = ePosInt - sPosInt</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = sPosInt to ePosInt</SourceLine>
-   <SourceLine>value = value + (mp.Byte(i) - 48) * 10^exp</SourceLine>
-   <SourceLine>exp = exp - 1</SourceLine>
-   <SourceLine>next</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' fraction part</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if sPosFrac &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>exp = 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = sPosFrac to ePosFrac</SourceLine>
-   <SourceLine>value = value + (mp.Byte(i) - 48) / 10^exp</SourceLine>
-   <SourceLine>exp = exp + 1</SourceLine>
-   <SourceLine>next</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>value = value * minus</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef value As Double</ItemParams>
-  <ItemResult>Boolean</ItemResult>
- </Method>
- <Method>
-  <ItemName>x3df_matchInteger</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchInteger(mp As Ptr, ByRef pos As Integer, ByRef value As Integer) As Boolean</SourceLine>
+   <SourceLine>Function matchInteger(mp As Ptr, ByRef pos As Integer, ByRef value As Integer) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim sPos As Integer</SourceLine>
@@ -3133,12 +3037,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchMaterial</ItemName>
+  <ItemName>matchMaterial</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchMaterial(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchMaterial(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3166,7 +3070,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' ===== AMBIENT =====================================</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpR)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3180,7 +3084,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpG)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3194,7 +3098,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpB)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3208,7 +3112,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpA)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3224,7 +3128,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' ===== DIFFUSE =====================================</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpR)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3238,7 +3142,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpG)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3252,7 +3156,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpB)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3266,7 +3170,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpA)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3282,7 +3186,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' ===== SPECULAR =====================================</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpR)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3296,7 +3200,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpG)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3310,7 +3214,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpB)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3324,7 +3228,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpA)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3338,7 +3242,7 @@
    <SourceLine>m.Specular.Blue = tmpB</SourceLine>
    <SourceLine>m.Specular.Alpha = tmpA</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpR)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine>m.Shininess = tmpR</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
@@ -3374,12 +3278,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchNormal</ItemName>
+  <ItemName>matchNormal</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchNormal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchNormal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3401,7 +3305,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpX)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3415,7 +3319,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpY)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3429,7 +3333,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpZ)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3466,12 +3370,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchPolygon</ItemName>
+  <ItemName>matchPolygon</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchPolygon(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchPolygon(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3509,7 +3413,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3528,33 +3432,33 @@
    <SourceLine>select case tmpStr</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "ci"</SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine>p.CIndex = tmpInt</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "mi"</SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine>p.MIndex = tmpInt</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "ni"</SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine>p.NIndex = tmpInt</SourceLine>
    <SourceLine>bLoadedNormal = true</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "ti"</SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine>p.TIndex = tmpInt</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "uvi"</SourceLine>
-   <SourceLine>result = x3df_matchUVIndex(mp, pos, p)</SourceLine>
+   <SourceLine>result = matchUVIndex(mp, pos, p)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "vi"</SourceLine>
-   <SourceLine>result = x3df_matchVIndex(mp, pos, p)</SourceLine>
+   <SourceLine>result = matchVIndex(mp, pos, p)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "vni"</SourceLine>
-   <SourceLine>result = x3df_matchVNIndex(mp, pos, p)</SourceLine>
+   <SourceLine>result = matchVNIndex(mp, pos, p)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else ' unknown tag</SourceLine>
-   <SourceLine>x3df_skipValue(mp, pos)</SourceLine>
+   <SourceLine>skipValue(mp, pos)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end select</SourceLine>
    <SourceLine></SourceLine>
@@ -3627,12 +3531,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchString</ItemName>
+  <ItemName>matchString</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchString(mp As Ptr, ByRef pos As Integer, ByRef value As String) As Boolean</SourceLine>
+   <SourceLine>Function matchString(mp As Ptr, ByRef pos As Integer, ByRef value As String) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3693,12 +3597,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchTexture</ItemName>
+  <ItemName>matchTexture</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchTexture(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchTexture(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3718,7 +3622,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3755,12 +3659,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchUVMap</ItemName>
+  <ItemName>matchUVMap</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchUVMap(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchUVMap(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3781,7 +3685,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpU)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpU)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3795,7 +3699,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpV)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpV)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3832,12 +3736,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchVertex</ItemName>
+  <ItemName>matchVertex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchVertex(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchVertex(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3859,7 +3763,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpX)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3873,7 +3777,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpY)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3887,7 +3791,7 @@
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchDouble(mp, pos, tmpZ)</SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3924,12 +3828,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchVIndex</ItemName>
+  <ItemName>matchVIndex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>Function matchVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -3948,7 +3852,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -3983,12 +3887,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchVNIndex</ItemName>
+  <ItemName>matchVNIndex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchVNIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>Function matchVNIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -4007,7 +3911,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, tmpInt)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -4042,12 +3946,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_matchX3Model</ItemName>
+  <ItemName>matchX3Model</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchX3Model(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function matchX3Model(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
@@ -4061,7 +3965,7 @@
    <SourceLine></SourceLine>
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tmpStr = "x3model" then</SourceLine>
    <SourceLine></SourceLine>
@@ -4087,7 +3991,7 @@
    <SourceLine></SourceLine>
    <SourceLine>do</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
@@ -4106,28 +4010,28 @@
    <SourceLine>select case tmpStr</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "colorpal"</SourceLine>
-   <SourceLine>result = x3df_matchColorPal(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchColorPal(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "material"</SourceLine>
-   <SourceLine>result = x3df_matchMaterial(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchMaterial(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "normal"</SourceLine>
-   <SourceLine>result = x3df_matchNormal(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchNormal(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "polygon"</SourceLine>
-   <SourceLine>result = x3df_matchPolygon(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchPolygon(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "vertex"</SourceLine>
-   <SourceLine>result = x3df_matchVertex(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchVertex(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "texture"</SourceLine>
-   <SourceLine>result = x3df_matchTexture(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchTexture(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "uvmap"</SourceLine>
-   <SourceLine>result = x3df_matchUVMap(mp, pos, model)</SourceLine>
+   <SourceLine>result = matchUVMap(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else ' unknown tag</SourceLine>
-   <SourceLine>x3df_skipValue(mp, pos)</SourceLine>
+   <SourceLine>skipValue(mp, pos)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end select</SourceLine>
    <SourceLine></SourceLine>
@@ -4173,12 +4077,12 @@
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>x3df_skipValue</ItemName>
+  <ItemName>skipValue</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub x3df_skipValue(mp As Ptr, ByRef pos As Integer)</SourceLine>
+   <SourceLine>Sub skipValue(mp As Ptr, ByRef pos As Integer)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim count As Integer</SourceLine>
@@ -4265,12 +4169,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>X3IO_LoadModel</ItemName>
+  <ItemName>LoadModel</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3IO_LoadModel(modelFile As FolderItem, surface As OpenGLSurface) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function LoadModel(modelFile As FolderItem, surface As OpenGLSurface) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
@@ -4285,7 +4189,7 @@
    <SourceLine>modelJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
    <SourceLine>tin.Close ' close file</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Model = X3IO_ModelFromX3DF(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine>Model = ModelFromX3DF(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
@@ -4300,12 +4204,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>X3IO_ModelFromX3DF</ItemName>
+  <ItemName>ModelFromX3DF</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3IO_ModelFromX3DF(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function ModelFromX3DF(modelJSON As String) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
@@ -4320,7 +4224,7 @@
    <SourceLine>pos = 0</SourceLine>
    <SourceLine>mp = jsonMB</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result =x3df_matchX3Model(mp, pos, model) ' parse the JSON</SourceLine>
+   <SourceLine>result =matchX3Model(mp, pos, model) ' parse the JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
@@ -4334,18 +4238,18 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>X3IO_SaveModel</ItemName>
+  <ItemName>SaveModel</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3IO_SaveModel(model As X3Core.X3Model, modelFile As FolderItem, saveNormals As Boolean = True)</SourceLine>
+   <SourceLine>Sub SaveModel(model As X3Core.X3Model, modelFile As FolderItem, saveNormals As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim json as String</SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>json = X3IO_X3DFFromModel(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
+   <SourceLine>json = X3DFFromModel(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout = TextOutputStream.Create(modelFile) ' open file for output</SourceLine>
    <SourceLine>tout.WriteLine json ' write X3DF JASON to file</SourceLine>
@@ -4361,12 +4265,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>X3IO_X3DFFromModel</ItemName>
+  <ItemName>X3DFFromModel</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3IO_X3DFFromModel(model As X3Core.X3Model) As String</SourceLine>
+   <SourceLine>Function X3DFFromModel(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
@@ -4802,6 +4706,102 @@
   <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>matchDouble</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchDouble(mp As Ptr, ByRef pos As Integer, ByRef value As Double) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim sPosInt As Integer</SourceLine>
+   <SourceLine>Dim ePosInt As Integer</SourceLine>
+   <SourceLine>Dim sPosFrac As Integer</SourceLine>
+   <SourceLine>Dim ePosFrac As Integer</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim exp As Integer</SourceLine>
+   <SourceLine>Dim minus As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>value = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 45 then ' minus</SourceLine>
+   <SourceLine>pos = pos + 1 ' skip sign</SourceLine>
+   <SourceLine>minus = -1</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>minus = 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>sPosInt = pos</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while ((mp.Byte(pos) &gt;= 48) and (mp.Byte(pos) &lt;= 57))</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ePosInt = pos - 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 46 then ' .</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>sPosFrac = pos</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while ((mp.Byte(pos) &gt;= 48) and (mp.Byte(pos) &lt;= 57))</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ePosFrac = pos - 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>sPosFrac = -1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' integer part</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if ePosInt &gt;= sPosInt then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>exp = ePosInt - sPosInt</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = sPosInt to ePosInt</SourceLine>
+   <SourceLine>value = value + (mp.Byte(i) - 48) * 10^exp</SourceLine>
+   <SourceLine>exp = exp - 1</SourceLine>
+   <SourceLine>next</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' fraction part</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if sPosFrac &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>exp = 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = sPosFrac to ePosFrac</SourceLine>
+   <SourceLine>value = value + (mp.Byte(i) - 48) / 10^exp</SourceLine>
+   <SourceLine>exp = exp + 1</SourceLine>
+   <SourceLine>next</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>value = value * minus</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef value As Double</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Index</ObjName>
@@ -4886,9 +4886,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1115863039</ObjContainerID>
 </block>
-<block type="Module" ID="1719648255">
+<block type="Module" ID="2090170367">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5089,9 +5089,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="817526783">
+<block type="Module" ID="937259007">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5285,9 +5285,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2113859583">
+<block type="Module" ID="234192895">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5899,9 +5899,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="44709887">
+<block type="Module" ID="990312447">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6025,9 +6025,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="536244223">
+<block type="Module" ID="1026674687">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6407,9 +6407,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="106678271">
+<block type="Module" ID="1066217471">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6668,9 +6668,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1698463743">
+<block type="Module" ID="1362038783">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6795,9 +6795,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1251719167">
+<block type="Module" ID="1920634879">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7169,9 +7169,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2072483839">
+<block type="Module" ID="680210431">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7323,9 +7323,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1705832447">
+<block type="Module" ID="339785727">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7514,9 +7514,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1875431423">
+<block type="Module" ID="595355647">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1975449599</ObjContainerID>
+ <ObjContainerID>229885951</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7686,8 +7686,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation></EditorLocation>
+    <EditorLocation>frmMain.action_Save</EditorLocation>
     <EditorPath></EditorPath>
+    <EditingPartID>1506764799</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
