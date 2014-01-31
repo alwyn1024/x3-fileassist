@@ -1843,7 +1843,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="229885951">
+<block type="Module" ID="1937391615">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -4586,127 +4586,6 @@
   <ItemResult>String</ItemResult>
  </Method>
  <Method>
-  <ItemName>X3E_UnitizeModel</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3E_UnitizeModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim vertLen As Double</SourceLine>
-   <SourceLine>Dim maxLen As Double</SourceLine>
-   <SourceLine>Dim scale As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if pos = nil then</SourceLine>
-   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>centPos = pos</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>maxLen = 0</SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>vertLen = Sqrt((model.Vertex(i).X - midX)^2 + (model.Vertex(i).Y - midY)^2 + (model.Vertex(i).Z - midZ)^2)</SourceLine>
-   <SourceLine>if vertLen &gt; maxLen then</SourceLine>
-   <SourceLine>maxLen = vertLen</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' scale model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>scale = 1 / maxLen</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>model.Vertex(i).X = model.Vertex(i).X / maxLen</SourceLine>
-   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y / maxLen</SourceLine>
-   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z / maxLen</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3E_CenterModel</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3E_CenterModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim xStep As Double</SourceLine>
-   <SourceLine>Dim yStep As Double</SourceLine>
-   <SourceLine>Dim zStep As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if pos = nil then</SourceLine>
-   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>centPos = pos</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>xStep = centPos.X - midX</SourceLine>
-   <SourceLine>yStep = centPos.Y - midY</SourceLine>
-   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>model.Vertex(i).X = model.Vertex(i).X + xStep</SourceLine>
-   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y + yStep</SourceLine>
-   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z + zStep</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
   <ItemName>matchDouble</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
@@ -4886,9 +4765,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1115863039</ObjContainerID>
 </block>
-<block type="Module" ID="2090170367">
+<block type="Module" ID="25939967">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5089,9 +4968,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="937259007">
+<block type="Module" ID="460976127">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5285,9 +5164,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="234192895">
+<block type="Module" ID="1481691135">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5899,9 +5778,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="990312447">
+<block type="Module" ID="1105526783">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6025,9 +5904,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1026674687">
+<block type="Module" ID="1874911231">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6176,6 +6055,127 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Center</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Center(pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim midZ As Double</SourceLine>
+   <SourceLine>Dim xStep As Double</SourceLine>
+   <SourceLine>Dim yStep As Double</SourceLine>
+   <SourceLine>Dim zStep As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if pos = nil then</SourceLine>
+   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>centPos = pos</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = 0</SourceLine>
+   <SourceLine>midY = 0</SourceLine>
+   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
+   <SourceLine>midX = midX + Vertex(i).X</SourceLine>
+   <SourceLine>midY = midY + Vertex(i).Y</SourceLine>
+   <SourceLine>midZ = midZ + Vertex(i).Z</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = midX / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midY = midY / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midZ = midZ / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>xStep = centPos.X - midX</SourceLine>
+   <SourceLine>yStep = centPos.Y - midY</SourceLine>
+   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
+   <SourceLine>Vertex(i).X = Vertex(i).X + xStep</SourceLine>
+   <SourceLine>Vertex(i).Y = Vertex(i).Y + yStep</SourceLine>
+   <SourceLine>Vertex(i).Z = Vertex(i).Z + zStep</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>pos As X3Core.X3Vector = nil</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Unitize</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Unitize(pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim midZ As Double</SourceLine>
+   <SourceLine>Dim vertLen As Double</SourceLine>
+   <SourceLine>Dim maxLen As Double</SourceLine>
+   <SourceLine>Dim scale As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if pos = nil then</SourceLine>
+   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>centPos = pos</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = 0</SourceLine>
+   <SourceLine>midY = 0</SourceLine>
+   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
+   <SourceLine>midX = midX + Vertex(i).X</SourceLine>
+   <SourceLine>midY = midY + Vertex(i).Y</SourceLine>
+   <SourceLine>midZ = midZ + Vertex(i).Z</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = midX / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midY = midY / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midZ = midZ / (Vertex.Ubound + 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>maxLen = 0</SourceLine>
+   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
+   <SourceLine>vertLen = Sqrt((Vertex(i).X - midX)^2 + (Vertex(i).Y - midY)^2 + (Vertex(i).Z - midZ)^2)</SourceLine>
+   <SourceLine>if vertLen &gt; maxLen then</SourceLine>
+   <SourceLine>maxLen = vertLen</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' scale model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>scale = 1 / maxLen</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
+   <SourceLine>Vertex(i).X = Vertex(i).X / maxLen</SourceLine>
+   <SourceLine>Vertex(i).Y = Vertex(i).Y / maxLen</SourceLine>
+   <SourceLine>Vertex(i).Z = Vertex(i).Z / maxLen</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>pos As X3Core.X3Vector = nil</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -6407,9 +6407,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1066217471">
+<block type="Module" ID="1362034687">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6668,9 +6668,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1362038783">
+<block type="Module" ID="459096063">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6795,9 +6795,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1920634879">
+<block type="Module" ID="686778367">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7169,9 +7169,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="680210431">
+<block type="Module" ID="967061503">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7323,9 +7323,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="339785727">
+<block type="Module" ID="141633535">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7514,9 +7514,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="595355647">
+<block type="Module" ID="1848647679">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>229885951</ObjContainerID>
+ <ObjContainerID>1937391615</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7686,9 +7686,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.action_Save</EditorLocation>
+    <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1506764799</EditingPartID>
+    <EditingPartID>1937391615</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
