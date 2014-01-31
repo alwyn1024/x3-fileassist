@@ -293,7 +293,7 @@
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(modFile.Name, 4) = ".obj" then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>CurrentModel = FA_LoadModel_OBJ(modFile) ' .obj</SourceLine>
+   <SourceLine>CurrentModel = LoadModelFromOBJ(modFile) ' .obj</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -366,7 +366,7 @@
    <SourceLine>lblFilename.TextColor = RGB(200, 0, 0)</SourceLine>
    <SourceLine>lblFilename.Refresh</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>FA_SaveModel_OBJ(CurrentModel, modFile)</SourceLine>
+   <SourceLine>SaveModelToOBJ(CurrentModel, modFile)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentFilename = modFile.Name</SourceLine>
    <SourceLine></SourceLine>
@@ -914,12 +914,12 @@
  <IsInterface>0</IsInterface>
  <Compatibility></Compatibility>
  <Method>
-  <ItemName>FA_LoadModel_OBJ</ItemName>
+  <ItemName>LoadModelFromOBJ</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function FA_LoadModel_OBJ(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function LoadModelFromOBJ(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
    <SourceLine>Dim tis As TextInputStream</SourceLine>
    <SourceLine>Dim sLine As String</SourceLine>
@@ -959,7 +959,7 @@
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if UBound(tmpArr) &gt;= 1 then</SourceLine>
-   <SourceLine>FA_LoadMaterials_OBJ modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
+   <SourceLine>loadOBJMaterials modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Left(sLine, 1) = "f" then ' face (polygon)</SourceLine>
@@ -1141,12 +1141,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>FA_SaveModel_OBJ</ItemName>
+  <ItemName>SaveModelToOBJ</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub FA_SaveModel_OBJ(model As X3Core.X3Model, modelFile As FolderItem)</SourceLine>
+   <SourceLine>Sub SaveModelToOBJ(model As X3Core.X3Model, modelFile As FolderItem)</SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
    <SourceLine>Dim sLine() As String</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -1389,12 +1389,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>FA_LoadMaterials_OBJ</ItemName>
+  <ItemName>loadOBJMaterials</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub FA_LoadMaterials_OBJ(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
+   <SourceLine>Sub loadOBJMaterials(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
    <SourceLine>Dim tis As TextInputStream</SourceLine>
    <SourceLine>Dim sLine As String</SourceLine>
    <SourceLine>Dim parseMat As Boolean </SourceLine>
@@ -1429,7 +1429,7 @@
    <SourceLine></SourceLine>
    <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>t = fa_loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
+   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
    <SourceLine>model.Texture.Append t</SourceLine>
    <SourceLine>t = nil</SourceLine>
    <SourceLine></SourceLine>
@@ -1545,7 +1545,7 @@
    <SourceLine></SourceLine>
    <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>t = fa_loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
+   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
    <SourceLine>model.Texture.Append t</SourceLine>
    <SourceLine>t = nil</SourceLine>
    <SourceLine></SourceLine>
@@ -1642,12 +1642,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>fa_loadTexture</ItemName>
+  <ItemName>loadTexture</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function fa_loadTexture(picFile As FolderItem) As X3Core.X3Texture</SourceLine>
+   <SourceLine>Function loadTexture(picFile As FolderItem) As X3Core.X3Texture</SourceLine>
    <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
    <SourceLine>Dim p As Picture</SourceLine>
    <SourceLine>Dim tgaData As MemoryBlock</SourceLine>
@@ -1660,7 +1660,7 @@
    <SourceLine>bs = BinaryStream.Open(picFile)</SourceLine>
    <SourceLine>tgaData = bs.Read(picFile.Length)</SourceLine>
    <SourceLine>bs.Close</SourceLine>
-   <SourceLine>p = fa_tgaToPicture(tgaData)</SourceLine>
+   <SourceLine>p = pictureFromTGA(tgaData)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine></SourceLine>
@@ -1684,12 +1684,12 @@
   <ItemResult>X3Core.X3Texture</ItemResult>
  </Method>
  <Method>
-  <ItemName>fa_tgaToPicture</ItemName>
+  <ItemName>pictureFromTGA</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function fa_tgaToPicture(tgaData As MemoryBlock) As Picture</SourceLine>
+   <SourceLine>Function pictureFromTGA(tgaData As MemoryBlock) As Picture</SourceLine>
    <SourceLine>Dim dataPtr As Ptr</SourceLine>
    <SourceLine>Dim dataPos As Integer</SourceLine>
    <SourceLine>Dim p As Picture</SourceLine>
@@ -1750,7 +1750,6 @@
    <SourceLine>yStep = 1</SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>y = ImageHeight - 1</SourceLine>
-   <SourceLineBreakpoint>60</SourceLineBreakpoint>
    <SourceLine>yStep = -1</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -4189,7 +4188,7 @@
    <SourceLine>modelJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
    <SourceLine>tin.Close ' close file</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Model = ModelFromX3DF(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine>Model = ModelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
@@ -4204,12 +4203,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>ModelFromX3DF</ItemName>
+  <ItemName>ModelFromJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function ModelFromX3DF(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function ModelFromJSON(modelJSON As String) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
@@ -4249,7 +4248,7 @@
    <SourceLine>Dim json as String</SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>json = X3DFFromModel(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
+   <SourceLine>json = ModelToJSON(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout = TextOutputStream.Create(modelFile) ' open file for output</SourceLine>
    <SourceLine>tout.WriteLine json ' write X3DF JASON to file</SourceLine>
@@ -4265,12 +4264,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>X3DFFromModel</ItemName>
+  <ItemName>ModelToJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3DFFromModel(model As X3Core.X3Model) As String</SourceLine>
+   <SourceLine>Function ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
@@ -7686,9 +7685,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core</EditorLocation>
+    <EditorLocation>ToolbarMain</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1937391615</EditingPartID>
+    <EditingPartID>1324312575</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
