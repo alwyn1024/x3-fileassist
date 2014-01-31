@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>16384</BuildFlags>
+ <BuildFlags>24576</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -794,17 +794,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -812,54 +812,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -867,39 +867,39 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -1842,7 +1842,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="832702463">
+<block type="Module" ID="1975449599">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -1856,6 +1856,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub renderPolygon(poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -2007,6 +2009,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_CreateSprite(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
    <SourceLine></SourceLine>
@@ -2166,6 +2170,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -2207,6 +2213,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderModel(model As X3Core.X3Model)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
@@ -2569,6 +2577,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetMaterial(material As X3Core.X3Material)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim matMB As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' set ambient values</SourceLine>
@@ -2665,6 +2675,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_Str(d As Double) As String</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>if (d \ 1) = d then // whole number?</SourceLine>
    <SourceLine>return Str(d, "-0")</SourceLine>
    <SourceLine>else</SourceLine>
@@ -2686,6 +2698,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PickPolygon(model As X3Core.X3Model, x As Integer, y As Integer) As X3Core.X3Polygon</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine>Dim pixelData As New MemoryBlock(4)</SourceLine>
@@ -2801,6 +2815,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchUVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpInt As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -2858,6 +2874,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchColorPal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpR As Double</SourceLine>
    <SourceLine>Dim tmpG As Double</SourceLine>
@@ -2963,6 +2981,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchDouble(mp As Ptr, ByRef pos As Integer, ByRef value As Double) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim sPosInt As Integer</SourceLine>
    <SourceLine>Dim ePosInt As Integer</SourceLine>
    <SourceLine>Dim sPosFrac As Integer</SourceLine>
@@ -3057,6 +3077,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchInteger(mp As Ptr, ByRef pos As Integer, ByRef value As Integer) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim sPos As Integer</SourceLine>
    <SourceLine>Dim ePos As Integer</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -3116,6 +3138,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchMaterial(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpR As Double</SourceLine>
    <SourceLine>Dim tmpG As Double</SourceLine>
@@ -3355,6 +3379,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchNormal(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpX As Double</SourceLine>
    <SourceLine>Dim tmpY As Double</SourceLine>
@@ -3445,6 +3471,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchPolygon(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim tmpStr As String</SourceLine>
@@ -3604,6 +3632,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchString(mp As Ptr, ByRef pos As Integer, ByRef value As String) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim sPos As Integer</SourceLine>
    <SourceLine>Dim ePos As Integer</SourceLine>
@@ -3668,6 +3698,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchTexture(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
@@ -3728,6 +3760,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchUVMap(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpU As Double</SourceLine>
    <SourceLine>Dim tmpV As Double</SourceLine>
@@ -3803,6 +3837,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchVertex(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpX As Double</SourceLine>
    <SourceLine>Dim tmpY As Double</SourceLine>
@@ -3893,6 +3929,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpInt As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -3950,6 +3988,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchVNIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpInt As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -4007,6 +4047,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function x3df_matchX3Model(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine></SourceLine>
@@ -4136,6 +4178,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub x3df_skipValue(mp As Ptr, ByRef pos As Integer)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim count As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
@@ -4643,6 +4687,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3E_UnitizeModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim midX As Double</SourceLine>
@@ -4706,6 +4752,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3E_CenterModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim midX As Double</SourceLine>
@@ -4837,9 +4885,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1115863039</ObjContainerID>
 </block>
-<block type="Module" ID="170555391">
+<block type="Module" ID="1719648255">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4851,6 +4899,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Vector</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim vec as new X3Core.X3Vector(X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return vec</SourceLine>
@@ -5038,9 +5088,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="947460095">
+<block type="Module" ID="817526783">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5052,6 +5102,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Color</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim col As new X3Color.X3Color(Red, Green, Blue, Alpha)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return col</SourceLine>
@@ -5232,9 +5284,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1532477439">
+<block type="Module" ID="2113859583">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5246,6 +5298,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub CalculateNormal()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Z As Double ' temporary value used during calculations</SourceLine>
@@ -5310,6 +5364,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Polygon</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim poly As new X3Core.X3Polygon(ParentModel)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -5351,6 +5407,7 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5416,6 +5473,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetCenter() As X3Core.X3Vector</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim xTot As Double</SourceLine>
    <SourceLine>Dim yTot As Double</SourceLine>
    <SourceLine>Dim zTot As Double</SourceLine>
@@ -5452,6 +5511,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim s As X3Core.X3Sprite</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if SIndex &gt;= 0 then</SourceLine>
@@ -5837,9 +5898,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="200929279">
+<block type="Module" ID="44709887">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5963,9 +6024,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1167065087">
+<block type="Module" ID="536244223">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5977,6 +6038,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub AppendPolygon(poly As X3Core.X3Polygon)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim firstUVIndex As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -6014,6 +6077,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
@@ -6095,6 +6160,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to Polygon.Ubound</SourceLine>
@@ -6339,9 +6406,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="998692863">
+<block type="Module" ID="106678271">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6353,7 +6420,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
-   <SourceLine>' nothing to do with a contructor with no intialization parameters</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -6451,6 +6519,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Destructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim texturePtr As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glFlush ' empty the OpenGL buffers</SourceLine>
@@ -6597,9 +6667,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="955488255">
+<block type="Module" ID="1698463743">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6611,6 +6681,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3UVCoordinate</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3UVCoordinate(U, V)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return coord</SourceLine>
@@ -6722,9 +6794,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1890164735">
+<block type="Module" ID="1251719167">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6736,6 +6808,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Quaternion</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim quat As new X3Core.X3Quaternion(W, X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return quat</SourceLine>
@@ -6904,6 +6978,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Pitch(angle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' Formula: [new quaternion] = [self] x [pitch quaternion]</SourceLine>
@@ -6931,6 +7007,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Roll(angle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' Formula: [new quaternion] = [self] x [roll quaternion]</SourceLine>
@@ -6958,6 +7036,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Yaw(angle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' Formula: [new quaternion] = [self] x [yaw quaternion]</SourceLine>
@@ -7088,9 +7168,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="922142719">
+<block type="Module" ID="2072483839">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7102,6 +7182,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Material</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim mat As new X3Core.X3Material</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>mat.Ambient = Ambient.Clone</SourceLine>
@@ -7127,6 +7209,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Ambient = new X3Color(0.2, 0.2, 0.2)</SourceLine>
    <SourceLine>Diffuse = new X3Color(0.8, 0.8, 0.8)</SourceLine>
    <SourceLine>Specular = new X3Color(0, 0, 0)</SourceLine>
@@ -7238,9 +7322,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="379643903">
+<block type="Module" ID="1705832447">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7252,6 +7336,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Sprite</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim sprite As New X3Core.X3Sprite</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -7278,7 +7364,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
-   <SourceLine>' nothing to do</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -7425,9 +7513,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1361989631">
+<block type="Module" ID="1875431423">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>832702463</ObjContainerID>
+ <ObjContainerID>1975449599</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7439,6 +7527,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3SpriteCoordinate</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3SpriteCoordinate(U1, V1, U2, V2)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return coord</SourceLine>
@@ -7597,7 +7687,7 @@
     <EditorIndex>0</EditorIndex>
     <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>832702463</EditingPartID>
+    <EditingPartID>1975449599</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
