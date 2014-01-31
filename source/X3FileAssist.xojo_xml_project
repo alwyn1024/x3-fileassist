@@ -4557,7 +4557,7 @@
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if p &lt;&gt; nil then</SourceLine>
-   <SourceLine>t = new X3Core.X3Texture(p)</SourceLine>
+   <SourceLine>t = new X3Core.X3Texture(p, false)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return t</SourceLine>
@@ -7681,9 +7681,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Texture.Constructor</EditorLocation>
+    <EditorLocation>FileAssist.loadTexture</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1326753791</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
