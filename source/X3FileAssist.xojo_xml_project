@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20624</BuildFlags>
+ <BuildFlags>28816</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -289,7 +289,7 @@
    <SourceLine></SourceLine>
    <SourceLine>if Right(modFile.Name, 4) = ".x3m" then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>CurrentModel = LoadModel(modFile, nil) ' .x3m</SourceLine>
+   <SourceLine>CurrentModel = X3_LoadModel(modFile, nil) ' .x3m</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(modFile.Name, 4) = ".obj" then</SourceLine>
    <SourceLine></SourceLine>
@@ -353,7 +353,7 @@
    <SourceLine>lblFilename.TextColor = RGB(200, 0, 0)</SourceLine>
    <SourceLine>lblFilename.Refresh</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>SaveModel(CurrentModel, modFile) ' save the model to the selected flie</SourceLine>
+   <SourceLine>X3_SaveModel(CurrentModel, modFile) ' save the model to the selected flie</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentFilename = modFile.Name</SourceLine>
    <SourceLine></SourceLine>
@@ -795,17 +795,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -813,54 +813,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -868,45 +868,977 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1473306623">
+<block type="Module" ID="1035139071">
+ <ObjName>FileAssist</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>0</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>LoadModelFromOBJ</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadModelFromOBJ(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim tis As TextInputStream</SourceLine>
+   <SourceLine>Dim sLine As String</SourceLine>
+   <SourceLine>Dim tmpArr() As String</SourceLine>
+   <SourceLine>Dim tmpArr2() As String</SourceLine>
+   <SourceLine>Dim v As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim uv As X3Core.X3UVCoordinate</SourceLine>
+   <SourceLine>Dim f As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim matLib As new Dictionary</SourceLine>
+   <SourceLine>Dim currentMat As String</SourceLine>
+   <SourceLine>Dim textureIndex As Integer </SourceLine>
+   <SourceLine>Dim colorIndex As Integer </SourceLine>
+   <SourceLine>Dim materialIndex As Integer </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>colorIndex = -1</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
+   <SourceLine>materialIndex = - 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tis = TextInputStream.Open(modelFile)</SourceLine>
+   <SourceLine>while not tis.EOF</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>sLine = Replace(Trim(tis.ReadLine()), Chr(9), " ")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if Left(sLine, 6) = "mtllib" then ' material library </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if UBound(tmpArr) &gt;= 1 then</SourceLine>
+   <SourceLine>loadOBJMaterials modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Left(sLine, 1) = "f" then ' face (polygon)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>f = new X3Core.X3Polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tmpArr.Ubound &gt;= 3 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if textureIndex &gt;= 0  then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>f.TIndex = textureIndex</SourceLine>
+   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
+   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
+   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
+   <SourceLine>f.UVIndex.Append Val(tmpArr2(1)) - 1</SourceLine>
+   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
+   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif materialIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>f.MIndex = materialIndex</SourceLine>
+   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
+   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
+   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
+   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
+   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif colorIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>f.CIndex = colorIndex</SourceLine>
+   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
+   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
+   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
+   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
+   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
+   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
+   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
+   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
+   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.AppendPolygon f</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'f.CalculateNormal()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Left(sLine, 2) = "vn" then ' normal vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>v = new X3Core.X3Vector(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
+   <SourceLine>v.Normalize()</SourceLine>
+   <SourceLine>model.Normal.Append v</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Left(sLine, 2) = "vt" then ' uv (texture) coordinate</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>uv = new X3Core.X3UVCoordinate(Val(tmpArr(1)), 1 - Val(tmpArr(2)))</SourceLine>
+   <SourceLine>model.UVMap.Append uv</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Left(sLine, 1) = "v" then ' vertex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>v = new X3Core.X3Vector(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
+   <SourceLine>model.Vertex.Append v</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Left(sLine, 6) = "usemtl" then ' material library</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' clear texture settings</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currentMat = matLib.Lookup(tmpArr(1), "")</SourceLine>
+   <SourceLine>if left(currentMat, 3) = "col" then ' color?</SourceLine>
+   <SourceLine>colorIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
+   <SourceLine>materialIndex = -1</SourceLine>
+   <SourceLine>elseif left(currentMat, 3) = "mat" then ' material?</SourceLine>
+   <SourceLine>materialIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
+   <SourceLine>colorIndex = -1</SourceLine>
+   <SourceLine>elseif left(currentMat, 3) = "txt" then ' texture?</SourceLine>
+   <SourceLine>textureIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
+   <SourceLine>colorIndex = -1</SourceLine>
+   <SourceLine>materialIndex = -1</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>colorIndex = -1</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
+   <SourceLine>materialIndex = -1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>modelFile As FolderItem</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SaveModelToOBJ</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub SaveModelToOBJ(model As X3Core.X3Model, modelFile As FolderItem)</SourceLine>
+   <SourceLine>Dim tout As TextOutputStream</SourceLine>
+   <SourceLine>Dim sLine() As String</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim v As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim vn As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim uv As X3Core.X3UVCoordinate</SourceLine>
+   <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim pngFile As FolderItem</SourceLine>
+   <SourceLine>Dim textureFilename As String</SourceLine>
+   <SourceLine>Dim mtlFile As FolderItem</SourceLine>
+   <SourceLine>Dim coreName As String</SourceLine>
+   <SourceLine>Dim normIndex As String</SourceLine>
+   <SourceLine>Dim currMat As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>coreName = Left(modelFile.Name, Len(modelFile.Name) - 4)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ***** TEXTURES ****************************</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' create png texture files</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>textureFilename = corename + "_txt_"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
+   <SourceLine>pngFile = modelFile.Parent.Child(textureFilename + Str(i + 1) + ".png")</SourceLine>
+   <SourceLine>writeTexturePNG pngFile, model.Texture(i)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ***** MTL File ****************************</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mtlFile = modelFile.Parent.Child(corename + ".mtl")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout = TextOutputStream.Create(mtlFile)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write texture materials</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
+   <SourceLine>tout.WriteLine "newmtl mtl_txt_" + Str(i + 1)</SourceLine>
+   <SourceLine>tout.WriteLine "Ka 0.0 0.0 0.0"</SourceLine>
+   <SourceLine>tout.WriteLine "Kd 1.0 1.0 1.0"</SourceLine>
+   <SourceLine>tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
+   <SourceLine>tout.WriteLine "d 1.0"</SourceLine>
+   <SourceLine>tout.WriteLine "illum 2"</SourceLine>
+   <SourceLine>tout.WriteLine "map_Kd " + textureFilename + Str(i + 1) + ".png"</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write material materials</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Material.Ubound</SourceLine>
+   <SourceLine>tout.WriteLine "newmtl mtl_mat_" + Str(i + 1)</SourceLine>
+   <SourceLine>tout.WriteLine "Ka " + X3_Str(model.Material(i).Ambient.Red) + " "  + X3_Str(model.Material(i).Ambient.Green) + " "  + X3_Str(model.Material(i).Ambient.Blue)</SourceLine>
+   <SourceLine>tout.WriteLine "Kd " + X3_Str(model.Material(i).Diffuse.Red) + " "  + X3_Str(model.Material(i).Diffuse.Green) + " "  + X3_Str(model.Material(i).Diffuse.Blue)</SourceLine>
+   <SourceLine>tout.WriteLine "Ks " + X3_Str(model.Material(i).Specular.Red) + " "  + X3_Str(model.Material(i).Specular.Green) + " "  + X3_Str(model.Material(i).Specular.Blue)</SourceLine>
+   <SourceLine>tout.WriteLine "Ns " + X3_Str(model.Material(i).Shininess)</SourceLine>
+   <SourceLine>tout.WriteLine "illum 2"</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.ColorPal.Ubound</SourceLine>
+   <SourceLine>tout.WriteLine "newmtl mtl_col_" + Str(i + 1)</SourceLine>
+   <SourceLine>tout.WriteLine "Ka " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
+   <SourceLine>tout.WriteLine "Kd " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
+   <SourceLine>tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
+   <SourceLine>tout.WriteLine "d " + X3_Str(model.ColorPal(i).Alpha)</SourceLine>
+   <SourceLine>tout.WriteLine "illum 1"</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.Close</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ***** OBJ File ****************************</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currMat = ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout = TextOutputStream.Create(modelFile)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write meta data comment</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine "# X3 FileAssist - www.xojo3d.com"</SourceLine>
+   <SourceLine>tout.WriteLine "# vertices: " + Str(model.Vertex.Ubound + 1) + ", faces: " + Str(model.Polygon.Ubound + 1) + ", textures: " + Str(model.Texture.Ubound + 1)</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' include material library</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
+   <SourceLine>tout.WriteLine "mtllib " + corename + ".mtl"</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>v = model.Vertex(i)</SourceLine>
+   <SourceLine>tout.WriteLine "v " + X3_Str(v.X) + " " + X3_Str(v.Y) + " " + X3_Str(v.Z)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Normal.Ubound</SourceLine>
+   <SourceLine>vn = model.Normal(i)</SourceLine>
+   <SourceLine>tout.WriteLine "vn " + X3_Str(vn.X) + " " + X3_Str(vn.Y) + " " + X3_Str(vn.Z)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write texture coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.UVMap.Ubound</SourceLine>
+   <SourceLine>uv = model.UVMap(i)</SourceLine>
+   <SourceLine>tout.WriteLine "vt " + X3_Str(uv.U) + " " + X3_Str(1 - uv.V)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' write polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
+   <SourceLine>p = model.Polygon(i)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>normIndex = Str(p.NIndex + 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Redim sLine(-1)</SourceLine>
+   <SourceLine>sLine.Append "f"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p.CIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; "mtl_col_" + Str(p.CIndex + 1) then</SourceLine>
+   <SourceLine>tout.WriteLine "usemtl mtl_col_" + Str(p.CIndex + 1)</SourceLine>
+   <SourceLine>currMat = "mtl_col_" + Str(p.CIndex + 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append normIndex</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif p.MIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; "mtl_mat_" + Str(p.MIndex + 1) then</SourceLine>
+   <SourceLine>tout.WriteLine "usemtl mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
+   <SourceLine>currMat = "mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append normIndex</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif p.TIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; "mtl_txt_" + Str(p.TIndex + 1) then</SourceLine>
+   <SourceLine>tout.WriteLine "usemtl mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
+   <SourceLine>currMat = "mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "/"</SourceLine>
+   <SourceLine>sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "/"</SourceLine>
+   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "/"</SourceLine>
+   <SourceLine>sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "/"</SourceLine>
+   <SourceLine>sLine.Append normIndex</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
+   <SourceLine>sLine.Append " "</SourceLine>
+   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
+   <SourceLine>sLine.Append "//"</SourceLine>
+   <SourceLine>sLine.Append normIndex</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Join(sLine, "")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i  </SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.Close</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>model As X3Core.X3Model, modelFile As FolderItem</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>loadOBJMaterials</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub loadOBJMaterials(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
+   <SourceLine>Dim tis As TextInputStream</SourceLine>
+   <SourceLine>Dim sLine As String</SourceLine>
+   <SourceLine>Dim parseMat As Boolean </SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim tmpArr() As String</SourceLine>
+   <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
+   <SourceLine>Dim Ka As X3Core.X3Color</SourceLine>
+   <SourceLine>Dim Kd As X3Core.X3Color</SourceLine>
+   <SourceLine>Dim Ks As X3Core.X3Color</SourceLine>
+   <SourceLine>Dim Ns As Double</SourceLine>
+   <SourceLine>Dim d As Double</SourceLine>
+   <SourceLine>Dim mat As X3Core.X3Material</SourceLine>
+   <SourceLine>Dim matName As String</SourceLine>
+   <SourceLine>Dim map_Kd As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if matFile.Exists then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>parseMat = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tis = TextInputStream.Open(matFile)</SourceLine>
+   <SourceLine>while not tis.EOF</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>sLine = Replace(Trim(tis.ReadLine()), Chr(9), " ")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if Left(sLine, 6) = "newmtl" then ' material library </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if parseMat then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ----- add material ---------------------</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if map_Kd &lt;&gt; "" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
+   <SourceLine>model.Texture.Append t</SourceLine>
+   <SourceLine>t = nil</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matLib.Value(matName) = "txt" + Str(model.Texture.Ubound)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mat = new X3Core.X3Material()</SourceLine>
+   <SourceLine>if Ka &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Ambient = Ka</SourceLine>
+   <SourceLine>mat.Ambient.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Kd &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Diffuse = Kd</SourceLine>
+   <SourceLine>mat.Diffuse.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Ks &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Specular = Ks</SourceLine>
+   <SourceLine>mat.Specular.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>mat.Shininess = Ns</SourceLine>
+   <SourceLine>model.Material.Append mat</SourceLine>
+   <SourceLine>matLib.Value(matName) = "mat" + Str(model.Material.Ubound)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ----------------------------------------</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set name, and clear texture properties</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matName = tmpArr(1)</SourceLine>
+   <SourceLine>map_Kd = ""</SourceLine>
+   <SourceLine>Ka = nil</SourceLine>
+   <SourceLine>Kd = nil</SourceLine>
+   <SourceLine>Ks = nil</SourceLine>
+   <SourceLine>Ns = 0</SourceLine>
+   <SourceLine>d = 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>parseMat = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if parseMat then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpArr = Split(sLine)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' remove empty values</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
+   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
+   <SourceLine>tmpArr.Remove(i)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tmpArr.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case tmpArr(0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "d"</SourceLine>
+   <SourceLine>d = Val(tmpArr(1))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "Ka"</SourceLine>
+   <SourceLine>Ka = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "Kd"</SourceLine>
+   <SourceLine>Kd = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "Ks"</SourceLine>
+   <SourceLine>Ks = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "map_Kd"</SourceLine>
+   <SourceLine>if tmpArr.Ubound &gt;= 1 then</SourceLine>
+   <SourceLine>map_Kd = tmpArr(1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "Ns"</SourceLine>
+   <SourceLine>Ns = (Val(tmpArr(1)) / 1000) * 128</SourceLine>
+   <SourceLine>//Ns = Val(tmpArr(1)) </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if parseMat then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ----- add material ---------------------</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if map_Kd &lt;&gt; "" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
+   <SourceLine>model.Texture.Append t</SourceLine>
+   <SourceLine>t = nil</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matLib.Value(matName) = "txt" + Str(model.Texture.Ubound)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mat = new X3Core.X3Material()</SourceLine>
+   <SourceLine>if Ka &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Ambient = Ka</SourceLine>
+   <SourceLine>mat.Ambient.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Kd &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Diffuse = Kd</SourceLine>
+   <SourceLine>mat.Diffuse.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Ks &lt;&gt; nil then</SourceLine>
+   <SourceLine>mat.Specular = Ks</SourceLine>
+   <SourceLine>mat.Specular.Alpha = d</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>mat.Shininess = Ns</SourceLine>
+   <SourceLine>model.Material.Append mat</SourceLine>
+   <SourceLine>matLib.Value(matName) = "mat" + Str(model.Material.Ubound)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ----------------------------------------</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>writeTexturePNG</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub writeTexturePNG(pngFile As FolderItem, texture As X3Core.X3Texture)</SourceLine>
+   <SourceLine>#pragma DisableBackgroundTasks</SourceLine>
+   <SourceLine>#pragma NilObjectChecking</SourceLine>
+   <SourceLine>#pragma StackOverflowChecking</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim pic As New Picture(texture.Width, texture.Height, 32)</SourceLine>
+   <SourceLine>Dim x As Integer</SourceLine>
+   <SourceLine>Dim y As Integer</SourceLine>
+   <SourceLine>Dim offset As Integer</SourceLine>
+   <SourceLine>Dim w As Integer</SourceLine>
+   <SourceLine>Dim h As Integer</SourceLine>
+   <SourceLine>Dim alpha As Byte</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all the pixels of the picture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>offset = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>h = texture.Height - 1</SourceLine>
+   <SourceLine>w = texture.Width - 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for y = 0 to h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for x = 0 to w</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pic.RGBSurface.Pixel(x, y) = RGB(texture.RGBABitmap.Byte(offset), texture.RGBABitmap.Byte(offset + 1), texture.RGBABitmap.Byte(offset + 2))</SourceLine>
+   <SourceLine>alpha = 255 - texture.RGBABitmap.Byte(offset + 3)</SourceLine>
+   <SourceLine>pic.Mask.RGBSurface.Pixel(x, y) = RGB(alpha, alpha, alpha)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next x</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next y</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pic.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>pngFile As FolderItem, texture As X3Core.X3Texture</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>loadTexture</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function loadTexture(picFile As FolderItem) As X3Core.X3Texture</SourceLine>
+   <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
+   <SourceLine>Dim p As Picture</SourceLine>
+   <SourceLine>Dim tgaData As MemoryBlock</SourceLine>
+   <SourceLine>Dim bs As BinaryStream</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if Right(picFile.Name, 4) = ".tga" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' load tga data</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>bs = BinaryStream.Open(picFile)</SourceLine>
+   <SourceLine>tgaData = bs.Read(picFile.Length)</SourceLine>
+   <SourceLine>bs.Close</SourceLine>
+   <SourceLine>p = pictureFromTGA(tgaData)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>p = Picture.Open(picFile) ' load data using built-in Xojo routines</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if p &lt;&gt; nil then</SourceLine>
+   <SourceLine>t = new X3Core.X3Texture(p, false)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return t</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>picFile As FolderItem</ItemParams>
+  <ItemResult>X3Core.X3Texture</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>pictureFromTGA</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function pictureFromTGA(tgaData As MemoryBlock) As Picture</SourceLine>
+   <SourceLine>Dim dataPtr As Ptr</SourceLine>
+   <SourceLine>Dim dataPos As Integer</SourceLine>
+   <SourceLine>Dim p As Picture</SourceLine>
+   <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
+   <SourceLine>Dim rgbMask As RGBSurface</SourceLine>
+   <SourceLine>Dim pixelCount As Integer</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim x As Integer</SourceLine>
+   <SourceLine>Dim y As Integer</SourceLine>
+   <SourceLine>Dim maskByte As Byte</SourceLine>
+   <SourceLine>Dim yStep As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' tga header information</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim ImageIDLen As Byte</SourceLine>
+   <SourceLine>Dim ColorMap As Byte</SourceLine>
+   <SourceLine>Dim ImageType As Byte</SourceLine>
+   <SourceLine>Dim ColorMapOrigin As UInt16</SourceLine>
+   <SourceLine>Dim ColorMapLen As UInt16</SourceLine>
+   <SourceLine>Dim ColorMapEntrySize As Byte</SourceLine>
+   <SourceLine>Dim ImageXOrigin As UInt16</SourceLine>
+   <SourceLine>Dim ImageYOrigin As UInt16</SourceLine>
+   <SourceLine>Dim ImageWidth As Integer</SourceLine>
+   <SourceLine>Dim ImageHeight As Integer</SourceLine>
+   <SourceLine>Dim ImagePixelSize As Byte</SourceLine>
+   <SourceLine>Dim ImageDescriptor As Byte</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dataPtr = tgaData</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ImageIDLen = dataPtr.Byte(0)</SourceLine>
+   <SourceLine>ColorMap = dataPtr.Byte(1)</SourceLine>
+   <SourceLine>ImageType = dataPtr.Byte(2)</SourceLine>
+   <SourceLine>ColorMapOrigin = dataPtr.UInt16(3)</SourceLine>
+   <SourceLine>ColorMapLen = dataPtr.UInt16(5)</SourceLine>
+   <SourceLine>ColorMapEntrySize = dataPtr.Byte(7)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>ImageXOrigin = dataPtr.UInt16(8)</SourceLine>
+   <SourceLine>ImageYOrigin = dataPtr.UInt16(10)</SourceLine>
+   <SourceLine>ImageWidth = dataPtr.UInt16(12)</SourceLine>
+   <SourceLine>ImageHeight = dataPtr.UInt16(14)</SourceLine>
+   <SourceLine>ImagePixelSize = dataPtr.Byte(16)</SourceLine>
+   <SourceLine>ImageDescriptor = dataPtr.Byte(17)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>p = new Picture(ImageWidth, ImageHeight, 32)</SourceLine>
+   <SourceLine>rgbMain = p.RGBSurface</SourceLine>
+   <SourceLine>rgbMask = p.Mask.RGBSurface</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case ImageType</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case 2 ' ***** Unmapped RGB images ***************************</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dataPos = 18 + ImageIDLen + ColorMapLen</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pixelCount = ImageWidth * ImageHeight</SourceLine>
+   <SourceLine>x = 0</SourceLine>
+   <SourceLine>if (ImageDescriptor and 32) &gt; 0 then</SourceLine>
+   <SourceLine>y = 0</SourceLine>
+   <SourceLine>yStep = 1</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>y = ImageHeight - 1</SourceLine>
+   <SourceLine>yStep = -1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case ImagePixelSize</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case 24</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt; pixelCount</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rgbMain.Pixel(x, y) = RGB(dataPtr.Byte(dataPos + 2), dataPtr.Byte(dataPos + 1), dataPtr.Byte(dataPos))</SourceLine>
+   <SourceLine>rgbMask.Pixel(x, y) = RGB(maskByte, maskByte, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dataPos = dataPos + 3</SourceLine>
+   <SourceLine>x = x + 1</SourceLine>
+   <SourceLine>if x &gt;= ImageWidth then</SourceLine>
+   <SourceLine>x = 0</SourceLine>
+   <SourceLine>y = y + yStep</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case 32</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt; pixelCount</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rgbMain.Pixel(x, y) = RGB(dataPtr.Byte(dataPos + 2), dataPtr.Byte(dataPos + 1), dataPtr.Byte(dataPos))</SourceLine>
+   <SourceLine>maskByte = 255 - dataPtr.Byte(dataPos + 3)</SourceLine>
+   <SourceLine>rgbMask.Pixel(x, y) = RGB(maskByte, maskByte, maskByte)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dataPos = dataPos + 4</SourceLine>
+   <SourceLine>x = x + 1</SourceLine>
+   <SourceLine>if x &gt;= ImageWidth then</SourceLine>
+   <SourceLine>x = 0</SourceLine>
+   <SourceLine>y = y + yStep</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return p</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tgaData As MemoryBlock</ItemParams>
+  <ItemResult>Picture</ItemResult>
+ </Method>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="Module" ID="87666687">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -3230,12 +4162,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>LoadModel</ItemName>
+  <ItemName>X3_LoadModel</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function LoadModel(modelFile As FolderItem, surface As OpenGLSurface) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function X3_LoadModel(modelFile As FolderItem, surface As OpenGLSurface) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
@@ -3250,7 +4182,7 @@
    <SourceLine>modelJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
    <SourceLine>tin.Close ' close file</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Model = ModelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine>Model = X3_ModelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
@@ -3265,12 +4197,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>ModelFromJSON</ItemName>
+  <ItemName>X3_ModelFromJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function ModelFromJSON(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function X3_ModelFromJSON(modelJSON As String) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
@@ -3299,18 +4231,18 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>SaveModel</ItemName>
+  <ItemName>X3_SaveModel</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub SaveModel(model As X3Core.X3Model, modelFile As FolderItem, saveNormals As Boolean = True)</SourceLine>
+   <SourceLine>Sub X3_SaveModel(model As X3Core.X3Model, modelFile As FolderItem, saveNormals As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim json as String</SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>json = ModelToJSON(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
+   <SourceLine>json = X3_ModelToJSON(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout = TextOutputStream.Create(modelFile) ' open file for output</SourceLine>
    <SourceLine>tout.WriteLine json ' write X3DF JASON to file</SourceLine>
@@ -3326,12 +4258,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>ModelToJSON</ItemName>
+  <ItemName>X3_ModelToJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
+   <SourceLine>Function X3_ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
@@ -3798,938 +4730,6 @@
   <ItemFlags>0</ItemFlags>
  </Constant>
 </block>
-<block type="Module" ID="1035139071">
- <ObjName>FileAssist</ObjName>
- <ObjContainerID>0</ObjContainerID>
- <IsClass>0</IsClass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <Compatibility></Compatibility>
- <Method>
-  <ItemName>LoadModelFromOBJ</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function LoadModelFromOBJ(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
-   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
-   <SourceLine>Dim tis As TextInputStream</SourceLine>
-   <SourceLine>Dim sLine As String</SourceLine>
-   <SourceLine>Dim tmpArr() As String</SourceLine>
-   <SourceLine>Dim tmpArr2() As String</SourceLine>
-   <SourceLine>Dim v As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim uv As X3Core.X3UVCoordinate</SourceLine>
-   <SourceLine>Dim f As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim matLib As new Dictionary</SourceLine>
-   <SourceLine>Dim currentMat As String</SourceLine>
-   <SourceLine>Dim textureIndex As Integer </SourceLine>
-   <SourceLine>Dim colorIndex As Integer </SourceLine>
-   <SourceLine>Dim materialIndex As Integer </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>colorIndex = -1</SourceLine>
-   <SourceLine>textureIndex = -1</SourceLine>
-   <SourceLine>materialIndex = - 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tis = TextInputStream.Open(modelFile)</SourceLine>
-   <SourceLine>while not tis.EOF</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>sLine = Replace(Trim(tis.ReadLine()), Chr(9), " ")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if Left(sLine, 6) = "mtllib" then ' material library </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if UBound(tmpArr) &gt;= 1 then</SourceLine>
-   <SourceLine>loadOBJMaterials modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 1) = "f" then ' face (polygon)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>f = new X3Core.X3Polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if tmpArr.Ubound &gt;= 3 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if textureIndex &gt;= 0  then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>f.TIndex = textureIndex</SourceLine>
-   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
-   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
-   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
-   <SourceLine>f.UVIndex.Append Val(tmpArr2(1)) - 1</SourceLine>
-   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
-   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif materialIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>f.MIndex = materialIndex</SourceLine>
-   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
-   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
-   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
-   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
-   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif colorIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>f.CIndex = colorIndex</SourceLine>
-   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
-   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
-   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
-   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
-   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to tmpArr.Ubound</SourceLine>
-   <SourceLine>tmpArr2 = Split(tmpArr(i), "/")</SourceLine>
-   <SourceLine>f.VIndex.Append Val(tmpArr2(0)) - 1</SourceLine>
-   <SourceLine>if tmpArr2.Ubound &gt;= 2 then</SourceLine>
-   <SourceLine>f.VNIndex.Append Val(tmpArr2(2)) - 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model.AppendPolygon f</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'f.CalculateNormal()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 2) = "vn" then ' normal vector</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>v = new X3Core.X3Vector(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine>v.Normalize()</SourceLine>
-   <SourceLine>model.Normal.Append v</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 2) = "vt" then ' uv (texture) coordinate</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>uv = new X3Core.X3UVCoordinate(Val(tmpArr(1)), 1 - Val(tmpArr(2)))</SourceLine>
-   <SourceLine>model.UVMap.Append uv</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 1) = "v" then ' vertex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>v = new X3Core.X3Vector(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine>model.Vertex.Append v</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif Left(sLine, 6) = "usemtl" then ' material library</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' clear texture settings</SourceLine>
-   <SourceLine>textureIndex = -1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currentMat = matLib.Lookup(tmpArr(1), "")</SourceLine>
-   <SourceLine>if left(currentMat, 3) = "col" then ' color?</SourceLine>
-   <SourceLine>colorIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
-   <SourceLine>textureIndex = -1</SourceLine>
-   <SourceLine>materialIndex = -1</SourceLine>
-   <SourceLine>elseif left(currentMat, 3) = "mat" then ' material?</SourceLine>
-   <SourceLine>materialIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
-   <SourceLine>textureIndex = -1</SourceLine>
-   <SourceLine>colorIndex = -1</SourceLine>
-   <SourceLine>elseif left(currentMat, 3) = "txt" then ' texture?</SourceLine>
-   <SourceLine>textureIndex = Val(Right(currentMat, Len(currentMat) - 3))</SourceLine>
-   <SourceLine>colorIndex = -1</SourceLine>
-   <SourceLine>materialIndex = -1</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>colorIndex = -1</SourceLine>
-   <SourceLine>textureIndex = -1</SourceLine>
-   <SourceLine>materialIndex = -1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>modelFile As FolderItem</ItemParams>
-  <ItemResult>X3Core.X3Model</ItemResult>
- </Method>
- <Method>
-  <ItemName>SaveModelToOBJ</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub SaveModelToOBJ(model As X3Core.X3Model, modelFile As FolderItem)</SourceLine>
-   <SourceLine>Dim tout As TextOutputStream</SourceLine>
-   <SourceLine>Dim sLine() As String</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim v As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim vn As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim uv As X3Core.X3UVCoordinate</SourceLine>
-   <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim pngFile As FolderItem</SourceLine>
-   <SourceLine>Dim textureFilename As String</SourceLine>
-   <SourceLine>Dim mtlFile As FolderItem</SourceLine>
-   <SourceLine>Dim coreName As String</SourceLine>
-   <SourceLine>Dim normIndex As String</SourceLine>
-   <SourceLine>Dim currMat As String</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>coreName = Left(modelFile.Name, Len(modelFile.Name) - 4)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ***** TEXTURES ****************************</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' create png texture files</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>textureFilename = corename + "_txt_"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
-   <SourceLine>pngFile = modelFile.Parent.Child(textureFilename + Str(i + 1) + ".png")</SourceLine>
-   <SourceLine>writeTexturePNG pngFile, model.Texture(i)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ***** MTL File ****************************</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>mtlFile = modelFile.Parent.Child(corename + ".mtl")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout = TextOutputStream.Create(mtlFile)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write texture materials</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
-   <SourceLine>tout.WriteLine "newmtl mtl_txt_" + Str(i + 1)</SourceLine>
-   <SourceLine>tout.WriteLine "Ka 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>tout.WriteLine "Kd 1.0 1.0 1.0"</SourceLine>
-   <SourceLine>tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>tout.WriteLine "d 1.0"</SourceLine>
-   <SourceLine>tout.WriteLine "illum 2"</SourceLine>
-   <SourceLine>tout.WriteLine "map_Kd " + textureFilename + Str(i + 1) + ".png"</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine>next i </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write material materials</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Material.Ubound</SourceLine>
-   <SourceLine>tout.WriteLine "newmtl mtl_mat_" + Str(i + 1)</SourceLine>
-   <SourceLine>tout.WriteLine "Ka " + X3_Str(model.Material(i).Ambient.Red) + " "  + X3_Str(model.Material(i).Ambient.Green) + " "  + X3_Str(model.Material(i).Ambient.Blue)</SourceLine>
-   <SourceLine>tout.WriteLine "Kd " + X3_Str(model.Material(i).Diffuse.Red) + " "  + X3_Str(model.Material(i).Diffuse.Green) + " "  + X3_Str(model.Material(i).Diffuse.Blue)</SourceLine>
-   <SourceLine>tout.WriteLine "Ks " + X3_Str(model.Material(i).Specular.Red) + " "  + X3_Str(model.Material(i).Specular.Green) + " "  + X3_Str(model.Material(i).Specular.Blue)</SourceLine>
-   <SourceLine>tout.WriteLine "Ns " + X3_Str(model.Material(i).Shininess)</SourceLine>
-   <SourceLine>tout.WriteLine "illum 2"</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.ColorPal.Ubound</SourceLine>
-   <SourceLine>tout.WriteLine "newmtl mtl_col_" + Str(i + 1)</SourceLine>
-   <SourceLine>tout.WriteLine "Ka " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
-   <SourceLine>tout.WriteLine "Kd " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
-   <SourceLine>tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>tout.WriteLine "d " + X3_Str(model.ColorPal(i).Alpha)</SourceLine>
-   <SourceLine>tout.WriteLine "illum 1"</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout.Close</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ***** OBJ File ****************************</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currMat = ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout = TextOutputStream.Create(modelFile)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write meta data comment</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout.WriteLine "# X3 FileAssist - www.xojo3d.com"</SourceLine>
-   <SourceLine>tout.WriteLine "# vertices: " + Str(model.Vertex.Ubound + 1) + ", faces: " + Str(model.Polygon.Ubound + 1) + ", textures: " + Str(model.Texture.Ubound + 1)</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' include material library</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
-   <SourceLine>tout.WriteLine "mtllib " + corename + ".mtl"</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write vertices</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>v = model.Vertex(i)</SourceLine>
-   <SourceLine>tout.WriteLine "v " + X3_Str(v.X) + " " + X3_Str(v.Y) + " " + X3_Str(v.Z)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write normals</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Normal.Ubound</SourceLine>
-   <SourceLine>vn = model.Normal(i)</SourceLine>
-   <SourceLine>tout.WriteLine "vn " + X3_Str(vn.X) + " " + X3_Str(vn.Y) + " " + X3_Str(vn.Z)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write texture coordinates</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.UVMap.Ubound</SourceLine>
-   <SourceLine>uv = model.UVMap(i)</SourceLine>
-   <SourceLine>tout.WriteLine "vt " + X3_Str(uv.U) + " " + X3_Str(1 - uv.V)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' write polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
-   <SourceLine>p = model.Polygon(i)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>normIndex = Str(p.NIndex + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Redim sLine(-1)</SourceLine>
-   <SourceLine>sLine.Append "f"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p.CIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; "mtl_col_" + Str(p.CIndex + 1) then</SourceLine>
-   <SourceLine>tout.WriteLine "usemtl mtl_col_" + Str(p.CIndex + 1)</SourceLine>
-   <SourceLine>currMat = "mtl_col_" + Str(p.CIndex + 1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append normIndex</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif p.MIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; "mtl_mat_" + Str(p.MIndex + 1) then</SourceLine>
-   <SourceLine>tout.WriteLine "usemtl mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
-   <SourceLine>currMat = "mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append normIndex</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif p.TIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; "mtl_txt_" + Str(p.TIndex + 1) then</SourceLine>
-   <SourceLine>tout.WriteLine "usemtl mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
-   <SourceLine>currMat = "mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "/"</SourceLine>
-   <SourceLine>sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "/"</SourceLine>
-   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "/"</SourceLine>
-   <SourceLine>sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "/"</SourceLine>
-   <SourceLine>sLine.Append normIndex</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>sLine.Append " "</SourceLine>
-   <SourceLine>sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>sLine.Append "//"</SourceLine>
-   <SourceLine>sLine.Append normIndex</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout.WriteLine Join(sLine, "")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i  </SourceLine>
-   <SourceLine>tout.WriteLine ""</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tout.Close</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>model As X3Core.X3Model, modelFile As FolderItem</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>loadOBJMaterials</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub loadOBJMaterials(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
-   <SourceLine>Dim tis As TextInputStream</SourceLine>
-   <SourceLine>Dim sLine As String</SourceLine>
-   <SourceLine>Dim parseMat As Boolean </SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim tmpArr() As String</SourceLine>
-   <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
-   <SourceLine>Dim Ka As X3Core.X3Color</SourceLine>
-   <SourceLine>Dim Kd As X3Core.X3Color</SourceLine>
-   <SourceLine>Dim Ks As X3Core.X3Color</SourceLine>
-   <SourceLine>Dim Ns As Double</SourceLine>
-   <SourceLine>Dim d As Double</SourceLine>
-   <SourceLine>Dim mat As X3Core.X3Material</SourceLine>
-   <SourceLine>Dim matName As String</SourceLine>
-   <SourceLine>Dim map_Kd As String</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if matFile.Exists then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>parseMat = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tis = TextInputStream.Open(matFile)</SourceLine>
-   <SourceLine>while not tis.EOF</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>sLine = Replace(Trim(tis.ReadLine()), Chr(9), " ")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if Left(sLine, 6) = "newmtl" then ' material library </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if parseMat then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ----- add material ---------------------</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if map_Kd &lt;&gt; "" then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
-   <SourceLine>model.Texture.Append t</SourceLine>
-   <SourceLine>t = nil</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matLib.Value(matName) = "txt" + Str(model.Texture.Ubound)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>mat = new X3Core.X3Material()</SourceLine>
-   <SourceLine>if Ka &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Ambient = Ka</SourceLine>
-   <SourceLine>mat.Ambient.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Kd &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Diffuse = Kd</SourceLine>
-   <SourceLine>mat.Diffuse.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Ks &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Specular = Ks</SourceLine>
-   <SourceLine>mat.Specular.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>mat.Shininess = Ns</SourceLine>
-   <SourceLine>model.Material.Append mat</SourceLine>
-   <SourceLine>matLib.Value(matName) = "mat" + Str(model.Material.Ubound)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ----------------------------------------</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set name, and clear texture properties</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matName = tmpArr(1)</SourceLine>
-   <SourceLine>map_Kd = ""</SourceLine>
-   <SourceLine>Ka = nil</SourceLine>
-   <SourceLine>Kd = nil</SourceLine>
-   <SourceLine>Ks = nil</SourceLine>
-   <SourceLine>Ns = 0</SourceLine>
-   <SourceLine>d = 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>parseMat = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if parseMat then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpArr = Split(sLine)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' remove empty values</SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt;= tmpArr.Ubound</SourceLine>
-   <SourceLine>if Trim(tmpArr(i)) = "" then</SourceLine>
-   <SourceLine>tmpArr.Remove(i)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if tmpArr.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case tmpArr(0)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "d"</SourceLine>
-   <SourceLine>d = Val(tmpArr(1))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "Ka"</SourceLine>
-   <SourceLine>Ka = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "Kd"</SourceLine>
-   <SourceLine>Kd = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "Ks"</SourceLine>
-   <SourceLine>Ks = new X3Core.X3Color(Val(tmpArr(1)), Val(tmpArr(2)), Val(tmpArr(3)))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "map_Kd"</SourceLine>
-   <SourceLine>if tmpArr.Ubound &gt;= 1 then</SourceLine>
-   <SourceLine>map_Kd = tmpArr(1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "Ns"</SourceLine>
-   <SourceLine>Ns = (Val(tmpArr(1)) / 1000) * 128</SourceLine>
-   <SourceLine>//Ns = Val(tmpArr(1)) </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if parseMat then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ----- add material ---------------------</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if map_Kd &lt;&gt; "" then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if matFile.Parent.Child(map_Kd).Exists then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>t = loadTexture(matFile.Parent.Child(map_Kd))</SourceLine>
-   <SourceLine>model.Texture.Append t</SourceLine>
-   <SourceLine>t = nil</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matLib.Value(matName) = "txt" + Str(model.Texture.Ubound)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>mat = new X3Core.X3Material()</SourceLine>
-   <SourceLine>if Ka &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Ambient = Ka</SourceLine>
-   <SourceLine>mat.Ambient.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Kd &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Diffuse = Kd</SourceLine>
-   <SourceLine>mat.Diffuse.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Ks &lt;&gt; nil then</SourceLine>
-   <SourceLine>mat.Specular = Ks</SourceLine>
-   <SourceLine>mat.Specular.Alpha = d</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>mat.Shininess = Ns</SourceLine>
-   <SourceLine>model.Material.Append mat</SourceLine>
-   <SourceLine>matLib.Value(matName) = "mat" + Str(model.Material.Ubound)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ----------------------------------------</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>writeTexturePNG</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub writeTexturePNG(pngFile As FolderItem, texture As X3Core.X3Texture)</SourceLine>
-   <SourceLine>#pragma DisableBackgroundTasks</SourceLine>
-   <SourceLine>#pragma NilObjectChecking</SourceLine>
-   <SourceLine>#pragma StackOverflowChecking</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim pic As New Picture(texture.Width, texture.Height, 32)</SourceLine>
-   <SourceLine>Dim x As Integer</SourceLine>
-   <SourceLine>Dim y As Integer</SourceLine>
-   <SourceLine>Dim offset As Integer</SourceLine>
-   <SourceLine>Dim w As Integer</SourceLine>
-   <SourceLine>Dim h As Integer</SourceLine>
-   <SourceLine>Dim alpha As Byte</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' loop through all the pixels of the picture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>h = texture.Height - 1</SourceLine>
-   <SourceLine>w = texture.Width - 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for y = 0 to h</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for x = 0 to w</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(x, y) = RGB(texture.RGBABitmap.Byte(offset), texture.RGBABitmap.Byte(offset + 1), texture.RGBABitmap.Byte(offset + 2))</SourceLine>
-   <SourceLine>alpha = 255 - texture.RGBABitmap.Byte(offset + 3)</SourceLine>
-   <SourceLine>pic.Mask.RGBSurface.Pixel(x, y) = RGB(alpha, alpha, alpha)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next x</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next y</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>pngFile As FolderItem, texture As X3Core.X3Texture</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>loadTexture</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function loadTexture(picFile As FolderItem) As X3Core.X3Texture</SourceLine>
-   <SourceLine>Dim t As X3Core.X3Texture</SourceLine>
-   <SourceLine>Dim p As Picture</SourceLine>
-   <SourceLine>Dim tgaData As MemoryBlock</SourceLine>
-   <SourceLine>Dim bs As BinaryStream</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if Right(picFile.Name, 4) = ".tga" then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' load tga data</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>bs = BinaryStream.Open(picFile)</SourceLine>
-   <SourceLine>tgaData = bs.Read(picFile.Length)</SourceLine>
-   <SourceLine>bs.Close</SourceLine>
-   <SourceLine>p = pictureFromTGA(tgaData)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>p = Picture.Open(picFile) ' load data using built-in Xojo routines</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if p &lt;&gt; nil then</SourceLine>
-   <SourceLine>t = new X3Core.X3Texture(p, false)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return t</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>picFile As FolderItem</ItemParams>
-  <ItemResult>X3Core.X3Texture</ItemResult>
- </Method>
- <Method>
-  <ItemName>pictureFromTGA</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function pictureFromTGA(tgaData As MemoryBlock) As Picture</SourceLine>
-   <SourceLine>Dim dataPtr As Ptr</SourceLine>
-   <SourceLine>Dim dataPos As Integer</SourceLine>
-   <SourceLine>Dim p As Picture</SourceLine>
-   <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
-   <SourceLine>Dim rgbMask As RGBSurface</SourceLine>
-   <SourceLine>Dim pixelCount As Integer</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim x As Integer</SourceLine>
-   <SourceLine>Dim y As Integer</SourceLine>
-   <SourceLine>Dim maskByte As Byte</SourceLine>
-   <SourceLine>Dim yStep As Integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' tga header information</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim ImageIDLen As Byte</SourceLine>
-   <SourceLine>Dim ColorMap As Byte</SourceLine>
-   <SourceLine>Dim ImageType As Byte</SourceLine>
-   <SourceLine>Dim ColorMapOrigin As UInt16</SourceLine>
-   <SourceLine>Dim ColorMapLen As UInt16</SourceLine>
-   <SourceLine>Dim ColorMapEntrySize As Byte</SourceLine>
-   <SourceLine>Dim ImageXOrigin As UInt16</SourceLine>
-   <SourceLine>Dim ImageYOrigin As UInt16</SourceLine>
-   <SourceLine>Dim ImageWidth As Integer</SourceLine>
-   <SourceLine>Dim ImageHeight As Integer</SourceLine>
-   <SourceLine>Dim ImagePixelSize As Byte</SourceLine>
-   <SourceLine>Dim ImageDescriptor As Byte</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>dataPtr = tgaData</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>ImageIDLen = dataPtr.Byte(0)</SourceLine>
-   <SourceLine>ColorMap = dataPtr.Byte(1)</SourceLine>
-   <SourceLine>ImageType = dataPtr.Byte(2)</SourceLine>
-   <SourceLine>ColorMapOrigin = dataPtr.UInt16(3)</SourceLine>
-   <SourceLine>ColorMapLen = dataPtr.UInt16(5)</SourceLine>
-   <SourceLine>ColorMapEntrySize = dataPtr.Byte(7)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>ImageXOrigin = dataPtr.UInt16(8)</SourceLine>
-   <SourceLine>ImageYOrigin = dataPtr.UInt16(10)</SourceLine>
-   <SourceLine>ImageWidth = dataPtr.UInt16(12)</SourceLine>
-   <SourceLine>ImageHeight = dataPtr.UInt16(14)</SourceLine>
-   <SourceLine>ImagePixelSize = dataPtr.Byte(16)</SourceLine>
-   <SourceLine>ImageDescriptor = dataPtr.Byte(17)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>p = new Picture(ImageWidth, ImageHeight, 32)</SourceLine>
-   <SourceLine>rgbMain = p.RGBSurface</SourceLine>
-   <SourceLine>rgbMask = p.Mask.RGBSurface</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case ImageType</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case 2 ' ***** Unmapped RGB images ***************************</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>dataPos = 18 + ImageIDLen + ColorMapLen</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pixelCount = ImageWidth * ImageHeight</SourceLine>
-   <SourceLine>x = 0</SourceLine>
-   <SourceLine>if (ImageDescriptor and 32) &gt; 0 then</SourceLine>
-   <SourceLine>y = 0</SourceLine>
-   <SourceLine>yStep = 1</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>y = ImageHeight - 1</SourceLine>
-   <SourceLine>yStep = -1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case ImagePixelSize</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case 24</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt; pixelCount</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>rgbMain.Pixel(x, y) = RGB(dataPtr.Byte(dataPos + 2), dataPtr.Byte(dataPos + 1), dataPtr.Byte(dataPos))</SourceLine>
-   <SourceLine>rgbMask.Pixel(x, y) = RGB(maskByte, maskByte, 0)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>dataPos = dataPos + 3</SourceLine>
-   <SourceLine>x = x + 1</SourceLine>
-   <SourceLine>if x &gt;= ImageWidth then</SourceLine>
-   <SourceLine>x = 0</SourceLine>
-   <SourceLine>y = y + yStep</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case 32</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt; pixelCount</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>rgbMain.Pixel(x, y) = RGB(dataPtr.Byte(dataPos + 2), dataPtr.Byte(dataPos + 1), dataPtr.Byte(dataPos))</SourceLine>
-   <SourceLine>maskByte = 255 - dataPtr.Byte(dataPos + 3)</SourceLine>
-   <SourceLine>rgbMask.Pixel(x, y) = RGB(maskByte, maskByte, maskByte)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>dataPos = dataPos + 4</SourceLine>
-   <SourceLine>x = x + 1</SourceLine>
-   <SourceLine>if x &gt;= ImageWidth then</SourceLine>
-   <SourceLine>x = 0</SourceLine>
-   <SourceLine>y = y + yStep</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return p</SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>tgaData As MemoryBlock</ItemParams>
-  <ItemResult>Picture</ItemResult>
- </Method>
- <ViewBehavior>
-  <ViewProperty>
-   <ObjName>Name</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Index</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <PropertyValue>-2147483648</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Super</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Left</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Top</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
- </ViewBehavior>
-</block>
 <block type="BuildAutomation" ID="1491474431">
  <ObjName>Build Automation</ObjName>
  <ObjContainerID>0</ObjContainerID>
@@ -4758,9 +4758,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1115863039</ObjContainerID>
 </block>
-<block type="Module" ID="1242669055">
+<block type="Module" ID="688304127">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4961,9 +4961,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="164638719">
+<block type="Module" ID="1897037823">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5157,9 +5157,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1428400127">
+<block type="Module" ID="371023871">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5771,9 +5771,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="149833727">
+<block type="Module" ID="172759039">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5897,9 +5897,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="517304319">
+<block type="Module" ID="467664895">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6400,9 +6400,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1326753791">
+<block type="Module" ID="578484223">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6663,9 +6663,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1596246015">
+<block type="Module" ID="107329535">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6790,9 +6790,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2000015359">
+<block type="Module" ID="1544458239">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7164,9 +7164,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="767789055">
+<block type="Module" ID="1245515775">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7318,9 +7318,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="117932031">
+<block type="Module" ID="1821153279">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7509,9 +7509,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1761300479">
+<block type="Module" ID="379867135">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1473306623</ObjContainerID>
+ <ObjContainerID>87666687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7681,9 +7681,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.loadTexture</EditorLocation>
+    <EditorLocation>frmMain.action_Save</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1506764799</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
