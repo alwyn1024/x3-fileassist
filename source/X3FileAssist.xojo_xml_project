@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -267,6 +267,7 @@
    <SourceLine>Dim allType As new FileType</SourceLine>
    <SourceLine>Dim x3mType As new FileType</SourceLine>
    <SourceLine>Dim objType As new FileType</SourceLine>
+   <SourceLine>Dim _3dmfType As new FileType</SourceLine>
    <SourceLine>Dim io As new X3Core.X3IO</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>allType.Name = "All model files"</SourceLine>
@@ -278,7 +279,10 @@
    <SourceLine>objType.Name = "Wavefront OBJ"</SourceLine>
    <SourceLine>objType.Extensions = ".obj"</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>dlg.Filter = allType + x3mType + objType</SourceLine>
+   <SourceLine>_3dmfType.Name = "QuickTime 3D Meta File Format"</SourceLine>
+   <SourceLine>_3dmfType.Extensions = ".3dmf"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dlg.Filter = allType + x3mType + objType + _3dmfType</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>modFile = dlg.ShowModal() ' get file to load model from</SourceLine>
    <SourceLine></SourceLine>
@@ -288,14 +292,14 @@
    <SourceLine>lblFilename.TextColor = RGB(200, 0, 0)</SourceLine>
    <SourceLine>lblFilename.Refresh</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if Right(modFile.Name, 4) = ".x3m" then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'CurrentModel = X3_LoadModel(modFile, nil) ' .x3m</SourceLine>
+   <SourceLine>if Right(modFile.Name, 4) = ".x3m" then ' .x3m</SourceLine>
    <SourceLine>CurrentModel = io.LoadModel(modFile)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(modFile.Name, 4) = ".obj" then</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>CurrentModel = LoadModelFromOBJ(modFile) ' .obj</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif Right(modFile.Name, 5) = ".3dmf" then</SourceLine>
+   <SourceLine>CurrentModel = LoadModelFrom3DMF(modFile) ' .x3mf</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -830,7 +834,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
@@ -878,7 +882,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1803,6 +1807,25 @@
   <IsShared>0</IsShared>
   <ItemParams>tgaData As MemoryBlock</ItemParams>
   <ItemResult>Picture</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LoadModelFrom3DMF</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadModelFrom3DMF(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>modelFile As FolderItem</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <ViewBehavior>
   <ViewProperty>
@@ -7760,8 +7783,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation></EditorLocation>
+    <EditorLocation>frmMain</EditorLocation>
     <EditorPath></EditorPath>
+    <EditingPartID>1506764799</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
