@@ -965,7 +965,7 @@
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if UBound(tmpArr) &gt;= 1 then</SourceLine>
-   <SourceLine>loadOBJMaterials modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
+   <SourceLine>objLoadMaterials modelFile.Parent.Child(tmpArr(1)), matLib, model</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Left(sLine, 1) = "f" then ' face (polygon)</SourceLine>
@@ -1391,12 +1391,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>loadOBJMaterials</ItemName>
+  <ItemName>objLoadMaterials</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub loadOBJMaterials(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
+   <SourceLine>Sub objLoadMaterials(matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model)</SourceLine>
    <SourceLine>Dim tis As TextInputStream</SourceLine>
    <SourceLine>Dim sLine As String</SourceLine>
    <SourceLine>Dim parseMat As Boolean </SourceLine>
@@ -7783,9 +7783,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain</EditorLocation>
+    <EditorLocation>FileAssist.LoadModelFromOBJ</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1506764799</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
