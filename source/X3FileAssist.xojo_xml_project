@@ -1827,6 +1827,23 @@
   <ItemParams>modelFile As FolderItem</ItemParams>
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
+ <Method>
+  <ItemName>dmfParseObject</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub dmfParseObject(model As X3Core.X3Model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>model As X3Core.X3Model</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Name</ObjName>
@@ -7783,7 +7800,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.LoadModelFromOBJ</EditorLocation>
+    <EditorLocation>FileAssist.dmfParseObject</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
