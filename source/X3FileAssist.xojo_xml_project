@@ -1848,6 +1848,10 @@
    <SourceLine></SourceLine>
    <SourceLine>tokenizer = new DMFTokenizer(fileData)</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>if dmfMatch3DMetaFile(tokenizer, model) then ' match 3DMF header</SourceLine>
+   <SourceLine>break</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
@@ -1869,8 +1873,16 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim token As String</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "3DMetafile" then</SourceLine>
    <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo: match header parameters</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
    <SourceLine></SourceLine>
@@ -7926,6 +7938,8 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>mData = modelData</SourceLine>
+   <SourceLine>mPosition = 0</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -7935,6 +7949,100 @@
   <IsShared>0</IsShared>
   <ItemParams>modelData As String</ItemParams>
   <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>NextToken</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function NextToken() As String</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim token() As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not EOF then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// space past whitespace</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while mData.Byte(mPosition) &lt;= 32</SourceLine>
+   <SourceLine>mPosition = mPosition + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through data characters until we find whitespace or the end-of-file</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while (mData.Byte(mPosition) &gt; 32) and not EOF</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>token.Append Chr(mData.Byte(mPosition))</SourceLine>
+   <SourceLine>mPosition = mPosition + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return Join(token, "")</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>EOF</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function EOF() As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = (mPosition &gt;= mData.Size)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LookToken</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LookToken() As String</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim token As String</SourceLine>
+   <SourceLine>Dim currentPosition As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currentPosition = mPosition 'save current position</SourceLine>
+   <SourceLine>token = NextToken() ' get next token</SourceLine>
+   <SourceLine>mPosition = currentPosition ' restore current position</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return token</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult>String</ItemResult>
  </Method>
  <Property>
   <ItemName>mData</ItemName>
@@ -7951,16 +8059,16 @@
   <IsShared>0</IsShared>
  </Property>
  <Property>
-  <ItemName>mPos</ItemName>
+  <ItemName>mPosition</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>mPos As Integer</SourceLine>
+   <SourceLine>mPosition As Integer</SourceLine>
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>mPos As Integer</ItemDeclaration>
+  <ItemDeclaration>mPosition As Integer</ItemDeclaration>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -8006,9 +8114,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.DMFTokenizer.Constructor</EditorLocation>
+    <EditorLocation>FileAssist.dmfMatch3DMetaFile</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1485817855</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
