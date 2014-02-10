@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20624</BuildFlags>
+ <BuildFlags>28816</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -802,112 +802,113 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Listbox</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">lstModelInfo</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1816,6 +1817,16 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function LoadModelFrom3DMF(modelFile As FolderItem) As X3Core.X3Model</SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim fileData As MemoryBlock</SourceLine>
+   <SourceLine>Dim textInput As TextInputStream</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' read 3dmf data into memory block</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>textInput = TextInputStream.Open(modelFile)</SourceLine>
+   <SourceLine>fileData = textInput.ReadAll()</SourceLine>
+   <SourceLine>textInput.Close()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>msgbox fileData</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -1828,12 +1839,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>dmfParseObject</ItemName>
+  <ItemName>dmfMatch3DMetaFile</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub dmfParseObject(model As X3Core.X3Model)</SourceLine>
+   <SourceLine>Sub dmfMatch3DMetaFile(model As X3Core.X3Model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -7800,7 +7811,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.dmfParseObject</EditorLocation>
+    <EditorLocation>FileAssist.LoadModelFrom3DMF</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
