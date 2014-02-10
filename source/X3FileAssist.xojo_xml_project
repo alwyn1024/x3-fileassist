@@ -1920,18 +1920,24 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim match As Boolean</SourceLine>
    <SourceLine>Dim token As String</SourceLine>
    <SourceLine>Dim objectName As String</SourceLine>
+   <SourceLine>Dim currentPosition As Integer</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = false ' by default we assume it is not a match</SourceLine>
+   <SourceLine>match = false ' by default we assume it is not a match</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currentPosition = tokenizer.Position ' store current position</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>objectName = tokenizer.LookToken()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>select case objectName</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "3DMetafile"</SourceLine>
-   <SourceLine>result = dmfMatch_3DMetaFile(tokenizer, model)</SourceLine>
+   <SourceLine>match = dmfMatch_3DMetaFile(tokenizer, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "Container"</SourceLine>
+   <SourceLine>match = dmfMatch_Container(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else</SourceLine>
    <SourceLine>break</SourceLine>
@@ -1939,11 +1945,64 @@
    <SourceLine>end select</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' was the object perhaps a label?</SourceLine>
-   <SourceLine>if not result then</SourceLine>
+   <SourceLine>if not match then</SourceLine>
    <SourceLine>if Right(objectName, 1) = ":" then</SourceLine>
-   <SourceLine>result = true ' yes, so indicate that we found a match for an object</SourceLine>
+   <SourceLine>match = true ' yes, so indicate that we found a match for an object</SourceLine>
    <SourceLine>break // test break point</SourceLine>
    <SourceLine>end if</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not match then</SourceLine>
+   <SourceLine>tokenizer.Position = currentPosition ' no match, so restore old position</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return match</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>dmfMatch_Container</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function dmfMatch_Container(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim temporaryString As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "Container" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match open bracket</SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match container objects</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while dmfMatch_Object(tokenizer, model)</SourceLine>
+   <SourceLine>// loop until we don't get a match for an object</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match closing bracket</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
@@ -8186,7 +8245,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.dmfMatch_Object</EditorLocation>
+    <EditorLocation>FileAssist.dmfMatch_Container</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
