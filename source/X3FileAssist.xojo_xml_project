@@ -1933,7 +1933,18 @@
    <SourceLine>case "3DMetafile"</SourceLine>
    <SourceLine>result = dmfMatch_3DMetaFile(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>case else</SourceLine>
+   <SourceLine>break</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' was the object perhaps a label?</SourceLine>
+   <SourceLine>if not result then</SourceLine>
+   <SourceLine>if Right(objectName, 1) = ":" then</SourceLine>
+   <SourceLine>result = true ' yes, so indicate that we found a match for an object</SourceLine>
+   <SourceLine>break // test break point</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
    <SourceLine></SourceLine>
