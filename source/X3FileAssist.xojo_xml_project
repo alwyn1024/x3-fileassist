@@ -1834,8 +1834,9 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
-   <SourceLine>Dim fileData As MemoryBlock</SourceLine>
+   <SourceLine>Dim fileData As String</SourceLine>
    <SourceLine>Dim textInput As TextInputStream</SourceLine>
+   <SourceLine>Dim tokenizer As DMFTokenizer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' read 3dmf data into memory block</SourceLine>
    <SourceLine></SourceLine>
@@ -1843,7 +1844,9 @@
    <SourceLine>fileData = textInput.ReadAll()</SourceLine>
    <SourceLine>textInput.Close()</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>msgbox fileData</SourceLine>
+   <SourceLine>' instantiate tokenizer that will be used to parse 3DMF tokens</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tokenizer = new DMFTokenizer(fileData)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -1861,17 +1864,24 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub dmfMatch3DMetaFile(model As X3Core.X3Model)</SourceLine>
+   <SourceLine>Function dmfMatch3DMetaFile(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine>End Sub</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <AliasName></AliasName>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>model As X3Core.X3Model</ItemParams>
-  <ItemResult></ItemResult>
+  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
  </Method>
  <ViewBehavior>
   <ViewProperty>
@@ -7898,15 +7908,107 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
+<block type="Module" ID="1485817855">
+ <ObjName>DMFTokenizer</ObjName>
+ <ObjContainerID>1035139071</ObjContainerID>
+ <IsClass>1</IsClass>
+ <ItemFlags>2</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>Constructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Constructor(modelData As String)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mData = modelData</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>modelData As String</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Property>
+  <ItemName>mData</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mData As MemoryBlock</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mData As MemoryBlock</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>mPos</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mPos As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mPos As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
 <block type="UIState" ID="0">
  <StudioWindowState>
   <Editors>
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.writeTexturePNG</EditorLocation>
+    <EditorLocation>FileAssist.DMFTokenizer.Constructor</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1485817855</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
