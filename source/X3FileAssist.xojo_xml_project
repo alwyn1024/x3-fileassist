@@ -1611,10 +1611,6 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>#pragma DisableBackgroundTasks</SourceLine>
-   <SourceLine>#pragma NilObjectChecking</SourceLine>
-   <SourceLine>#pragma StackOverflowChecking</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>Dim pic As New Picture(texture.Width, texture.Height, 32)</SourceLine>
    <SourceLine>Dim x As Integer</SourceLine>
    <SourceLine>Dim y As Integer</SourceLine>
