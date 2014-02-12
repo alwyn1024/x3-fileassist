@@ -1835,7 +1835,7 @@
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
    <SourceLine>Dim fileData As String</SourceLine>
    <SourceLine>Dim textInput As TextInputStream</SourceLine>
-   <SourceLine>Dim tokenizer As DMFTokenizer</SourceLine>
+   <SourceLine>Dim tokenizer As QuickDrawTokenizer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' read 3dmf data into memory block</SourceLine>
    <SourceLine></SourceLine>
@@ -1845,9 +1845,9 @@
    <SourceLine></SourceLine>
    <SourceLine>' instantiate tokenizer that will be used to parse 3DMF tokens</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>tokenizer = new DMFTokenizer(fileData)</SourceLine>
+   <SourceLine>tokenizer = new QuickDrawTokenizer(fileData)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>while qdaMatch_Object(tokenizer, model)</SourceLine>
+   <SourceLine>while qdMatch_Object(tokenizer, model)</SourceLine>
    <SourceLine>// keep om matching 3DMF objects until we get an errror</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -1863,12 +1863,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>qdaMatch_3DMetaFile</ItemName>
+  <ItemName>qdMatch_3DMetaFile</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function qdaMatch_3DMetaFile(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function qdMatch_3DMetaFile(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
@@ -1906,16 +1906,16 @@
   <AliasName></AliasName>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>qdaMatch_Object</ItemName>
+  <ItemName>qdMatch_Object</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function qdaMatch_Object(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function qdMatch_Object(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
@@ -1933,13 +1933,13 @@
    <SourceLine>select case objectName</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "3DMetafile"</SourceLine>
-   <SourceLine>match = qdaMatch_3DMetaFile(tokenizer, model)</SourceLine>
+   <SourceLine>match = qdMatch_3DMetaFile(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "Box"</SourceLine>
-   <SourceLine>match = qdaMatch_Box(tokenizer, model)</SourceLine>
+   <SourceLine>match = qdMatch_Box(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "Container"</SourceLine>
-   <SourceLine>match = qdaMatch_Container(tokenizer, model)</SourceLine>
+   <SourceLine>match = qdMatch_Container(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else</SourceLine>
    <SourceLine>break</SourceLine>
@@ -1967,16 +1967,16 @@
   <AliasName></AliasName>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>qdaMatch_Container</ItemName>
+  <ItemName>qdMatch_Container</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function qdaMatch_Container(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function qdMatch_Container(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
@@ -1992,7 +1992,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' match container objects</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>while qdaMatch_Object(tokenizer, model)</SourceLine>
+   <SourceLine>while qdMatch_Object(tokenizer, model)</SourceLine>
    <SourceLine>// loop until we don't get a match for an object</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -2014,16 +2014,16 @@
   <AliasName></AliasName>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
-  <ItemName>qdaMatch_Box</ItemName>
+  <ItemName>qdMatch_Box</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function qdaMatch_Box(tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>Function qdMatch_Box(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
@@ -2065,6 +2065,7 @@
    <SourceLine>' match closing bracket</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
+   <SourceLineBreakpoint>41</SourceLineBreakpoint>
    <SourceLine>result = true</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -2078,7 +2079,7 @@
   <AliasName></AliasName>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>tokenizer As DMFTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
   <ItemResult>Boolean</ItemResult>
  </Method>
  <ViewBehavior>
@@ -8107,7 +8108,7 @@
  </ViewBehavior>
 </block>
 <block type="Module" ID="1485817855">
- <ObjName>DMFTokenizer</ObjName>
+ <ObjName>QuickDrawTokenizer</ObjName>
  <ObjContainerID>1035139071</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>2</ItemFlags>
@@ -8148,7 +8149,7 @@
    <SourceLine></SourceLine>
    <SourceLine>Dim token() As String</SourceLine>
    <SourceLine>Dim foundToken As Boolean</SourceLine>
-   <SourceLine>Dim temporaryString As String</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if not EOF then</SourceLine>
    <SourceLine></SourceLine>
@@ -8167,8 +8168,8 @@
    <SourceLine>token.Append Chr(mData.Byte(Position))</SourceLine>
    <SourceLine>Position = Position + 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>temporaryString = Join(token, "")</SourceLine>
-   <SourceLine>select case temporaryString</SourceLine>
+   <SourceLine>tmpStr = Join(token, "")</SourceLine>
+   <SourceLine>select case tmpStr</SourceLine>
    <SourceLine>case "(", ")"</SourceLine>
    <SourceLine>foundToken = true</SourceLine>
    <SourceLine>end select</SourceLine>
@@ -8315,9 +8316,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdaMatch_Box</EditorLocation>
+    <EditorLocation>FileAssist.QuickDrawTokenizer.NextToken</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1485817855</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
