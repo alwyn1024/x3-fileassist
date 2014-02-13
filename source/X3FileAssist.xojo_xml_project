@@ -1931,6 +1931,13 @@
    <SourceLine></SourceLine>
    <SourceLine>objectName = tokenizer.LookToken()</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>if Right(objectName, 1) = ":" then ' is this a label</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>objectName = tokenizer.NextToken()</SourceLine>
+   <SourceLine>match = true ' yes, so indicate that we found a match</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>select case objectName</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "3DMetafile"</SourceLine>
@@ -1942,19 +1949,15 @@
    <SourceLine>case "Container"</SourceLine>
    <SourceLine>match = qdMatch_Container(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>case "FaceAttributeSetList"</SourceLine>
+   <SourceLine>match = qdMatch_FaceAttributeSetList(tokenizer, model)</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>case else</SourceLine>
    <SourceLine>break</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end select</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>' was the object perhaps a label?</SourceLine>
-   <SourceLine>if not match then</SourceLine>
-   <SourceLine>if Right(objectName, 1) = ":" then</SourceLine>
-   <SourceLine>match = true ' yes, so indicate that we found a match for an object</SourceLine>
-   <SourceLine>break // test break point</SourceLine>
    <SourceLine>end if</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if not match then</SourceLine>
    <SourceLine>tokenizer.Position = currentPosition ' no match, so restore old position</SourceLine>
@@ -2158,6 +2161,52 @@
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
    <SourceLine>result = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>qdMatch_FaceAttributeSetList</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function qdMatch_FaceAttributeSetList(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "FaceAttributeSetList" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match open bracket</SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' nObjects (must match parent values</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' packing</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' nIndices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match closing bracket</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
@@ -8439,9 +8488,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.action_Open</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_Object</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1506764799</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
