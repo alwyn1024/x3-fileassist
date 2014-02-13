@@ -1940,6 +1940,9 @@
    <SourceLine></SourceLine>
    <SourceLine>select case objectName</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>case "", ")"</SourceLine>
+   <SourceLine>match = false</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>case "AttributeSet"</SourceLine>
    <SourceLine>match = qdMatch_AttributeSet(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
@@ -1951,6 +1954,9 @@
    <SourceLine></SourceLine>
    <SourceLine>case "Container"</SourceLine>
    <SourceLine>match = qdMatch_Container(tokenizer, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "DiffuseColor"</SourceLine>
+   <SourceLine>match = qdMatch_DiffuseColor(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "FaceAttributeSetList"</SourceLine>
    <SourceLine>match = qdMatch_FaceAttributeSetList(tokenizer, model)</SourceLine>
@@ -2244,6 +2250,52 @@
    <SourceLine></SourceLine>
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match closing bracket</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>qdMatch_DiffuseColor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function qdMatch_DiffuseColor(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "DiffuseColor" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match open bracket</SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ?</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ?</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ?</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match closing bracket</SourceLine>
    <SourceLine></SourceLine>
@@ -8339,7 +8391,7 @@
    <SourceLine>if not EOF then</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// skip past whitespace</SourceLine>
-   <SourceLine>while mData.Byte(Position) &lt;= 32</SourceLine>
+   <SourceLine>while (Position &lt; mData.Size) and (mData.Byte(Position) &lt;= 32)</SourceLine>
    <SourceLine>Position = Position + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -8351,7 +8403,7 @@
    <SourceLine></SourceLine>
    <SourceLine>ch = Chr(mData.Byte(Position))</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if (mData.Byte(Position) &lt;= 32) then</SourceLine>
+   <SourceLine>if (mData.Byte(Position) &lt;= 32)  then</SourceLine>
    <SourceLine>foundToken = true</SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine></SourceLine>
@@ -8532,7 +8584,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdMatch_AttributeSet</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_Object</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
