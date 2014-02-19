@@ -1841,8 +1841,11 @@
    <SourceLine>' intialize variables</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>qdDiffuseIndex = 0</SourceLine>
-   <SourceLine>qdNumTriangleAttrTypes = 0</SourceLine>
    <SourceLine>qdNumEdgeAttrTypes = 0</SourceLine>
+   <SourceLine>qdNumEdges = 0</SourceLine>
+   <SourceLine>qbNumPoints = 0</SourceLine>
+   <SourceLine>qdNumTriangleAttrTypes = 0</SourceLine>
+   <SourceLine>qdNumTriangles = 0</SourceLine>
    <SourceLine>qdNumVertexAttrTypes = 0</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' read 3dmf data into memory block</SourceLine>
@@ -2349,10 +2352,6 @@
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpStr As String</SourceLine>
-   <SourceLine>Dim numTriangles As Integer</SourceLine>
-   <SourceLine>Dim numEdges As Integer</SourceLine>
-   <SourceLine>Dim numEdgeAttrTypes As Integer</SourceLine>
-   <SourceLine>Dim numPoints As Integer</SourceLine>
    <SourceLine>Dim vec as X3Core.X3Vector</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -2369,16 +2368,16 @@
    <SourceLine></SourceLine>
    <SourceLine>' get data counters</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>numTriangles = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>qdNumTriangles = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>qdNumTriangleAttrTypes = qdNumTriangleAttrTypes + Val(tokenizer.NextToken())</SourceLine>
-   <SourceLine>numEdges = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>qdNumEdges = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>qdNumEdgeAttrTypes = qdNumEdgeAttrTypes + Val(tokenizer.NextToken())</SourceLine>
-   <SourceLine>numPoints = Val(tokenizer.NextToken()) </SourceLine>
+   <SourceLine>qbNumPoints = Val(tokenizer.NextToken()) </SourceLine>
    <SourceLine>qdNumVertexAttrTypes = qdNumVertexAttrTypes + Val(tokenizer.NextToken())</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' parse triangles</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>for i  = 1 to numTriangles</SourceLine>
+   <SourceLine>for i  = 1 to qdNumTriangles</SourceLine>
    <SourceLine>poly  = new X3Core.X3Polygon()</SourceLine>
    <SourceLine>poly.VIndex.Append Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>poly.VIndex.Append Val(tokenizer.NextToken())</SourceLine>
@@ -2388,7 +2387,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' parse points</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to numPoints</SourceLine>
+   <SourceLine>for i = 1 to qbNumPoints</SourceLine>
    <SourceLine>tmpX = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>tmpY = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>tmpZ = Val(tokenizer.NextToken())</SourceLine>
@@ -2438,6 +2437,12 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim tmpX As Double</SourceLine>
+   <SourceLine>Dim tmpY As Double</SourceLine>
+   <SourceLine>Dim tmpZ As Double</SourceLine>
+   <SourceLine>Dim tmpVec As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
@@ -2446,8 +2451,48 @@
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>if qdNumTriangleAttrTypes &gt; 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' triangle attribute</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "3" then ' triangle normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// parse triangle normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to qdNumTriangles</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpX = Val(tokenizer.NextToken()) + 20</SourceLine>
+   <SourceLine>tmpY = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>tmpZ = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpVec = new X3Core.X3Vector(tmpX, tmpY, tmpZ)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Normal.Append tmpVec</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Polygon(model.Polygon.Ubound - (qdNumTriangles - i)).NIndex = model.Normal.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>break // ? unknown triangle attribute type</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>qdNumTriangleAttrTypes = qdNumTriangleAttrTypes - 1</SourceLine>
+   <SourceLine>if qdNumTriangleAttrTypes &lt;= 0 then</SourceLine>
+   <SourceLine>qdNumTriangles = 0</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>' TODO</SourceLine>
    <SourceLine>break</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match closing bracket</SourceLine>
    <SourceLine></SourceLine>
@@ -2523,6 +2568,48 @@
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>qdNumEdgeAttrTypes As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qdNumTriangles</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qdNumTriangles As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qdNumTriangles As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qdNumEdges</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qdNumEdges As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qdNumEdges As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qbNumPoints</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qbNumPoints As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qbNumPoints As Integer</ItemDeclaration>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -8719,7 +8806,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdMatch_TriMesh</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_AttributeArray</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
