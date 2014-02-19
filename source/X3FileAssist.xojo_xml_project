@@ -1841,6 +1841,9 @@
    <SourceLine>' intialize variables</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>qdDiffuseIndex = 0</SourceLine>
+   <SourceLine>qdNumTriangleAttrTypes = 0</SourceLine>
+   <SourceLine>qdNumEdgeAttrTypes = 0</SourceLine>
+   <SourceLine>qdNumVertexAttrTypes = 0</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' read 3dmf data into memory block</SourceLine>
    <SourceLine></SourceLine>
@@ -1883,7 +1886,6 @@
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = "3DMetafile" then</SourceLine>
-   <SourceLine>result = true</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
@@ -1946,6 +1948,9 @@
    <SourceLine></SourceLine>
    <SourceLine>case "", ")"</SourceLine>
    <SourceLine>match = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "AttributeArray"</SourceLine>
+   <SourceLine>match = qdMatch_AttributeArray(tokenizer, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "AttributeSet"</SourceLine>
    <SourceLine>match = qdMatch_AttributeSet(tokenizer, model)</SourceLine>
@@ -2208,7 +2213,6 @@
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = "FaceAttributeSetList" then</SourceLine>
-   <SourceLine>result = true</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
@@ -2253,7 +2257,6 @@
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = "AttributeSet" then</SourceLine>
-   <SourceLine>result = true</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
@@ -2298,7 +2301,6 @@
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if tokenizer.NextToken() = "DiffuseColor" then</SourceLine>
-   <SourceLine>result = true</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match open bracket</SourceLine>
    <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
@@ -2348,11 +2350,9 @@
    <SourceLine>Dim result As Boolean</SourceLine>
    <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine>Dim numTriangles As Integer</SourceLine>
-   <SourceLine>Dim numTriangleAttrTypes As Integer</SourceLine>
    <SourceLine>Dim numEdges As Integer</SourceLine>
    <SourceLine>Dim numEdgeAttrTypes As Integer</SourceLine>
    <SourceLine>Dim numPoints As Integer</SourceLine>
-   <SourceLine>Dim numVertexAttrTypes As Integer</SourceLine>
    <SourceLine>Dim vec as X3Core.X3Vector</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -2370,12 +2370,11 @@
    <SourceLine>' get data counters</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>numTriangles = Val(tokenizer.NextToken())</SourceLine>
-   <SourceLineBreakpoint>28</SourceLineBreakpoint>
-   <SourceLine>numTriangleAttrTypes = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>qdNumTriangleAttrTypes = qdNumTriangleAttrTypes + Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>numEdges = Val(tokenizer.NextToken())</SourceLine>
-   <SourceLine>numEdgeAttrTypes = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>qdNumEdgeAttrTypes = qdNumEdgeAttrTypes + Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>numPoints = Val(tokenizer.NextToken()) </SourceLine>
-   <SourceLine>numVertexAttrTypes = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>qdNumVertexAttrTypes = qdNumVertexAttrTypes + Val(tokenizer.NextToken())</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' parse triangles</SourceLine>
    <SourceLine></SourceLine>
@@ -2407,6 +2406,48 @@
    <SourceLine>tmpStr = tokenizer.NextToken() ' ?</SourceLine>
    <SourceLine>tmpStr = tokenizer.NextToken() ' ?</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>' match closing bracket</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = ")" then</SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>qdMatch_AttributeArray</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function qdMatch_AttributeArray(tokenizer As QuickDrawTokenizer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "AttributeArray" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' match open bracket</SourceLine>
+   <SourceLine>if tokenizer.NextToken() = "(" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' TODO</SourceLine>
+   <SourceLine>break</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match closing bracket</SourceLine>
    <SourceLine></SourceLine>
@@ -2440,6 +2481,48 @@
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>qdDiffuseIndex As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qdNumTriangleAttrTypes</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qdNumTriangleAttrTypes As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qdNumTriangleAttrTypes As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qdNumVertexAttrTypes</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qdNumVertexAttrTypes As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qdNumVertexAttrTypes As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>qdNumEdgeAttrTypes</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>qdNumEdgeAttrTypes As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>qdNumEdgeAttrTypes As Integer</ItemDeclaration>
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
