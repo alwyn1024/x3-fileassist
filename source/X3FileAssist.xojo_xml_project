@@ -344,7 +344,9 @@
    <SourceLine></SourceLine>
    <SourceLine>dlg.Filter = x3mType + objType ' assign type to dialog</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if Len(CurrentFilename) &gt; 4 then</SourceLine>
+   <SourceLine>if Right(CurrentFilename, 5) = ".3dmf" then</SourceLine>
+   <SourceLine>dlg.SuggestedFileName = Left(CurrentFilename, Len(CurrentFilename) - 5)</SourceLine>
+   <SourceLine>elseif Len(CurrentFilename) &gt; 4 then</SourceLine>
    <SourceLine>dlg.SuggestedFileName = Left(CurrentFilename, Len(CurrentFilename) - 4)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -8866,9 +8868,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdMatch_AttributeArray</EditorLocation>
+    <EditorLocation>frmMain.action_Save</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1506764799</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
