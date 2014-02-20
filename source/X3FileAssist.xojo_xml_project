@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -813,9 +813,9 @@
   <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -868,9 +868,9 @@
   <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Listbox</PropertyVal>
   <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -907,10 +907,9 @@
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -2447,8 +2446,10 @@
    <SourceLine>Dim tmpY As Double</SourceLine>
    <SourceLine>Dim tmpZ As Double</SourceLine>
    <SourceLine>Dim tmpVec As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim firstNormalIndex As Integer</SourceLine>
+   <SourceLine>Dim tmpUV As X3Core.X3UVCoordinate</SourceLine>
+   <SourceLine>Dim firstIndex As Integer</SourceLine>
    <SourceLine>Dim tmpInt As Integer</SourceLine>
+   <SourceLine>Dim arrType As String</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
@@ -2459,9 +2460,13 @@
    <SourceLine></SourceLine>
    <SourceLine>if qdNumTriangleAttrTypes &gt; 0 then</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>arrType = tokenizer.LookToken()</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>' ===== triangle attribute ========</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if tokenizer.NextToken() = "3" then ' triangle normals</SourceLine>
+   <SourceLine>if arrType = "3" then ' triangle normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>arrType = tokenizer.NextToken()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// ***** triangle normals ************</SourceLine>
    <SourceLine></SourceLine>
@@ -2500,9 +2505,13 @@
    <SourceLine></SourceLine>
    <SourceLine>elseif qdNumVertexAttrTypes &gt; 0 then</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>arrType = tokenizer.LookToken()</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>' ===== vertex attribute ========</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if tokenizer.NextToken() = "3" then ' vertex normals</SourceLine>
+   <SourceLine>if arrType = "3" then ' vertex normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>arrType = tokenizer.NextToken()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// ***** vertex normals ************</SourceLine>
    <SourceLine></SourceLine>
@@ -2511,7 +2520,7 @@
    <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
    <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>firstNormalIndex = model.Normal.Ubound + 1</SourceLine>
+   <SourceLine>firstIndex = model.Normal.Ubound + 1</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 1 to qdNumPoints</SourceLine>
    <SourceLine></SourceLine>
@@ -2534,12 +2543,50 @@
    <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if poly.VIndex(j) &gt;= tmpInt then</SourceLine>
-   <SourceLine>poly.VNIndex.Append firstNormalIndex + poly.VIndex(j) - tmpInt</SourceLine>
+   <SourceLine>poly.VNIndex.Append firstIndex + poly.VIndex(j) - tmpInt</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>next j </SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif arrType = "2" then ' u,v coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>arrType = tokenizer.NextToken()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine>tmpStr = tokenizer.NextToken() ' ? unknown value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>firstIndex = model.UVMap.Ubound + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to qdNumPoints</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpX = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>tmpY = Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpUV = new X3Core.X3UVCoordinate(tmpX, tmpY)</SourceLine>
+   <SourceLine>model.UVMap.Append tmpUV</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' update vertex uv coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpInt = model.Vertex.Ubound - qdNumPoints + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = model.Polygon(i)</SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex(j) &gt;= tmpInt then</SourceLine>
+   <SourceLine>poly.UVIndex.Append firstIndex + poly.VIndex(j) - tmpInt</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>break // ? unknown triangle attribute type</SourceLine>
@@ -8868,9 +8915,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.action_Save</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_AttributeArray</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1506764799</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
