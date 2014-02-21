@@ -2366,6 +2366,7 @@
    <SourceLine>Dim tmpX As Double</SourceLine>
    <SourceLine>Dim tmpY As Double</SourceLine>
    <SourceLine>Dim tmpZ As Double</SourceLine>
+   <SourceLine>Dim vertexOffset As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
@@ -2385,11 +2386,13 @@
    <SourceLine></SourceLine>
    <SourceLine>' parse triangles</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>vertexOffset = model.Vertex.Ubound + 1</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>for i  = 1 to qdNumTriangles</SourceLine>
    <SourceLine>poly  = new X3Core.X3Polygon()</SourceLine>
-   <SourceLine>poly.VIndex.Append Val(tokenizer.NextToken())</SourceLine>
-   <SourceLine>poly.VIndex.Append Val(tokenizer.NextToken())</SourceLine>
-   <SourceLine>poly.VIndex.Append Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>poly.VIndex.Append vertexOffset + Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>poly.VIndex.Append vertexOffset + Val(tokenizer.NextToken())</SourceLine>
+   <SourceLine>poly.VIndex.Append vertexOffset + Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>model.AppendPolygon poly</SourceLine>
    <SourceLine>next i </SourceLine>
    <SourceLine></SourceLine>
@@ -9048,9 +9051,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.QuickDrawTokenizer.NextToken</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_TriMesh</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1485817855</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
