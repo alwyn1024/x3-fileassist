@@ -4357,17 +4357,23 @@
    <SourceLine></SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>token.Append ch</SourceLine>
-   <SourceLine>Position = Position + 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>tmpStr = Join(token, "")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case tmpStr</SourceLine>
+   <SourceLine>select case ch</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "(", ")"</SourceLine>
    <SourceLine>foundToken = true</SourceLine>
+   <SourceLine>if token.Ubound &lt; 0 then</SourceLine>
+   <SourceLine>token.Append ch</SourceLine>
+   <SourceLine>Position = Position + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not foundToken then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>token.Append ch</SourceLine>
+   <SourceLine>Position = Position + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -9042,9 +9048,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdMatch_PixmapTexture</EditorLocation>
+    <EditorLocation>FileAssist.QuickDrawTokenizer.NextToken</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1485817855</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
