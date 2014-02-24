@@ -2764,7 +2764,7 @@
    <SourceLine>y = 0</SourceLine>
    <SourceLine>while i &lt; rawData.Size</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(x, y) = rawData.Byte(i)</SourceLine>
+   <SourceLine>pic.RGBSurface.Pixel(x, y) = RGB(rawData.Byte(i), rawData.Byte(i), rawData.Byte(i))</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>i = i + bytesPerPixel</SourceLine>
    <SourceLine>x = x + 1</SourceLine>
