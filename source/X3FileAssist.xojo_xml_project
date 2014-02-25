@@ -2576,7 +2576,7 @@
    <SourceLine>tmpX = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine>tmpY = Val(tokenizer.NextToken())</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>tmpUV = new X3Core.X3UVCoordinate(tmpX, tmpY)</SourceLine>
+   <SourceLine>tmpUV = new X3Core.X3UVCoordinate(tmpX, 1 - tmpY)</SourceLine>
    <SourceLine>model.UVMap.Append tmpUV</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>next i</SourceLine>
@@ -2702,6 +2702,7 @@
    <SourceLine>Dim pic As Picture</SourceLine>
    <SourceLine>Dim x As Integer</SourceLine>
    <SourceLine>Dim y As Integer</SourceLine>
+   <SourceLine>Dim texture As X3Core.X3Texture</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
@@ -2773,6 +2774,15 @@
    <SourceLine>y = y + 1</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>texture = new X3Core.X3Texture(pic)</SourceLine>
+   <SourceLine>model.Texture.Append(texture)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' link vertices to texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
+   <SourceLine>model.Polygon(i).TIndex = 0</SourceLine>
+   <SourceLine>next i </SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
