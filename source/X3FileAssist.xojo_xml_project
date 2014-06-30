@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RBProject version="2013r4.1" FormatVersion="2" MinIDEVersion="20070100">
+<RBProject version="2014r2" FormatVersion="2" MinIDEVersion="20070100">
 <block type="Project" ID="0">
- <ProjectSavedInVers>2013.041</ProjectSavedInVers>
- <ProjMgrUser></ProjMgrUser>
- <ProjMgrServer></ProjMgrServer>
+ <ProjectSavedInVers>2014.02</ProjectSavedInVers>
  <MajorVersion>0</MajorVersion>
  <MinorVersion>3</MinorVersion>
  <SubVersion>0</SubVersion>
@@ -19,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -28,10 +26,6 @@
  <BuildCarbonName>My Application</BuildCarbonName>
  <BuildCarbonMachOName>X3 FileAssist</BuildCarbonMachOName>
  <BundleIdentifier>com.xojo3d.x3fileassist</BundleIdentifier>
- <BuildSize>4194304</BuildSize>
- <BuildMinSize>2097152</BuildMinSize>
- <BuildSizeAsString>4096</BuildSizeAsString>
- <BuildMinSizeAsString>2048</BuildMinSizeAsString>
  <WinMDICaption></WinMDICaption>
  <BuildWinName>X3 FileAssist.exe</BuildWinName>
  <BuildWinMDI>0</BuildWinMDI>
@@ -43,14 +37,6 @@
  <BuildLinuxX86Name>X3 FileAssist</BuildLinuxX86Name>
  <BuildCarbonExecutableFormat>1</BuildCarbonExecutableFormat>
  <DebuggerCommandLine></DebuggerCommandLine>
- <WebPort>0</WebPort>
- <WebSecurePort>443</WebSecurePort>
- <WebProtocol>0</WebProtocol>
- <WebDebugPort>8080</WebDebugPort>
- <WebUseIntegratedBrowser>0</WebUseIntegratedBrowser>
- <WebLaunchString>Launching...</WebLaunchString>
- <WebHTMLHeader></WebHTMLHeader>
- <WebDisconnectString>The application has gone off-line. Please try again later.</WebDisconnectString>
 </block>
 <block type="Module" ID="736555007">
  <ObjName>App</ObjName>
@@ -61,7 +47,7 @@
  <IsInterface>0</IsInterface>
  <IsApplicationObject>1</IsApplicationObject>
  <Compatibility></Compatibility>
- <PropertyVal Name="MenuBar"><Hex bytes="9">363131333231383535</Hex></PropertyVal>
+ <PropertyVal Name="MenuBar">611321855</PropertyVal>
  <ViewBehavior>
  </ViewBehavior>
  <Constant>
@@ -510,16 +496,16 @@
  <PropertyVal Name="Visible">True</PropertyVal>
  <PropertyVal Name="Title">X3 FileAssist</PropertyVal>
  <PropertyVal Name="Backdrop">0</PropertyVal>
- <PropertyVal Name="BackColor"><Hex bytes="8">3136373737323135</Hex></PropertyVal>
+ <PropertyVal Name="BackColor">16777215</PropertyVal>
  <PropertyVal Name="HasBackColor">False</PropertyVal>
  <PropertyVal Name="Composite">False</PropertyVal>
  <PropertyVal Name="Frame"><Hex bytes="1">30</Hex></PropertyVal>
- <PropertyVal Name="MaxHeight"><Hex bytes="5">3332303030</Hex></PropertyVal>
- <PropertyVal Name="MaxWidth"><Hex bytes="5">3332303030</Hex></PropertyVal>
- <PropertyVal Name="MinHeight"><Hex bytes="2">3634</Hex></PropertyVal>
- <PropertyVal Name="MinWidth"><Hex bytes="2">3634</Hex></PropertyVal>
- <PropertyVal Name="Height"><Hex bytes="3">323633</Hex></PropertyVal>
- <PropertyVal Name="Width"><Hex bytes="3">343635</Hex></PropertyVal>
+ <PropertyVal Name="MaxHeight">32000</PropertyVal>
+ <PropertyVal Name="MaxWidth">32000</PropertyVal>
+ <PropertyVal Name="MinHeight">64</PropertyVal>
+ <PropertyVal Name="MinWidth">64</PropertyVal>
+ <PropertyVal Name="Height">263</PropertyVal>
+ <PropertyVal Name="Width">465</PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -804,17 +790,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height">32</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -822,54 +808,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3231</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">323232</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">222</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top">21</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -877,39 +863,39 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">343235</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -2935,7 +2921,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1447344127">
+<block type="Module" ID="582621183">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -3205,6 +3191,10 @@
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>' render buffer storage</SourceLine>
+   <SourceLine>dim mb as new MemoryBlock(16)</SourceLine>
+   <SourceLine>OpenGL.glGetIntegerv OpenGL.GL_ALPHA_BITS, mb // shouldn't be zero</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -3318,14 +3308,16 @@
    <SourceLine>Dim currIndex As Integer = -1 ' current material index</SourceLine>
    <SourceLine>Dim texture As X3Core.X3Texture</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
    <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glScalef model.Scale.X, model.Scale.Y, model.Scale.Z ' set the model's scale</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>OpenGL.glTranslatef model.Position.X, model.Position.Y, model.Position.Z ' set the model's position</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>X3_SetRotation(model.Rotation) ' apply the model's rotation</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' have we rendered this model previous innto an OpenGL display list?</SourceLine>
    <SourceLine>if (model.OGLName &gt; 0) and not model.Invalidate then</SourceLine>
@@ -3729,16 +3721,16 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetPerspective(Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
+   <SourceLine>Sub X3_SetPerspective(x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glViewport 0, 0, Surface.Width, Surface.Height ' set the viewport rectangle</SourceLine>
+   <SourceLine>OpenGL.glViewport x, y, width, height ' set the viewport rectangle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' set up the perspective projection settings</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glMatrixMode OpenGL.GL_PROJECTION ' select the projection matrix</SourceLine>
    <SourceLine>OpenGL.glLoadIdentity ' clear the projection matrix</SourceLine>
-   <SourceLine>OpenGL.gluPerspective fov, Surface.Width / Surface.Height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
+   <SourceLine>OpenGL.gluPerspective fov, width / height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' select and reset the modelview matrix</SourceLine>
    <SourceLine></SourceLine>
@@ -3752,7 +3744,7 @@
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
+  <ItemParams>x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Method>
@@ -4240,6 +4232,114 @@
   <ItemParams>model As X3Core.X3Model</ItemParams>
   <ItemResult>String</ItemResult>
  </Method>
+ <Method>
+  <ItemName>X3_RenderScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' select the active camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = scene.Camera(scene.CameraIndex)</SourceLine>
+   <SourceLine>X3_SetCamera activeCam</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// render all the models in the scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to scene.Model.Ubound</SourceLine>
+   <SourceLine>X3_RenderModel(scene.Model(i))</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>scene As X3Core.X3Scene</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
+   <SourceLine>' apply the perspective settings of the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetPerspective camera.ViewportX, camera.ViewportY, camera.ViewportWidth, camera.ViewportHeight, camera.FieldOfView, camera.zNear, camera.zFar</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set the orientation of the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetRotation camera.CameraRotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' position the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTranslatef -camera.DollyPosition.X, -camera.DollyPosition.Y, -camera.DollyPosition.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>camera As X3Core.X3Camera</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_Snapshot</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_Snapshot(x As Integer, y As Integer, width As Integer, height As Integer) As Picture</SourceLine>
+   <SourceLine>Dim pixelData As New MemoryBlock(width * height * 4)</SourceLine>
+   <SourceLine>Dim result As Picture</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim heightMinOne As Integer</SourceLine>
+   <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
+   <SourceLine>Dim pixelOffset As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glReadPixels(x, y, width, height, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
+   <SourceLine>pixelData.LittleEndian = True</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = new Picture(width, height)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rgbMain = result.RGBSurface</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>heightMinOne = height - 1</SourceLine>
+   <SourceLineBreakpoint>16</SourceLineBreakpoint>
+   <SourceLine>j = 0</SourceLine>
+   <SourceLine>while j &lt; height</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt; width</SourceLine>
+   <SourceLine>pixelOffset = ((heightMinOne - j) * width + i) * 4</SourceLine>
+   <SourceLine>rgbMain.Pixel(i, j) = RGB(pixelData.Byte(pixelOffset), pixelData.Byte(pixelOffset +1), pixelData.Byte(pixelOffset +2))</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine>j = j + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
+  <ItemResult>Picture</ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Index</ObjName>
@@ -4565,9 +4665,590 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2018033663">
+<block type="Module" ID="720670719">
+ <ObjName>X3Camera</ObjName>
+ <ObjContainerID>582621183</ObjContainerID>
+ <IsClass>1</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>Constructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Constructor()</SourceLine>
+   <SourceLine>' initialize camera with default values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine>DollyRotation = new X3Core.X3Quaternion()</SourceLine>
+   <SourceLine>CameraRotation = new X3Core.X3Quaternion()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DollyIn</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
+   <SourceLine>Dim forwardVec As new X3Core.X3Vector(0, 0, -1) ' forward vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>forwardVec.Rotate(DollyRotation) ' apply dolly rotation to (0,0,-1) to determine the forward vector of the dolly</SourceLine>
+   <SourceLine>forwardVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine>forwardVec.Multiply(Distance) ' calculate the distance to move</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' move the dolly position forward with the given distance</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition.Add(forwardVec)</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DollyOut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
+   <SourceLine>DollyIn(-distance) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PedestalDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
+   <SourceLine>PedestalUp(-distance) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PedestalUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
+   <SourceLine>Dim upVec As new X3Core.X3Vector(0, 1, 0) ' up vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>upVec.Rotate(DollyRotation) ' apply dolly rotation to (0, 1, 0) to determine up vector</SourceLine>
+   <SourceLine>upVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine>upVec.Multiply(Distance) ' calculate the distance to move</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' move the dolly position upward with the given distance</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition.Add(upVec)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
+   <SourceLine>Dim rightVec As new X3Core.X3Vector(1, 0, 0) ' right vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rightVec.Rotate(DollyRotation) ' apply dolly rotation to (1, 0, 0) to determine forward vector</SourceLine>
+   <SourceLine>rightVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine>rightVec.Multiply(Distance) ' calculate the distance to move</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' move the dolly position forward with the given distance</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition.Add(rightVec)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
+   <SourceLine>TruckRight(-distance) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
+   <SourceLine>PanRight(-angle) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanRight(angle As Double)</SourceLine>
+   <SourceLine>Dim upVec As new X3Core.X3Vector(0, 1, 0) ' up vector of camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>upVec.Rotate(CameraRotation) ' apply camera rotation to (0, 1, 0) to determine current up vector</SourceLine>
+   <SourceLine>upVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' pan the camera around the up vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(upVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TurnDollyLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>TurnDollyRight(-angle, lockCamera) ' apply action with the inverse method</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TurnDollyRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>Dim upVec As new X3Core.X3Vector(0, 1, 0) ' up vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>upVec.Rotate(DollyRotation) ' apply dolly rotation to (0, 1, 0) to determine current right vector</SourceLine>
+   <SourceLine>upVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' turn the dolly around the up vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyRotation.RotateAroundAxis(upVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' is the camera locked to the rotation of the dolly?</SourceLine>
+   <SourceLine>if lockCamera then</SourceLine>
+   <SourceLine>' yes, so we need to rotate the camera as well</SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(upVec, angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
+   <SourceLine>TiltCameraDown(-angle) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
+   <SourceLine>Dim rightVec As new X3Core.X3Vector(1, 0, 0) ' right vector of camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rightVec.Rotate(CameraRotation) ' apply camera rotation to (0, 0, 1) to determine current right vector</SourceLine>
+   <SourceLine>rightVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' tilt the camera around the right vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(rightVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>RollCameraRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RollCameraRight(angle As Double)</SourceLine>
+   <SourceLine>RollCameraLeft(-angle) ' apply action with the inverse method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>RollCameraLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RollCameraLeft(angle As Double)</SourceLine>
+   <SourceLine>Dim forwardVec As new X3Core.X3Vector(0, 0, -1) ' forward vector of camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>forwardVec.Rotate(CameraRotation) ' apply camera rotation to (0,0,-1) to determine current forward vector</SourceLine>
+   <SourceLine>forwardVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' roll the camera around the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(forwardVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ResetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ResetCamera()</SourceLine>
+   <SourceLine>CameraRotation.Assign(DollyRotation) ' align camera with dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Property>
+  <ItemName>DollyPosition</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>DollyPosition As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>DollyPosition As X3Core.X3Vector</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>CameraRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>CameraRotation As X3Core.X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>CameraRotation As X3Core.X3Quaternion</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>DollyRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>DollyRotation As X3Core.X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>DollyRotation As X3Core.X3Quaternion</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>FieldOfView</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>FieldOfView As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>FieldOfView As Double = 60.0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>zNear</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>zNear As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>zNear As Double = 1.0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>zFar</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>zFar As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>zFar As Double = 100.0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>ViewportX</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>ViewportX As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>ViewportX As Double = 0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>ViewportY</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>ViewportY As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>ViewportY As Double = 0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>ViewportWidth</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>ViewportWidth As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>ViewportWidth As Double = 0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>ViewportHeight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>ViewportHeight As Double</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>ViewportHeight As Double = 0</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>FieldOfView</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>60.0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>zNear</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>1.0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>zFar</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>100.0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ViewportX</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ViewportY</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ViewportWidth</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ViewportHeight</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Double</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="Module" ID="1388537855">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4675,6 +5356,82 @@
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>Rotate</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Rotate(quat As X3Core.X3Quaternion)</SourceLine>
+   <SourceLine>Dim rotX As Double</SourceLine>
+   <SourceLine>Dim rotY As Double</SourceLine>
+   <SourceLine>Dim rotZ As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' rotate vector with quaternion values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rotX = (1 - 2 * quat.y^2 - 2 * quat.z^2) * x + 2 * (quat.x * quat.y + quat.w * quat.z) * y + 2 * (quat.x * quat.z - quat.w * quat.y) * z</SourceLine>
+   <SourceLine>rotY = 2 * (quat.x * quat.y - quat.w * quat.z) * x + (1 - 2 * quat.x^2 - 2 * quat.z^2) * y + 2 * (quat.y * quat.z + quat.w * quat.x) * z</SourceLine>
+   <SourceLine>rotZ = 2 * (quat.x * quat.z + quat.w * quat.y) * x + 2 * (quat.y * quat.z - quat.w * quat.x) * y + (1 - 2 * quat.x^2 - 2 * quat.y^2) * z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' assign result to current values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = rotX</SourceLine>
+   <SourceLine>Y = rotY</SourceLine>
+   <SourceLine>Z = rotZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>quat As X3Core.X3Quaternion</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Multiply</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Multiply(scalar As Double)</SourceLine>
+   <SourceLine>' multiply the vector with the given scalar value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = X * scalar</SourceLine>
+   <SourceLine>Y = Y * scalar</SourceLine>
+   <SourceLine>Z = Z * scalar</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>scalar As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Add</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Add(vec As X3Core.X3Vector)</SourceLine>
+   <SourceLine>' add the given vector to this vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = X + vec.x</SourceLine>
+   <SourceLine>Y = Y + vec.y</SourceLine>
+   <SourceLine>Z = Z + vec.z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>vec As X3Core.X3Vector</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>X</ItemName>
   <Compatibility></Compatibility>
@@ -4768,9 +5525,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1553586175">
+<block type="Module" ID="1782067199">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4964,9 +5721,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2131451903">
+<block type="Module" ID="1256583167">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5578,9 +6335,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="907941887">
+<block type="Module" ID="27713535">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5704,9 +6461,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="813051903">
+<block type="Module" ID="1330534399">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5785,6 +6542,7 @@
    <SourceLine></SourceLine>
    <SourceLine>model.Position = Position.Clone</SourceLine>
    <SourceLine>model.Rotation = Rotation.Clone</SourceLine>
+   <SourceLine>model.Scale = Scale.Clone</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to Sprite.Ubound</SourceLine>
    <SourceLine>model.Sprite.Append Sprite(i).Clone</SourceLine>
@@ -5823,6 +6581,7 @@
    <SourceLine></SourceLine>
    <SourceLine>Position = new X3Core.X3Vector(0, 0, 0) ' instantiate the default position at the origin</SourceLine>
    <SourceLine>Rotation = new X3Core.X3Quaternion() ' instantiate a default rotation quaternion</SourceLine>
+   <SourceLine>Scale = new X3Core.X3Vector(1, 1, 1) ' instantiate the default scale</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5867,13 +6626,42 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim maxX As Double</SourceLine>
+   <SourceLine>Dim minX As Double</SourceLine>
+   <SourceLine>Dim maxY As Double</SourceLine>
+   <SourceLine>Dim minY As Double</SourceLine>
+   <SourceLine>Dim maxZ As Double</SourceLine>
+   <SourceLine>Dim minZ As Double</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim xStep As Double</SourceLine>
-   <SourceLine>Dim yStep As Double</SourceLine>
-   <SourceLine>Dim zStep As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if Vertex.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>maxX = Vertex(0).X</SourceLine>
+   <SourceLine>minX = Vertex(0).X</SourceLine>
+   <SourceLine>maxY = Vertex(0).Y</SourceLine>
+   <SourceLine>minY = Vertex(0).Y</SourceLine>
+   <SourceLine>maxZ = Vertex(0).Z</SourceLine>
+   <SourceLine>minZ = Vertex(0).Z</SourceLine>
+   <SourceLine>for i = 1 to Vertex.Ubound</SourceLine>
+   <SourceLine>if Vertex(i).X &gt; maxX then</SourceLine>
+   <SourceLine>maxX = Vertex(i).X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).X &lt; minX then</SourceLine>
+   <SourceLine>minX = Vertex(i).X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Y &gt; maxY then</SourceLine>
+   <SourceLine>maxY = Vertex(i).Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Y &lt; minY then</SourceLine>
+   <SourceLine>minY = Vertex(i).Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Z &gt; maxZ then</SourceLine>
+   <SourceLine>maxZ = Vertex(i).Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Z &lt; minZ then</SourceLine>
+   <SourceLine>minZ = Vertex(i).Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if pos = nil then</SourceLine>
    <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
@@ -5881,29 +6669,17 @@
    <SourceLine>centPos = pos</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine>MaxX = centPos.X - (MaxX + MinX) / 2</SourceLine>
+   <SourceLine>MaxY = centPos.Y - (MaxY + MinY) / 2</SourceLine>
+   <SourceLine>MaxZ = centPos.Z - (MaxZ + MinZ) / 2</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + Vertex(i).Z</SourceLine>
+   <SourceLine>Vertex(i).X = Vertex(i).X + MaxX</SourceLine>
+   <SourceLine>Vertex(i).Y = Vertex(i).Y + MaxY</SourceLine>
+   <SourceLine>Vertex(i).Z = Vertex(i).Z + MaxZ</SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>xStep = centPos.X - midX</SourceLine>
-   <SourceLine>yStep = centPos.Y - midY</SourceLine>
-   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
-   <SourceLine>Vertex(i).X = Vertex(i).X + xStep</SourceLine>
-   <SourceLine>Vertex(i).Y = Vertex(i).Y + yStep</SourceLine>
-   <SourceLine>Vertex(i).Z = Vertex(i).Z + zStep</SourceLine>
-   <SourceLine>next i</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -6063,20 +6839,6 @@
   <IsShared>0</IsShared>
  </Property>
  <Property>
-  <ItemName>Position</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Position As X3Core.X3Vector</SourceLine>
-   <SourceLine></SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>Position As X3Core.X3Vector</ItemDeclaration>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
- </Property>
- <Property>
   <ItemName>Rotation</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
@@ -6160,6 +6922,34 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
+ <Property>
+  <ItemName>Position</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Position As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Position As X3Core.X3Vector</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Scale</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Scale As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Scale As X3Core.X3Vector</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Index</ObjName>
@@ -6207,9 +6997,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1753589759">
+<block type="Module" ID="871258111">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6300,12 +7090,6 @@
    <SourceLine></SourceLine>
    <SourceLine>TextureImage = texture</SourceLine>
    <SourceLine>OGLName = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'' load texture into OpenGL</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if loadOpenGL then</SourceLine>
-   <SourceLine>'OGLName = X3_LoadRGBATexture(RGBABitmap, Width, Height)</SourceLine>
-   <SourceLine>'end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -6490,9 +7274,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="653723647">
+<block type="Module" ID="2137020415">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6617,9 +7401,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="9607167">
+<block type="Module" ID="1957478399">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6879,6 +7663,89 @@
   <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>RotateAroundAxis</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RotateAroundAxis(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>Dim tmpQuat As new X3Core.X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' Formula: [new quaternion] = [self] x [rotation]</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' apply rotation around axis</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if angle &lt;&gt; 0 then</SourceLine>
+   <SourceLine>tmpQuat.SetEulerRotation(axis, angle)</SourceLine>
+   <SourceLine>Multiply tmpQuat</SourceLine>
+   <SourceLine>Normalize</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SetEulerRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub SetEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim halfAngle As Double</SourceLine>
+   <SourceLine>Dim sinAng As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>norm = axis.Clone ' first clone the given axis</SourceLine>
+   <SourceLine>norm.Normalize ' now normalize the axis</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>halfAngle = (angle * X3_PiOver180)  / 2 ' calculate the half angle (convert degrees to radians)</SourceLine>
+   <SourceLine>sinAng = sin(halfAngle) ' calculate sine of half angle</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = (norm.x * sinAng)</SourceLine>
+   <SourceLine>Y = (norm.y * sinAng)</SourceLine>
+   <SourceLine>Z = (norm.z * sinAng)</SourceLine>
+   <SourceLine>W = cos(halfAngle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Assign</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Assign(quat As X3Core.X3Quaternion)</SourceLine>
+   <SourceLine>' assign given quaternion value to self</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>W = quat.W</SourceLine>
+   <SourceLine>X = quat.X</SourceLine>
+   <SourceLine>Y = quat.Y</SourceLine>
+   <SourceLine>Z = quat.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>quat As X3Core.X3Quaternion</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>W</ItemName>
   <Compatibility></Compatibility>
@@ -6991,9 +7858,530 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1667721215">
+<block type="Module" ID="889071615">
+ <ObjName>X3Scene</ObjName>
+ <ObjContainerID>582621183</ObjContainerID>
+ <IsClass>1</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>DollyIn</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.DollyIn(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DollyOut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.DollyOut(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PedestalUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PedestalUp(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PedestalDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PedestalDown(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TruckLeft(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TruckRight(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PanLeft(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanRight(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PanRight(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TurnDollyLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TurnDollyLeft(angle, lockCamera)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TurnDollyRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TurnDollyRight(angle, lockCamera)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltCameraUp(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltCameraDown(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>RollCameraRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RollCameraRight(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.RollCameraRight(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>RollCameraLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RollCameraLeft(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.RollCameraLeft(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ResetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ResetCamera()</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.ResetCamera()</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SetViewport</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub SetViewport(x As Double, y As Double, width As Double, height As Double)</SourceLine>
+   <SourceLine>Dim i as Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all cameras and configure them with the given viewport settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Camera.Ubound</SourceLine>
+   <SourceLine>Camera(i).ViewportX = x</SourceLine>
+   <SourceLine>Camera(i).ViewportY = y</SourceLine>
+   <SourceLine>Camera(i).ViewportWidth = width</SourceLine>
+   <SourceLine>Camera(i).ViewportHeight = height</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Double, y As Double, width As Double, height As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Property>
+  <ItemName>Model()</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Model() As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Model() As X3Core.X3Model</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Camera()</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Camera() As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Camera() As X3Core.X3Camera</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>mCameraIndex</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mCameraIndex As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mCameraIndex As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>CameraIndex</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>CameraIndex As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>CameraIndex As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine>mCameraIndex = value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mCameraIndex &gt;= 0 and mCameraIndex &lt;= Camera.Ubound then</SourceLine>
+   <SourceLine>mActiveCamera = Camera(mCameraIndex)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>mActiveCamera = nil</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return mCameraIndex</SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>mActiveCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mActiveCamera As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mActiveCamera As X3Core.X3Camera</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>ActiveCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>ActiveCamera As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>ActiveCamera As X3Core.X3Camera</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return mActiveCamera</SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>CameraIndex</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="Module" ID="1691508735">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7145,9 +8533,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="720248831">
+<block type="Module" ID="743788543">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7336,9 +8724,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="424982527">
+<block type="Module" ID="361347071">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7502,9 +8890,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="546080767">
+<block type="Module" ID="502829055">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>1447344127</ObjContainerID>
+ <ObjContainerID>582621183</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7634,87 +9022,12 @@
    <SourceLine></SourceLine>
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 123 then ' {</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>' skip white space</SourceLine>
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>do</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 58 then ' :</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case tmpStr</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "colorpal"</SourceLine>
-   <SourceLine>result = matchColorPal(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "material"</SourceLine>
-   <SourceLine>result = matchMaterial(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "normal"</SourceLine>
-   <SourceLine>result = matchNormal(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "polygon"</SourceLine>
-   <SourceLine>result = matchPolygon(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "vertex"</SourceLine>
-   <SourceLine>result = matchVertex(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "texture"</SourceLine>
-   <SourceLine>result = matchTexture(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case "uvmap"</SourceLine>
-   <SourceLine>result = matchUVMap(mp, pos, model)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>case else ' unknown tag</SourceLine>
-   <SourceLine>skipValue(mp, pos)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = false ' malformed JSON</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>loop until (mp.Byte(pos) = 125) or not result ' }</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
+   <SourceLine>result = matchModelObject(mp, pos, model)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -8358,7 +9671,6 @@
    <SourceLine>Dim tmpG As Double</SourceLine>
    <SourceLine>Dim tmpB As Double</SourceLine>
    <SourceLine>Dim tmpA As Double</SourceLine>
-   <SourceLine>Dim c As X3Core.X3Color</SourceLine>
    <SourceLine>Dim m As X3Core.X3Material</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
@@ -9055,6 +10367,816 @@
   <IsShared>0</IsShared>
   <ItemParams>mp As Ptr, ByRef pos As Integer</ItemParams>
   <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LoadModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadModel(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Model = modelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>modelJSON As String</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LoadScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadScene(sceneFile As FolderItem) As X3Core.X3Scene</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim scene As X3Core.X3Scene</SourceLine>
+   <SourceLine>Dim tin As TextInputStream</SourceLine>
+   <SourceLine>Dim sceneJSON As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tin = TextInputStream.Open(sceneFile) ' open file</SourceLine>
+   <SourceLine>sceneJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
+   <SourceLine>tin.Close ' close file</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene = sceneFromJSON(sceneJSON) ' parse data and create X3Scene from JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>sceneFile As FolderItem</ItemParams>
+  <ItemResult>X3Core.X3Scene</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LoadScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadScene(sceneJSON As String) As X3Core.X3Scene</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim scene As X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene = sceneFromJSON(sceneJSON) ' parse data and create X3Scene from JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>sceneJSON As String</ItemParams>
+  <ItemResult>X3Core.X3Scene</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>sceneFromJSON</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function sceneFromJSON(sceneJSON As String) As X3Core.X3Scene</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim scene As new X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim pos As Integer</SourceLine>
+   <SourceLine>Dim jsonMB As MemoryBlock</SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim mp As Ptr</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this method renders X3 Data Format JSON into an X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>jsonMB = sceneJSON</SourceLine>
+   <SourceLine>pos = 0</SourceLine>
+   <SourceLine>mp = jsonMB</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchX3Scene(mp, pos, scene) ' parse the JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>sceneJSON As String</ItemParams>
+  <ItemResult>X3Core.X3Scene</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchX3Scene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchX3Scene(mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine>Dim tmpModel As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim models() As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim tmpCamera As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>scene = new X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if tmpStr = "x3scene" then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case tmpStr</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "models"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while (mp.Byte(pos) &lt;&gt; 93) and result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tmpModel = new X3Core.X3Model</SourceLine>
+   <SourceLine>result = matchModelObject(mp, pos, tmpModel)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if result then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>models.Append tmpModel // add model to model templates that will be used to spawn objects</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "objects"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while (mp.Byte(pos) &lt;&gt; 93) and result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchObject(mp, pos, scene, models)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if result then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case else ' unknown tag</SourceLine>
+   <SourceLine>skipValue(mp, pos)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false ' malformed JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>loop until (mp.Byte(pos) = 125) or not result ' }</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// if no cameras were defined for the scene, then we add a default one at position (0, 0, 10)</SourceLine>
+   <SourceLine>if scene.Camera.Ubound &lt; 0 then</SourceLine>
+   <SourceLine>tmpCamera = new X3Core.X3Camera</SourceLine>
+   <SourceLine>tmpCamera.DollyPosition.Z = 10</SourceLine>
+   <SourceLine>scene.Camera.Append tmpCamera</SourceLine>
+   <SourceLine>scene.CameraIndex = 0</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchModelObject</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchModelObject(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model = new X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case tmpStr</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "colorpal"</SourceLine>
+   <SourceLine>result = matchColorPal(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "material"</SourceLine>
+   <SourceLine>result = matchMaterial(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "normal"</SourceLine>
+   <SourceLine>result = matchNormal(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "polygon"</SourceLine>
+   <SourceLine>result = matchPolygon(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "vertex"</SourceLine>
+   <SourceLine>result = matchVertex(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "texture"</SourceLine>
+   <SourceLine>result = matchTexture(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "uvmap"</SourceLine>
+   <SourceLine>result = matchUVMap(mp, pos, model)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case else ' unknown tag</SourceLine>
+   <SourceLine>skipValue(mp, pos)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false ' malformed JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>loop until (mp.Byte(pos) = 125) or not result ' }</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchObject</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchObject(mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene, models() As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine>Dim modelInstance As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim index As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case tmpStr</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "mi"</SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, index)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if result then</SourceLine>
+   <SourceLine>modelInstance = models(index).Clone</SourceLine>
+   <SourceLine>scene.Model.Append modelInstance</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "pos"</SourceLine>
+   <SourceLine>result = matchPosition(mp, pos, modelInstance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "rot"</SourceLine>
+   <SourceLine>result = matchRotation(mp, pos, modelInstance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "scale"</SourceLine>
+   <SourceLine>result = matchScale(mp, pos, modelInstance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case else ' unknown tag</SourceLine>
+   <SourceLine>skipValue(mp, pos)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false ' malformed JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>loop until (mp.Byte(pos) = 125) or not result ' }</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene, models() As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchPosition</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchPosition(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpX As Double</SourceLine>
+   <SourceLine>Dim tmpY As Double</SourceLine>
+   <SourceLine>Dim tmpZ As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Position.X = tmpX</SourceLine>
+   <SourceLine>model.Position.Y = tmpY</SourceLine>
+   <SourceLine>model.Position.Z = tmpZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchRotation(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpW As Double</SourceLine>
+   <SourceLine>Dim tmpX As Double</SourceLine>
+   <SourceLine>Dim tmpY As Double</SourceLine>
+   <SourceLine>Dim tmpZ As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpW)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Rotation.W = tmpW</SourceLine>
+   <SourceLine>model.Rotation.X = tmpX</SourceLine>
+   <SourceLine>model.Rotation.Y = tmpY</SourceLine>
+   <SourceLine>model.Rotation.Z = tmpZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchScale</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchScale(mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpX As Double</SourceLine>
+   <SourceLine>Dim tmpY As Double</SourceLine>
+   <SourceLine>Dim tmpZ As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Scale.X = tmpX</SourceLine>
+   <SourceLine>model.Scale.Y = tmpY</SourceLine>
+   <SourceLine>model.Scale.Z = tmpZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model</ItemParams>
+  <ItemResult>Boolean</ItemResult>
  </Method>
  <ViewBehavior>
   <ViewProperty>
