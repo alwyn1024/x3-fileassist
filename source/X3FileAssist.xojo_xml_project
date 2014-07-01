@@ -2307,10 +2307,10 @@
    <SourceLine></SourceLine>
    <SourceLine>col = new X3Core.X3Color(red, green, blue)</SourceLine>
    <SourceLine>model.ColorPal.Append col</SourceLine>
-   <SourceLine>if qdDiffuseIndex &lt;= model.Polygon.Ubound then</SourceLine>
+   <SourceLine>while qdDiffuseIndex &lt;= model.Polygon.Ubound</SourceLine>
    <SourceLine>model.Polygon(qdDiffuseIndex).CIndex = model.ColorPal.Ubound</SourceLine>
    <SourceLine>qdDiffuseIndex = qdDiffuseIndex + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
+   <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' match closing bracket</SourceLine>
    <SourceLine></SourceLine>
@@ -2745,7 +2745,6 @@
    <SourceLine>y = 0</SourceLine>
    <SourceLine>while i &lt; rawData.Size</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>//pic.RGBSurface.Pixel(x, y) = RGB(rawData.Byte(i), rawData.Byte(i), rawData.Byte(i))</SourceLine>
    <SourceLine>select case rgbType</SourceLine>
    <SourceLine>case "RGB16"</SourceLine>
    <SourceLine>pic.RGBSurface.Pixel(x, y) = qdRGB16Color(rawData.UInt16Value(i))</SourceLine>
@@ -2774,7 +2773,6 @@
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>break</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -11244,7 +11242,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdRGB16Color</EditorLocation>
+    <EditorLocation>FileAssist.qdMatch_DiffuseColor</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
