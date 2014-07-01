@@ -799,9 +799,9 @@
   <PropertyVal Name="Top">20</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
+  <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -854,9 +854,9 @@
   <PropertyVal Name="Top">21</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Listbox</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lstModelInfo</PropertyVal>
+  <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -893,9 +893,10 @@
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1849,7 +1850,6 @@
    <SourceLine>// keep om matching 3DMF objects until we get an errror</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
@@ -2798,7 +2798,7 @@
    <SourceLine>Function qdRGB16Color(pixel As UInt16) As Color</SourceLine>
    <SourceLine>Dim c As Color</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>c = RGB(pixel and 31, ShiftRight(pixel, 5) and 31, ShiftRight(pixel, 10) and 31)</SourceLine>
+   <SourceLine>c = RGB(((pixel and 31) / 31) * 255, ((ShiftRight(pixel, 5) and 31) / 31) * 255, ((ShiftRight(pixel, 10) and 31) / 31) * 255)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return c</SourceLine>
    <SourceLine></SourceLine>
@@ -11244,7 +11244,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.qdMatch_AttributeArray</EditorLocation>
+    <EditorLocation>FileAssist.qdRGB16Color</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
