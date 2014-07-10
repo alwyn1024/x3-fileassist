@@ -378,7 +378,7 @@
    <SourceLine>lblFilename.TextColor = RGB(200, 0, 0)</SourceLine>
    <SourceLine>lblFilename.Refresh</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>//SaveModelToOBJ(CurrentModel, modFile)</SourceLine>
+   <SourceLine>SaveModelTo3DMF(CurrentModel, modFile)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentFilename = modFile.Name</SourceLine>
    <SourceLine></SourceLine>
@@ -2838,236 +2838,20 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'Dim tout As TextOutputStream</SourceLine>
-   <SourceLine>'Dim sLine() As String</SourceLine>
-   <SourceLine>'Dim i As Integer</SourceLine>
-   <SourceLine>'Dim j As Integer</SourceLine>
-   <SourceLine>'Dim v As X3Core.X3Vector</SourceLine>
-   <SourceLine>'Dim vn As X3Core.X3Vector</SourceLine>
-   <SourceLine>'Dim uv As X3Core.X3UVCoordinate</SourceLine>
-   <SourceLine>'Dim p As X3Core.X3Polygon</SourceLine>
-   <SourceLine>'Dim pngFile As FolderItem</SourceLine>
-   <SourceLine>'Dim textureFilename As String</SourceLine>
-   <SourceLine>'Dim mtlFile As FolderItem</SourceLine>
-   <SourceLine>'Dim coreName As String</SourceLine>
-   <SourceLine>'Dim normIndex As String</SourceLine>
-   <SourceLine>'Dim currMat As String</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'coreName = Left(modelFile.Name, Len(modelFile.Name) - 4)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' ***** TEXTURES ****************************</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' create png texture files</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'textureFilename = corename + "_txt_"</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Texture.Ubound</SourceLine>
-   <SourceLine>'pngFile = modelFile.Parent.Child(textureFilename + Str(i + 1) + ".png")</SourceLine>
-   <SourceLine>'writeTexturePNG pngFile, model.Texture(i)</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' ***** MTL File ****************************</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'mtlFile = modelFile.Parent.Child(corename + ".mtl")</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout = TextOutputStream.Create(mtlFile)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write texture materials</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Texture.Ubound</SourceLine>
-   <SourceLine>'tout.WriteLine "newmtl mtl_txt_" + Str(i + 1)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ka 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>'tout.WriteLine "Kd 1.0 1.0 1.0"</SourceLine>
-   <SourceLine>'tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>'tout.WriteLine "d 1.0"</SourceLine>
-   <SourceLine>'tout.WriteLine "illum 2"</SourceLine>
-   <SourceLine>'tout.WriteLine "map_Kd " + textureFilename + Str(i + 1) + ".png"</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'next i </SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write material materials</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Material.Ubound</SourceLine>
-   <SourceLine>'tout.WriteLine "newmtl mtl_mat_" + Str(i + 1)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ka " + X3_Str(model.Material(i).Ambient.Red) + " "  + X3_Str(model.Material(i).Ambient.Green) + " "  + X3_Str(model.Material(i).Ambient.Blue)</SourceLine>
-   <SourceLine>'tout.WriteLine "Kd " + X3_Str(model.Material(i).Diffuse.Red) + " "  + X3_Str(model.Material(i).Diffuse.Green) + " "  + X3_Str(model.Material(i).Diffuse.Blue)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ks " + X3_Str(model.Material(i).Specular.Red) + " "  + X3_Str(model.Material(i).Specular.Green) + " "  + X3_Str(model.Material(i).Specular.Blue)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ns " + X3_Str(model.Material(i).Shininess)</SourceLine>
-   <SourceLine>'tout.WriteLine "illum 2"</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write colors</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.ColorPal.Ubound</SourceLine>
-   <SourceLine>'tout.WriteLine "newmtl mtl_col_" + Str(i + 1)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ka " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
-   <SourceLine>'tout.WriteLine "Kd " + X3_Str(model.ColorPal(i).Red) + " "  + X3_Str(model.ColorPal(i).Green) + " "  + X3_Str(model.ColorPal(i).Blue)</SourceLine>
-   <SourceLine>'tout.WriteLine "Ks 0.0 0.0 0.0"</SourceLine>
-   <SourceLine>'tout.WriteLine "d " + X3_Str(model.ColorPal(i).Alpha)</SourceLine>
-   <SourceLine>'tout.WriteLine "illum 1"</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout.Close</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'end if </SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' ***** OBJ File ****************************</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'currMat = ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout = TextOutputStream.Create(modelFile)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write meta data comment</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout.WriteLine "# X3 FileAssist - www.xojo3d.com"</SourceLine>
-   <SourceLine>'tout.WriteLine "# vertices: " + Str(model.Vertex.Ubound + 1) + ", faces: " + Str(model.Polygon.Ubound + 1) + ", textures: " + Str(model.Texture.Ubound + 1)</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' include material library</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if (model.Texture.Ubound + model.Material.Ubound + model.ColorPal.Ubound + 3) &gt; 0 then</SourceLine>
-   <SourceLine>'tout.WriteLine "mtllib " + corename + ".mtl"</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write vertices</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>'v = model.Vertex(i)</SourceLine>
-   <SourceLine>'tout.WriteLine "v " + X3_Str(v.X) + " " + X3_Str(v.Y) + " " + X3_Str(v.Z)</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write normals</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Normal.Ubound</SourceLine>
-   <SourceLine>'vn = model.Normal(i)</SourceLine>
-   <SourceLine>'tout.WriteLine "vn " + X3_Str(vn.X) + " " + X3_Str(vn.Y) + " " + X3_Str(vn.Z)</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write texture coordinates</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.UVMap.Ubound</SourceLine>
-   <SourceLine>'uv = model.UVMap(i)</SourceLine>
-   <SourceLine>'tout.WriteLine "vt " + X3_Str(uv.U) + " " + X3_Str(1 - uv.V)</SourceLine>
-   <SourceLine>'next i</SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' write polygons</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for i = 0 to model.Polygon.Ubound</SourceLine>
-   <SourceLine>'p = model.Polygon(i)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'normIndex = Str(p.NIndex + 1)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'Redim sLine(-1)</SourceLine>
-   <SourceLine>'sLine.Append "f"</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if p.CIndex &gt;= 0 then</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if currMat &lt;&gt; "mtl_col_" + Str(p.CIndex + 1) then</SourceLine>
-   <SourceLine>'tout.WriteLine "usemtl mtl_col_" + Str(p.CIndex + 1)</SourceLine>
-   <SourceLine>'currMat = "mtl_col_" + Str(p.CIndex + 1)</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'else</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append normIndex</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'elseif p.MIndex &gt;= 0 then</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if currMat &lt;&gt; "mtl_mat_" + Str(p.MIndex + 1) then</SourceLine>
-   <SourceLine>'tout.WriteLine "usemtl mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
-   <SourceLine>'currMat = "mtl_mat_" + Str(p.MIndex + 1)</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'else</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append normIndex</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'elseif p.TIndex &gt;= 0 then</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if currMat &lt;&gt; "mtl_txt_" + Str(p.TIndex + 1) then</SourceLine>
-   <SourceLine>'tout.WriteLine "usemtl mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
-   <SourceLine>'currMat = "mtl_txt_" + Str(p.TIndex + 1)</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "/"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "/"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'else</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "/"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.UVIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "/"</SourceLine>
-   <SourceLine>'sLine.Append normIndex</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'else</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'if p.VNIndex.Ubound = p.VIndex.Ubound then</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VNIndex(j) + 1)</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'else</SourceLine>
-   <SourceLine>'for j = 0 to p.VIndex.Ubound</SourceLine>
-   <SourceLine>'sLine.Append " "</SourceLine>
-   <SourceLine>'sLine.Append Str(p.VIndex(j) + 1)</SourceLine>
-   <SourceLine>'sLine.Append "//"</SourceLine>
-   <SourceLine>'sLine.Append normIndex</SourceLine>
-   <SourceLine>'next j</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'end if</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout.WriteLine Join(sLine, "")</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'next i  </SourceLine>
-   <SourceLine>'tout.WriteLine ""</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tout.Close</SourceLine>
+   <SourceLine>Dim tout As TextOutputStream</SourceLine>
+   <SourceLineBreakpoint>4</SourceLineBreakpoint>
+   <SourceLine>Dim sLine() As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout = TextOutputStream.Create(modelFile)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine "3DMetafile ( 1 0 Normal tableofcontents0&gt; )"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// TODO</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine ""</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.Close</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -11971,9 +11755,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_Str</EditorLocation>
+    <EditorLocation>frmMain.action_Save</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1595645951</EditingPartID>
+    <EditingPartID>1506764799</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
