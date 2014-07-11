@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20624</BuildFlags>
+ <BuildFlags>28816</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -2839,14 +2839,73 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
-   <SourceLineBreakpoint>4</SourceLineBreakpoint>
    <SourceLine>Dim sLine() As String</SourceLine>
+   <SourceLine>Dim meshCount As Integer</SourceLine>
+   <SourceLine>Dim polyIndex As Integer</SourceLine>
+   <SourceLine>Dim lastMeshPolyIndex As Integer</SourceLine>
+   <SourceLine>Dim numTriangles As Integer</SourceLine>
+   <SourceLine>Dim numTriangleAttrTypes As Integer</SourceLine>
+   <SourceLine>Dim numEdges As Integer</SourceLine>
+   <SourceLine>Dim numEdgeAttrTypes As Integer</SourceLine>
+   <SourceLine>Dim numPoints As Integer</SourceLine>
+   <SourceLine>Dim numVertexAttrTypes As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>meshCount = 0</SourceLine>
+   <SourceLine>polyIndex = 0</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout = TextOutputStream.Create(modelFile)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine "3DMetafile ( 1 0 Normal tableofcontents0&gt; )"</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// TODO</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while polyIndex &lt;= model.Polygon.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// ***** next mesh ******</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo</SourceLine>
+   <SourceLine>lastMeshPolyIndex = model.Polygon.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>numTriangles = lastMeshPolyIndex - polyIndex + 1</SourceLine>
+   <SourceLine>numTriangleAttrTypes  = 1</SourceLine>
+   <SourceLine>numEdges = 0</SourceLine>
+   <SourceLine>numEdgeAttrTypes = 0</SourceLine>
+   <SourceLine>numPoints = 0 // todo: calculate number of points used</SourceLine>
+   <SourceLine>numVertexAttrTypes = 2</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + "trimesh" + Str(meshCount) + ":"</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + "Container ("</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "TriMesh ("</SourceLine>
+   <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
+   <SourceLine>tout.Write Str(numTriangles)</SourceLine>
+   <SourceLine>tout.Write  " " + Str(numTriangleAttrTypes)</SourceLine>
+   <SourceLine>tout.Write  " " + Str(numEdges)</SourceLine>
+   <SourceLine>tout.Write  " " + Str(numEdgeAttrTypes)</SourceLine>
+   <SourceLine>tout.Write  " " + Str(numPoints)</SourceLine>
+   <SourceLine>tout.WriteLine  " " + Str(numVertexAttrTypes)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// triangles</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# triangles"</SourceLine>
+   <SourceLine>while (polyIndex &lt;= lastMeshPolyIndex) </SourceLine>
+   <SourceLine>polyIndex = polyIndex + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# vertices"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// bounding box</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# bounding box:"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // close TriMesh</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + ")" // close Container</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>polyIndex = polyIndex + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine ""</SourceLine>
    <SourceLine></SourceLine>
@@ -11755,9 +11814,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.action_Save</EditorLocation>
+    <EditorLocation>FileAssist.SaveModelTo3DMF</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1506764799</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
