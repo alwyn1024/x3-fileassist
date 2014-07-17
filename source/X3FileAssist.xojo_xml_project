@@ -1949,7 +1949,6 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim match As Boolean</SourceLine>
-   <SourceLine>Dim token As String</SourceLine>
    <SourceLine>Dim objectName As String</SourceLine>
    <SourceLine>Dim currentPosition As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -2034,7 +2033,6 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Boolean</SourceLine>
-   <SourceLine>Dim temporaryString As String</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
    <SourceLine></SourceLine>
@@ -2855,7 +2853,6 @@
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
-   <SourceLine>Dim sLine() As String</SourceLine>
    <SourceLine>Dim meshCount As Integer</SourceLine>
    <SourceLine>Dim polyIndex As Integer</SourceLine>
    <SourceLine>Dim lastMeshPolyIndex As Integer</SourceLine>
@@ -3205,7 +3202,6 @@
    <SourceLine></SourceLine>
    <SourceLine>Dim token() As String</SourceLine>
    <SourceLine>Dim foundToken As Boolean</SourceLine>
-   <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine>Dim ch As String</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if not EOF then</SourceLine>
@@ -12195,12 +12191,20 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist</EditorLocation>
+    <EditorLocation>FileAssist.QuickDrawTokenizer.NextToken</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1485817855</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
  </StudioWindowState>
+ <WarningPreferences>
+  <ItemName>5</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>6</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>7</ItemName>
+  <ItemData>0</ItemData>
+ </WarningPreferences>
 </block>
 </RBProject>
