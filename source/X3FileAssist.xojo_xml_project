@@ -2868,8 +2868,7 @@
    <SourceLine>Dim p1 As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim p2 As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim vertices As Dictionary</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model.UpdateBoundingBox()</SourceLine>
+   <SourceLine>Dim bb As X3Core.X3BoundingBox</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>meshCount = 0</SourceLine>
    <SourceLine>polyIndex = 0</SourceLine>
@@ -2882,11 +2881,13 @@
    <SourceLine></SourceLine>
    <SourceLine>while polyIndex &lt;= model.Polygon.Ubound</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// ***** next mesh ******</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>lastMeshPolyIndex = -1</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>while lastMeshPolyIndex &lt; model.Polygon.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// ***** next mesh ******</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>bb = new X3Core.X3BoundingBox</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>lastMeshPolyIndex = lastMeshPolyIndex + 1</SourceLine>
    <SourceLine></SourceLine>
@@ -2905,6 +2906,7 @@
    <SourceLine>for j = 0 to p1.VIndex.Ubound</SourceLine>
    <SourceLine>if not vertices.HasKey(p1.VIndex(j)) then</SourceLine>
    <SourceLine>vertices.Value(p1.VIndex(j)) = (vertices.Keys.Ubound + 1)</SourceLine>
+   <SourceLine>bb.ApplyVertex model.Vertex(p1.VIndex(j)) // update bounding box</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>next j </SourceLine>
    <SourceLine></SourceLine>
@@ -2970,6 +2972,20 @@
    <SourceLine>// bounding box</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# bounding box:"</SourceLine>
+   <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.X1)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.Y1)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.Z1)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.X2)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.Y2)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write X3_Str(bb.Z2)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.WriteLine "False"</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // close TriMesh</SourceLine>
    <SourceLine></SourceLine>
@@ -11963,13 +11979,13 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x1 = 0</SourceLine>
-   <SourceLine>y1 = 0</SourceLine>
-   <SourceLine>z1 = 0</SourceLine>
+   <SourceLine>X1 = 0</SourceLine>
+   <SourceLine>Y1 = 0</SourceLine>
+   <SourceLine>Z1 = 0</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x2 = 0</SourceLine>
-   <SourceLine>y2 = 0</SourceLine>
-   <SourceLine>z2 = 0</SourceLine>
+   <SourceLine>X2 = 0</SourceLine>
+   <SourceLine>Y2 = 0</SourceLine>
+   <SourceLine>Z2 = 0</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -12191,9 +12207,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.QuickDrawTokenizer.NextToken</EditorLocation>
+    <EditorLocation>FileAssist.SaveModelTo3DMF</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1485817855</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
