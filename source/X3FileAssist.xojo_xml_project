@@ -12025,6 +12025,49 @@
   <ItemParams></ItemParams>
   <ItemResult>X3Core.X3BoundingBox</ItemResult>
  </Method>
+ <Method>
+  <ItemName>ApplyVertex</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ApplyVertex(vec As X3Core.X3Vector)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.X &lt; X1 then</SourceLine>
+   <SourceLine>X1 = vec.X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.Y &lt; Y1 then</SourceLine>
+   <SourceLine>Y1 = vec.Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.Z &lt; Z1 then</SourceLine>
+   <SourceLine>Z1 = vec.Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.X &gt; X2 then</SourceLine>
+   <SourceLine>X2 = vec.X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.Y &gt; Y2 then</SourceLine>
+   <SourceLine>Y2 = vec.Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if vec.Z &gt; Z2 then</SourceLine>
+   <SourceLine>Z2 = vec.Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>vec As X3Core.X3Vector</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>X1</ItemName>
   <Compatibility></Compatibility>
@@ -12162,9 +12205,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Model.UpdateBoundingBox</EditorLocation>
+    <EditorLocation>X3Core.X3BoundingBox.ApplyVertex</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1742800895</EditingPartID>
+    <EditingPartID>1873836031</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
