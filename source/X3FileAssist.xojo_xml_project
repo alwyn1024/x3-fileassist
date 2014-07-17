@@ -5659,35 +5659,9 @@
    <SourceLine></SourceLine>
    <SourceLine>if Vertex.Ubound &gt;= 0 then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>BoundingBox.X1 = Vertex(0).X</SourceLine>
-   <SourceLine>BoundingBox.Y1 = Vertex(0).Y</SourceLine>
-   <SourceLine>BoundingBox.Z1 = Vertex(0).Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>BoundingBox.X2 = Vertex(0).X</SourceLine>
-   <SourceLine>BoundingBox.Y2 = Vertex(0).Y</SourceLine>
-   <SourceLine>BoundingBox.Z2 = Vertex(0).Z</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>BoundingBox.ApplyVertex Vertex(0)</SourceLine>
    <SourceLine>for i = 1 to Vertex.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if Vertex(i).X &lt; BoundingBox.X1 then</SourceLine>
-   <SourceLine>BoundingBox.X1 = Vertex(i).X</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Vertex(i).Y &lt; BoundingBox.Y1 then</SourceLine>
-   <SourceLine>BoundingBox.Y1 = Vertex(i).Y</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Vertex(i).Z &lt; BoundingBox.Z1 then</SourceLine>
-   <SourceLine>BoundingBox.Z1 = Vertex(i).Z</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Vertex(i).X &gt; BoundingBox.X2 then</SourceLine>
-   <SourceLine>BoundingBox.X2 = Vertex(i).X</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Vertex(i).Y &gt; BoundingBox.Y2 then</SourceLine>
-   <SourceLine>BoundingBox.Y2 = Vertex(i).Y</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>if Vertex(i).Z &gt; BoundingBox.Z2 then</SourceLine>
-   <SourceLine>BoundingBox.Z2 = Vertex(i).Z</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>BoundingBox.ApplyVertex Vertex(i)</SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>else</SourceLine>
@@ -5701,6 +5675,7 @@
    <SourceLine>BoundingBox.Z2 = 0</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -12205,9 +12180,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3BoundingBox.ApplyVertex</EditorLocation>
+    <EditorLocation>X3Core.X3Model.UpdateBoundingBox</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1873836031</EditingPartID>
+    <EditingPartID>1742800895</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
