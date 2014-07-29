@@ -2876,6 +2876,7 @@
    <SourceLine>Dim col As X3Core.X3Color</SourceLine>
    <SourceLine>Dim hasVertexNormals As Boolean</SourceLine>
    <SourceLine>Dim usesTexture As Boolean</SourceLine>
+   <SourceLine>Dim textureIndex As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>meshCount = 0</SourceLine>
    <SourceLine>polyIndex = 0</SourceLine>
@@ -2902,6 +2903,7 @@
    <SourceLine>uvCoords = new Dictionary</SourceLine>
    <SourceLine>hasVertexNormals = True</SourceLine>
    <SourceLine>usesTexture = False</SourceLine>
+   <SourceLine>textureIndex = -1</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>findSegment = true</SourceLine>
    <SourceLine>while (lastMeshPolyIndex &lt; model.Polygon.Ubound) and findSegment</SourceLine>
@@ -2914,6 +2916,7 @@
    <SourceLine></SourceLine>
    <SourceLine>if p1.TIndex &gt;= 0 then</SourceLine>
    <SourceLine>usesTexture = true</SourceLine>
+   <SourceLine>textureIndex = p1.TIndex</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
@@ -3080,6 +3083,27 @@
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>// *** texture bitmap ****</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if usesTexture and (textureIndex &gt;= 0) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "attributeSet" + Str(meshCount) + ":"</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "Container ("</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "AttributeSet ( )"</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "Container ("</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + "TextureShader ( )"</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + "PixmapTexture ("</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>qdWriteRGB16 tout, model.Texture(textureIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + ")" // PixmapTexture</SourceLine>
+   <SourceLineBreakpoint>248</SourceLineBreakpoint>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + ")" // container</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>// *** triangle colors ****</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>p1 = model.Polygon(polyIndex)</SourceLine>
@@ -3097,7 +3121,10 @@
    <SourceLine>tout.Write " "</SourceLine>
    <SourceLine>tout.Write X3_Str(col.Blue)</SourceLine>
    <SourceLine>tout.WriteLine " )"</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -3124,6 +3151,40 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>model As X3Core.X3Model, modelFile As FolderItem</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>qdWriteRGB16</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub qdWriteRGB16(tout As TextOutputStream, texture As X3Core.X3Texture)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// first we write some texture information</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.Write Str(texture.Width)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.Write Str(texture.Height)</SourceLine>
+   <SourceLine>tout.WriteLine " 256 16 RGB16 BigEndian BigEndian"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// now we write the actual texture data</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo: texur</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>break</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>tout As TextOutputStream, texture As X3Core.X3Texture</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -12389,7 +12450,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.SaveModelTo3DMF</EditorLocation>
+    <EditorLocation>FileAssist.qdWriteRGB16</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1035139071</EditingPartID>
    </Editor>
