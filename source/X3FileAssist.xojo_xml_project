@@ -2870,10 +2870,12 @@
    <SourceLine>Dim p2 As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim vertices As Dictionary</SourceLine>
    <SourceLine>Dim vertNormals As Dictionary</SourceLine>
+   <SourceLine>Dim uvCoords As Dictionary</SourceLine>
    <SourceLine>Dim bb As X3Core.X3BoundingBox</SourceLine>
    <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim col As X3Core.X3Color</SourceLine>
    <SourceLine>Dim hasVertexNormals As Boolean</SourceLine>
+   <SourceLine>Dim usesTexture As Boolean</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>meshCount = 0</SourceLine>
    <SourceLine>polyIndex = 0</SourceLine>
@@ -2897,7 +2899,9 @@
    <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
    <SourceLine>vertices = new Dictionary</SourceLine>
    <SourceLine>vertNormals = new Dictionary</SourceLine>
+   <SourceLine>uvCoords = new Dictionary</SourceLine>
    <SourceLine>hasVertexNormals = True</SourceLine>
+   <SourceLine>usesTexture = False</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>findSegment = true</SourceLine>
    <SourceLine>while (lastMeshPolyIndex &lt; model.Polygon.Ubound) and findSegment</SourceLine>
@@ -2908,6 +2912,10 @@
    <SourceLine>hasVertexNormals = false</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>if p1.TIndex &gt;= 0 then</SourceLine>
+   <SourceLine>usesTexture = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
    <SourceLine>p2 = model.Polygon(lastMeshPolyIndex + 1)</SourceLine>
    <SourceLine></SourceLine>
@@ -2916,6 +2924,9 @@
    <SourceLine>vertices.Value(p1.VIndex(j)) = (vertices.Keys.Ubound + 1)</SourceLine>
    <SourceLine>if hasVertexNormals then</SourceLine>
    <SourceLine>vertNormals.Value(p1.VNIndex(j)) = (vertNormals.Keys.Ubound + 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if usesTexture then</SourceLine>
+   <SourceLine>uvCoords.Value(p1.UVIndex(j)) = (uvCoords.Keys.Ubound + 1)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>bb.ApplyVertex model.Vertex(p1.VIndex(j)) // update bounding box</SourceLine>
    <SourceLine>end if</SourceLine>
@@ -2936,6 +2947,9 @@
    <SourceLine>numPoints = vertices.keys.Ubound + 1</SourceLine>
    <SourceLine>numVertexAttrTypes = 0 // todo: increase for textures</SourceLine>
    <SourceLine>if hasVertexNormals then</SourceLine>
+   <SourceLine>numVertexAttrTypes = numVertexAttrTypes + 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if usesTexture then</SourceLine>
    <SourceLine>numVertexAttrTypes = numVertexAttrTypes + 1</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -3044,6 +3058,25 @@
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // vertex normals</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// *** uv coordinates ***</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if usesTexture then</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "AttributeArray ( 2 0 2 1 0"</SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# u,v coordinates"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= vertices.Keys.Ubound</SourceLine>
+   <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
+   <SourceLine>tout.Write X3_Str(model.UVMap(uvCoords.Key(i)).U)</SourceLine>
+   <SourceLine>tout.Write " "</SourceLine>
+   <SourceLine>tout.WriteLine X3_Str(1 - model.UVMap(uvCoords.Key(i)).V)</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tout.WriteLine Chr(9) + Chr(9) + ")" // uv coordinates</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
