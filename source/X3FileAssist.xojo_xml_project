@@ -2877,6 +2877,9 @@
    <SourceLine>Dim hasVertexNormals As Boolean</SourceLine>
    <SourceLine>Dim usesTexture As Boolean</SourceLine>
    <SourceLine>Dim textureIndex As Integer</SourceLine>
+   <SourceLine>Dim cloneModel As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cloneModel = model.Clone()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>meshCount = 0</SourceLine>
    <SourceLine>polyIndex = 0</SourceLine>
@@ -2885,11 +2888,11 @@
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine "3DMetafile ( 1 0 Normal tableofcontents0&gt; )"</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>while polyIndex &lt;= model.Polygon.Ubound</SourceLine>
+   <SourceLine>while polyIndex &lt;= cloneModel.Polygon.Ubound</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>lastMeshPolyIndex = -1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>while lastMeshPolyIndex &lt; model.Polygon.Ubound</SourceLine>
+   <SourceLine>while lastMeshPolyIndex &lt; cloneModel.Polygon.Ubound</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// ***** next mesh ******</SourceLine>
    <SourceLine></SourceLine>
@@ -2897,7 +2900,7 @@
    <SourceLine></SourceLine>
    <SourceLine>lastMeshPolyIndex = lastMeshPolyIndex + 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
+   <SourceLine>p1 = cloneModel.Polygon(lastMeshPolyIndex)</SourceLine>
    <SourceLine>vertices = new Dictionary</SourceLine>
    <SourceLine>vertNormals = new Dictionary</SourceLine>
    <SourceLine>uvCoords = new Dictionary</SourceLine>
@@ -2906,7 +2909,7 @@
    <SourceLine>textureIndex = -1</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>findSegment = true</SourceLine>
-   <SourceLine>while (lastMeshPolyIndex &lt;= model.Polygon.Ubound) and findSegment</SourceLine>
+   <SourceLine>while (lastMeshPolyIndex &lt;= cloneModel.Polygon.Ubound) and findSegment</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// TODO: cater for sprite surfaces </SourceLine>
    <SourceLine></SourceLine>
@@ -2919,9 +2922,9 @@
    <SourceLine>textureIndex = p1.TIndex</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
-   <SourceLine>if lastMeshPolyIndex &lt; model.Polygon.Ubound then</SourceLine>
-   <SourceLine>p2 = model.Polygon(lastMeshPolyIndex + 1)</SourceLine>
+   <SourceLine>p1 = cloneModel.Polygon(lastMeshPolyIndex)</SourceLine>
+   <SourceLine>if lastMeshPolyIndex &lt; cloneModel.Polygon.Ubound then</SourceLine>
+   <SourceLine>p2 = cloneModel.Polygon(lastMeshPolyIndex + 1)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for j = 0 to p1.VIndex.Ubound</SourceLine>
@@ -2933,11 +2936,11 @@
    <SourceLine>if usesTexture then</SourceLine>
    <SourceLine>uvCoords.Value(p1.UVIndex(j)) = (uvCoords.Keys.Ubound + 1)</SourceLine>
    <SourceLine>end if</SourceLine>
-   <SourceLine>bb.ApplyVertex model.Vertex(p1.VIndex(j)) // update bounding box</SourceLine>
+   <SourceLine>bb.ApplyVertex cloneModel.Vertex(p1.VIndex(j)) // update bounding box</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>next j </SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if lastMeshPolyIndex &gt;= model.Polygon.Ubound then</SourceLine>
+   <SourceLine>if lastMeshPolyIndex &gt;= cloneModel.Polygon.Ubound then</SourceLine>
    <SourceLine>findSegment = false</SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>if (p1.CIndex &lt;&gt; p2.CIndex) or (p1.MIndex &lt;&gt; p2.MIndex) or (p1.SIndex &lt;&gt; p2.SIndex) or (p1.TIndex &lt;&gt; p2.TIndex) then</SourceLine>
@@ -2954,7 +2957,7 @@
    <SourceLine>numEdges = 0</SourceLine>
    <SourceLine>numEdgeAttrTypes = 0</SourceLine>
    <SourceLine>numPoints = vertices.keys.Ubound + 1</SourceLine>
-   <SourceLine>numVertexAttrTypes = 0 // todo: increase for textures</SourceLine>
+   <SourceLine>numVertexAttrTypes = 0</SourceLine>
    <SourceLine>if hasVertexNormals then</SourceLine>
    <SourceLine>numVertexAttrTypes = numVertexAttrTypes + 1</SourceLine>
    <SourceLine>end if</SourceLine>
@@ -2984,7 +2987,7 @@
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + "# triangles"</SourceLine>
    <SourceLine>i = polyIndex</SourceLine>
    <SourceLine>while (i &lt;= lastMeshPolyIndex) </SourceLine>
-   <SourceLine>p1 = model.Polygon(i)</SourceLine>
+   <SourceLine>p1 = cloneModel.Polygon(i)</SourceLine>
    <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
    <SourceLine>tout.Write Str(vertices.Value(p1.VIndex(0)))</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
@@ -3001,11 +3004,11 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt;= vertices.Keys.Ubound</SourceLine>
    <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
-   <SourceLine>tout.Write X3_Str(model.Vertex(vertices.Key(i)).X)</SourceLine>
+   <SourceLine>tout.Write X3_Str(cloneModel.Vertex(vertices.Key(i)).X)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
-   <SourceLine>tout.Write X3_Str(model.Vertex(vertices.Key(i)).Y)</SourceLine>
+   <SourceLine>tout.Write X3_Str(cloneModel.Vertex(vertices.Key(i)).Y)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
-   <SourceLine>tout.WriteLine X3_Str(model.Vertex(vertices.Key(i)).Z)</SourceLine>
+   <SourceLine>tout.WriteLine X3_Str(cloneModel.Vertex(vertices.Key(i)).Z)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -3036,8 +3039,8 @@
    <SourceLine></SourceLine>
    <SourceLine>i = polyIndex</SourceLine>
    <SourceLine>while (i &lt;= lastMeshPolyIndex)</SourceLine>
-   <SourceLine>p1 = model.Polygon(i)</SourceLine>
-   <SourceLine>norm = model.Normal(p1.NIndex)</SourceLine>
+   <SourceLine>p1 = cloneModel.Polygon(i)</SourceLine>
+   <SourceLine>norm = cloneModel.Normal(p1.NIndex)</SourceLine>
    <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
    <SourceLine>tout.Write X3_Str(norm.X)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
@@ -3058,11 +3061,11 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt;= vertices.Keys.Ubound</SourceLine>
    <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
-   <SourceLine>tout.Write X3_Str(model.Normal(vertNormals.Key(i)).X)</SourceLine>
+   <SourceLine>tout.Write X3_Str(cloneModel.Normal(vertNormals.Key(i)).X)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
-   <SourceLine>tout.Write X3_Str(model.Normal(vertNormals.Key(i)).Y)</SourceLine>
+   <SourceLine>tout.Write X3_Str(cloneModel.Normal(vertNormals.Key(i)).Y)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
-   <SourceLine>tout.WriteLine X3_Str(model.Normal(vertNormals.Key(i)).Z)</SourceLine>
+   <SourceLine>tout.WriteLine X3_Str(cloneModel.Normal(vertNormals.Key(i)).Z)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -3079,9 +3082,9 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt;= vertices.Keys.Ubound</SourceLine>
    <SourceLine>tout.Write Chr(9) + Chr(9) + Chr(9)</SourceLine>
-   <SourceLine>tout.Write X3_Str(model.UVMap(uvCoords.Key(i)).U)</SourceLine>
+   <SourceLine>tout.Write X3_Str(cloneModel.UVMap(uvCoords.Key(i)).U)</SourceLine>
    <SourceLine>tout.Write " "</SourceLine>
-   <SourceLine>tout.WriteLine X3_Str(1 - model.UVMap(uvCoords.Key(i)).V)</SourceLine>
+   <SourceLine>tout.WriteLine X3_Str(1 - cloneModel.UVMap(uvCoords.Key(i)).V)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
@@ -3101,7 +3104,7 @@
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + "TextureShader ( )"</SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + "PixmapTexture ("</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>qdWriteRGB16 tout, model.Texture(textureIndex)</SourceLine>
+   <SourceLine>qdWriteRGB16 tout, cloneModel.Texture(textureIndex)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + Chr(9) + ")" // PixmapTexture</SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + Chr(9) + ")" // container</SourceLine>
@@ -3111,10 +3114,10 @@
    <SourceLine></SourceLine>
    <SourceLine>// *** triangle colors ****</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>p1 = model.Polygon(polyIndex)</SourceLine>
+   <SourceLine>p1 = cloneModel.Polygon(polyIndex)</SourceLine>
    <SourceLine>if p1.CIndex &gt;= 0 then</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>col = model.ColorPal(p1.CIndex)</SourceLine>
+   <SourceLine>col = cloneModel.ColorPal(p1.CIndex)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "attributeSet" + Str(meshCount) + ":"</SourceLine>
    <SourceLine>tout.WriteLine Chr(9) + Chr(9) + "Container ("</SourceLine>
