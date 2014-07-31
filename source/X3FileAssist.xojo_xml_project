@@ -2880,6 +2880,7 @@
    <SourceLine>Dim cloneModel As X3Core.X3Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>cloneModel = model.Clone()</SourceLine>
+   <SourceLine>cloneModel.Triangulate()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>meshCount = 0</SourceLine>
    <SourceLine>polyIndex = 0</SourceLine>
@@ -12502,9 +12503,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Model.Triangulate</EditorLocation>
+    <EditorLocation>FileAssist.SaveModelTo3DMF</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1742800895</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
