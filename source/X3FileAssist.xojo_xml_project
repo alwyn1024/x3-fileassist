@@ -5917,6 +5917,27 @@
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>Triangulate</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Triangulate()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>ColorPal()</ItemName>
   <Compatibility></Compatibility>
@@ -12481,9 +12502,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>FileAssist.SaveModelTo3DMF</EditorLocation>
+    <EditorLocation>X3Core.X3Model.Triangulate</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1035139071</EditingPartID>
+    <EditingPartID>1742800895</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
