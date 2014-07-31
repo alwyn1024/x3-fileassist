@@ -2922,8 +2922,6 @@
    <SourceLine>p1 = model.Polygon(lastMeshPolyIndex)</SourceLine>
    <SourceLine>if lastMeshPolyIndex &lt; model.Polygon.Ubound then</SourceLine>
    <SourceLine>p2 = model.Polygon(lastMeshPolyIndex + 1)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>break</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for j = 0 to p1.VIndex.Ubound</SourceLine>
