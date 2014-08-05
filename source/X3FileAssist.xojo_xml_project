@@ -5070,7 +5070,6 @@
    <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// triangulate the polygon using the ear clipping method</SourceLine>
-   <SourceLine>// todo: see if faster algorithms exist to triangulate polygons with</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>while VIndex.Ubound &gt; 2 </SourceLine>
    <SourceLine></SourceLine>
@@ -5080,13 +5079,14 @@
    <SourceLine>foundEar = false</SourceLine>
    <SourceLine>while not foundEar</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// if pi is convex then</SourceLine>
+   <SourceLine>// is p(i) convex?</SourceLine>
    <SourceLine>// todo</SourceLine>
    <SourceLine>if true then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>//  if triangle formed by pi-1, pi, and pi+1 contains no concave vertex then</SourceLine>
+   <SourceLine>' yes</SourceLine>
+   <SourceLine>// do  the triangle formed by pi-1, pi, and pi+1 contain no concave vertices</SourceLine>
    <SourceLine>// todo</SourceLine>
    <SourceLine>if true then</SourceLine>
+   <SourceLine>' yes, so we found an ear</SourceLine>
    <SourceLine>foundEar = true</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -5101,7 +5101,6 @@
    <SourceLine>// create new polygon from ear</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>poly = new X3Core.X3Polygon()</SourceLine>
-   <SourceLineBreakpoint>40</SourceLineBreakpoint>
    <SourceLine></SourceLine>
    <SourceLine>ParentModel.AppendPolygon(poly)</SourceLine>
    <SourceLine></SourceLine>
@@ -5165,7 +5164,6 @@
    <SourceLine>// remove principle vertex from this polygon</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if VNIndex.Ubound &gt;= VIndex.Ubound then</SourceLine>
-   <SourceLineBreakpoint>103</SourceLineBreakpoint>
    <SourceLine>VNIndex.Remove(i)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>VIndex.Remove(i)</SourceLine>
