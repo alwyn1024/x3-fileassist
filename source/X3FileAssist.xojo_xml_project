@@ -5186,6 +5186,70 @@
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>CalculateNormal</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function CalculateNormal() As X3Core.X3Vector</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim v1Z As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim v2X As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim v2Y As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim v2Z As Double ' temporary value used during calculations</SourceLine>
+   <SourceLine>Dim cpX As Double ' cross product x</SourceLine>
+   <SourceLine>Dim cpY As Double ' cross product y</SourceLine>
+   <SourceLine>Dim cpZ As Double ' cross product z</SourceLine>
+   <SourceLine>Dim m As Double ' magnitude of vector</SourceLine>
+   <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' calculate polygon surface vectors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>v1X = ParentModel.Vertex(VIndex(1)).X - ParentModel.Vertex(VIndex(0)).X</SourceLine>
+   <SourceLine>v1Y = ParentModel.Vertex(VIndex(1)).Y - ParentModel.Vertex(VIndex(0)).Y</SourceLine>
+   <SourceLine>v1Z = ParentModel.Vertex(VIndex(1)).Z - ParentModel.Vertex(VIndex(0)).Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>v2X = ParentModel.Vertex(VIndex(2)).X - ParentModel.Vertex(VIndex(1)).X</SourceLine>
+   <SourceLine>v2Y = ParentModel.Vertex(VIndex(2)).Y - ParentModel.Vertex(VIndex(1)).Y</SourceLine>
+   <SourceLine>v2Z = ParentModel.Vertex(VIndex(2)).Z - ParentModel.Vertex(VIndex(1)).Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' calculate cross product</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cpX = v1Y * v2Z - v1Z * v2Y</SourceLine>
+   <SourceLine>cpY = v1Z * v2X - v1X * v2Z</SourceLine>
+   <SourceLine>cpZ = v1X * v2Y - v1Y * v2X</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' normalize</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>m =  Sqrt(cpX^2 + cpY^2 + cpZ^2)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' now calculate normalized values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>n = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if m &gt; 0 then</SourceLine>
+   <SourceLine>n.X = cpX / m</SourceLine>
+   <SourceLine>n.Y = cpY / m</SourceLine>
+   <SourceLine>n.Z = cpZ / m</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return n</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult>X3Core.X3Vector</ItemResult>
+ </Method>
  <Property>
   <ItemName>CIndex</ItemName>
   <Compatibility></Compatibility>
@@ -12641,7 +12705,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.Triangulate</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.CalculateNormal</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
