@@ -5136,7 +5136,7 @@
    <SourceLine></SourceLine>
    <SourceLine>// reduce project 3D poloygon to a 2D polygon to simplify calculations</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>coords2D = poly.Get2DProjectionCoords()</SourceLine>
+   <SourceLine>coords2D = poly.GetXYProjectionCoords()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// is p(i) convex?</SourceLine>
    <SourceLine>// todo</SourceLine>
@@ -5256,18 +5256,31 @@
   <ItemResult>X3Core.X3Vector</ItemResult>
  </Method>
  <Method>
-  <ItemName>Get2DProjectionCoords</ItemName>
+  <ItemName>GetXYProjectionCoords</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function Get2DProjectionCoords() As X3Core.X3Vector()</SourceLine>
+   <SourceLine>Function GetXYProjectionCoords() As X3Core.X3Vector()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coords() As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// is the polygon perpendicluar to the XY plane?</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// todo</SourceLine>
+   <SourceLine>if false then</SourceLine>
+   <SourceLine>// yes, so the points first needs to be rotated</SourceLine>
+   <SourceLine>break</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= VIndex.Ubound</SourceLine>
+   <SourceLine>coords.Append new X3Core.X3Vector(ParentModel.Vertex(VIndex(i)).X, ParentModel.Vertex(VIndex(i)).Y, 0)</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return coords</SourceLine>
    <SourceLine></SourceLine>
@@ -12735,7 +12748,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.Triangulate</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.GetXYProjectionCoords</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
