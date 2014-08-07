@@ -4885,7 +4885,6 @@
    <SourceLine>poly.CIndex = CIndex</SourceLine>
    <SourceLine>poly.MIndex = MIndex</SourceLine>
    <SourceLine>poly.NIndex = NIndex</SourceLine>
-   <SourceLine>poly.ParentModel = ParentModel</SourceLine>
    <SourceLine>poly.Selected = Selected</SourceLine>
    <SourceLine>poly.SIndex = SIndex</SourceLine>
    <SourceLine>poly.SpriteImageIndex = mSpriteImageIndex</SourceLine>
@@ -5239,6 +5238,7 @@
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return n</SourceLine>
+   <SourceLineBreakpoint>46</SourceLineBreakpoint>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -5249,6 +5249,32 @@
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
   <ItemResult>X3Core.X3Vector</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Get2DProjection</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function Get2DProjection() As X3Core.X3Polygon</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim parent As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim poly As new X3Core.X3Polygon(parent)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return poly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult>X3Core.X3Polygon</ItemResult>
  </Method>
  <Property>
   <ItemName>CIndex</ItemName>
@@ -12705,7 +12731,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.CalculateNormal</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.Get2DProjection</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
