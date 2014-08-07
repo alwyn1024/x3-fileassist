@@ -5067,6 +5067,7 @@
    <SourceLine>Dim foundEar As Boolean</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim coords2D() As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// triangulate the polygon using the ear clipping method</SourceLine>
    <SourceLine></SourceLine>
@@ -5132,6 +5133,10 @@
    <SourceLine>poly.VNIndex.Append VNIndex(i + 1)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// reduce project 3D poloygon to a 2D polygon to simplify calculations</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>coords2D = poly.Get2DProjectionCoords()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// is p(i) convex?</SourceLine>
    <SourceLine>// todo</SourceLine>
@@ -12730,7 +12735,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.Get2DProjectionCoords</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.Triangulate</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
