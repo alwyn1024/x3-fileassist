@@ -5251,21 +5251,20 @@
   <ItemResult>X3Core.X3Vector</ItemResult>
  </Method>
  <Method>
-  <ItemName>Get2DProjection</ItemName>
+  <ItemName>Get2DProjectionCoords</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function Get2DProjection() As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Function Get2DProjectionCoords() As X3Core.X3Vector()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim parent As new X3Core.X3Model</SourceLine>
-   <SourceLine>Dim poly As new X3Core.X3Polygon(parent)</SourceLine>
+   <SourceLine>Dim coords() As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// todo</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>return poly</SourceLine>
+   <SourceLine>return coords</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
@@ -5274,7 +5273,7 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
-  <ItemResult>X3Core.X3Polygon</ItemResult>
+  <ItemResult>X3Core.X3Vector()</ItemResult>
  </Method>
  <Property>
   <ItemName>CIndex</ItemName>
@@ -12731,7 +12730,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.Get2DProjection</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.Get2DProjectionCoords</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
