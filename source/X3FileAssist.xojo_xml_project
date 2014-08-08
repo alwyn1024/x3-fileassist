@@ -5124,7 +5124,6 @@
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim foundEar As Boolean</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine>Dim coords2D() As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// triangulate the polygon using the ear clipping method</SourceLine>
@@ -5301,7 +5300,6 @@
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return n</SourceLine>
-   <SourceLineBreakpoint>46</SourceLineBreakpoint>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -5325,21 +5323,24 @@
    <SourceLine></SourceLine>
    <SourceLine>Dim coords() As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim v As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim perpendicular As Boolean</SourceLine>
    <SourceLine>Dim polyNorm As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim xyNorm As new X3Core.X3Vector(0, 0, 1)</SourceLine>
    <SourceLine>Dim angle As Double</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>perpendicular = false</SourceLine>
    <SourceLine>polyNorm = CalculateNormal()</SourceLine>
+   <SourceLine>angle = ACos(polyNorm.DotProduct(xyNorm)) * X3_180OverPi</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if angle = 90 then ' polygon is perpendicular to XY plane?</SourceLine>
    <SourceLineBreakpoint>13</SourceLineBreakpoint>
    <SourceLine></SourceLine>
-   <SourceLine>// is the polygon perpendicular to the XY plane?</SourceLine>
+   <SourceLine>// we need to rotate the polygon a bit so that we don't get a straight line</SourceLine>
+   <SourceLine>// todo</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if perpendicular then</SourceLine>
-   <SourceLine>// yes, so the points first needs to be rotated</SourceLine>
-   <SourceLine>break</SourceLine>
+   <SourceLine>elseif angle &gt; 90 then ' polygon is facing away?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// we need to rotate the polygon to face us</SourceLine>
+   <SourceLine>// todo</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt;= VIndex.Ubound</SourceLine>
