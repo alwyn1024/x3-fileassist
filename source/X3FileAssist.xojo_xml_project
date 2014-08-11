@@ -5326,6 +5326,8 @@
    <SourceLine>Dim polyNorm As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim xyNorm As new X3Core.X3Vector(0, 0, 1)</SourceLine>
    <SourceLine>Dim angle As Double</SourceLine>
+   <SourceLine>Dim quat As X3Core.X3Quaternion</SourceLine>
+   <SourceLine>Dim tmpVec As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>polyNorm = CalculateNormal()</SourceLine>
    <SourceLine>angle = ACos(polyNorm.DotProduct(xyNorm)) * X3_180OverPi</SourceLine>
@@ -5333,7 +5335,6 @@
    <SourceLine>if angle = 0 then ' polygon is facing us, so use XY coordinates as is?</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>i = 0</SourceLine>
-   <SourceLineBreakpoint>15</SourceLineBreakpoint>
    <SourceLine>while i &lt;= VIndex.Ubound</SourceLine>
    <SourceLine>coords.Append new X3Core.X3Vector(ParentModel.Vertex(VIndex(i)).X, ParentModel.Vertex(VIndex(i)).Y, 0)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
@@ -5343,7 +5344,15 @@
    <SourceLine></SourceLine>
    <SourceLine>// polygon needs to be rotated to face us before its projected onto XY plane</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// todo</SourceLine>
+   <SourceLine>quat = new X3Core.X3Quaternion(polyNorm, xyNorm) // calculate quaternion to use for vertex rotations</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt;= VIndex.Ubound</SourceLine>
+   <SourceLine>tmpVec = ParentModel.Vertex(VIndex(i)).Clone</SourceLine>
+   <SourceLine>tmpVec.Rotate quat</SourceLine>
+   <SourceLine>coords.Append new X3Core.X3Vector(tmpVec.X, tmpVec.Y, 0)</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
@@ -12843,9 +12852,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Quaternion.FromEulerRotation</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.GetXYProjectionCoords</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>103264255</EditingPartID>
+    <EditingPartID>1286942719</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
