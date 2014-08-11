@@ -7202,44 +7202,10 @@
    <SourceLine>' apply rotation around axis</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if angle &lt;&gt; 0 then</SourceLine>
-   <SourceLine>tmpQuat.SetEulerRotation(axis, angle)</SourceLine>
+   <SourceLine>tmpQuat.FromEulerRotation(axis, angle)</SourceLine>
    <SourceLine>Multiply tmpQuat</SourceLine>
    <SourceLine>Normalize</SourceLine>
    <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>SetEulerRotation</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub SetEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim halfAngle As Double</SourceLine>
-   <SourceLine>Dim sinAng As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>norm = axis.Clone ' first clone the given axis</SourceLine>
-   <SourceLine>norm.Normalize ' now normalize the axis</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>halfAngle = (angle * X3_PiOver180)  / 2 ' calculate the half angle (convert degrees to radians)</SourceLine>
-   <SourceLine>sinAng = sin(halfAngle) ' calculate sine of half angle</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X = (norm.x * sinAng)</SourceLine>
-   <SourceLine>Y = (norm.y * sinAng)</SourceLine>
-   <SourceLine>Z = (norm.z * sinAng)</SourceLine>
-   <SourceLine>W = cos(halfAngle)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -7293,7 +7259,6 @@
    <SourceLine>Dim angle As Double ' angle of rotation</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tmpFrom = fromVec.Clone()</SourceLine>
-   <SourceLineBreakpoint>9</SourceLineBreakpoint>
    <SourceLine>tmpFrom.Normalize</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tmpTo = toVec.Clone()</SourceLine>
@@ -7305,7 +7270,7 @@
    <SourceLine></SourceLine>
    <SourceLine>angle = ACos(tmpFrom.DotProduct(tmpTo)) * X3_180OverPi ' quaternion angle of roration in degrees</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>SetEulerRotation(axis, angle) ' instantiate the quaterion with the calculate axis and angle</SourceLine>
+   <SourceLine>FromEulerRotation(axis, angle) ' instantiate the quaterion with the calculate axis and angle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Normalize ' normalize the quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -7317,6 +7282,40 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>fromVec As X3Core.X3Vector, toVec As X3Core.X3Vector</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>FromEulerRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub FromEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim halfAngle As Double</SourceLine>
+   <SourceLine>Dim sinAng As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>norm = axis.Clone ' first clone the given axis</SourceLine>
+   <SourceLine>norm.Normalize ' now normalize the axis</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>halfAngle = (angle * X3_PiOver180)  / 2 ' calculate the half angle (convert degrees to radians)</SourceLine>
+   <SourceLine>sinAng = sin(halfAngle) ' calculate sine of half angle</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = (norm.x * sinAng)</SourceLine>
+   <SourceLine>Y = (norm.y * sinAng)</SourceLine>
+   <SourceLine>Z = (norm.z * sinAng)</SourceLine>
+   <SourceLine>W = cos(halfAngle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -12855,7 +12854,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Quaternion.FromEulerRotation</EditorLocation>
+    <EditorLocation>X3Core.X3Quaternion.Constructor</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>103264255</EditingPartID>
    </Editor>
