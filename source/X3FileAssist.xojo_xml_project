@@ -7294,20 +7294,9 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim halfAngle As Double</SourceLine>
-   <SourceLine>Dim sinAng As Double</SourceLine>
+   <SourceLine>' IMPORTANT: axis needs to be normalized prior to this call</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>norm = axis.Clone ' first clone the given axis</SourceLine>
-   <SourceLine>norm.Normalize ' now normalize the axis</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>halfAngle = (angle * X3_PiOver180)  / 2 ' calculate the half angle (convert degrees to radians)</SourceLine>
-   <SourceLine>sinAng = sin(halfAngle) ' calculate sine of half angle</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X = (norm.x * sinAng)</SourceLine>
-   <SourceLine>Y = (norm.y * sinAng)</SourceLine>
-   <SourceLine>Z = (norm.z * sinAng)</SourceLine>
-   <SourceLine>W = cos(halfAngle)</SourceLine>
+   <SourceLine>FromEulerRotation axis.X, axis.Y, axis.Z, angle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -12854,7 +12843,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Quaternion.Constructor</EditorLocation>
+    <EditorLocation>X3Core.X3Quaternion.FromEulerRotation</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>103264255</EditingPartID>
    </Editor>
