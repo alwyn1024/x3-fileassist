@@ -4579,7 +4579,6 @@
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
-   <SourceLineBreakpoint>11</SourceLineBreakpoint>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -12905,9 +12904,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Vector.PerpendicularVector</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.GetCenter</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>39030783</EditingPartID>
+    <EditingPartID>1286942719</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
