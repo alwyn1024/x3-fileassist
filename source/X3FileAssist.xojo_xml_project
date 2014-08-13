@@ -5152,6 +5152,7 @@
    <SourceLine>Dim foundEar As Boolean</SourceLine>
    <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim coords2D() As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim convexArea As Double</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// triangulate the polygon using the ear clipping method</SourceLine>
    <SourceLine></SourceLine>
@@ -5222,11 +5223,13 @@
    <SourceLine></SourceLine>
    <SourceLine>coords2D = poly.GetXYProjectionCoords()</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>convexArea = coords2D(0).X * (coords2D(2).Y - coords2D(1).Y)</SourceLine>
+   <SourceLine>convexArea = convexArea + coords2D(1).X * (coords2D(0).Y - coords2D(2).Y)</SourceLine>
+   <SourceLine>convexArea = convexArea + coords2D(2).X * (coords2D(1).Y - coords2D(0).Y)</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>// is p(i) convex?</SourceLine>
-   <SourceLine>// todo</SourceLine>
-   <SourceLine>if true then</SourceLine>
-   <SourceLine>' yes</SourceLine>
-   <SourceLine>// do  the triangle formed by pi-1, pi, and pi+1 contain no concave vertices</SourceLine>
+   <SourceLine>if convexArea &lt; 0 then</SourceLine>
+   <SourceLine>' yes, now see if the triangle formed by pi-1, pi, and pi+1 contain no concave vertices</SourceLine>
    <SourceLine>// todo</SourceLine>
    <SourceLine>if true then</SourceLine>
    <SourceLine>' yes, so we found an ear</SourceLine>
@@ -12904,7 +12907,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Polygon.GetCenter</EditorLocation>
+    <EditorLocation>X3Core.X3Polygon.Triangulate</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1286942719</EditingPartID>
    </Editor>
