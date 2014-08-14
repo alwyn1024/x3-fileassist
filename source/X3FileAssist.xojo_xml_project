@@ -5198,7 +5198,13 @@
    <SourceLine></SourceLine>
    <SourceLine>// is p(i) convex?</SourceLine>
    <SourceLine>if convexArea &lt; 0 then</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>' yes, now see if the triangle formed by pi-1, pi, and pi+1 contain no concave vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// if the vertex is only four vertices in size, the fourth point wont be inside the ear</SourceLine>
+   <SourceLine>// TODO</SourceLine>
+   <SourceLine>// if VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>// do inside test stuff...</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// compute vectors for test</SourceLine>
    <SourceLine></SourceLine>
