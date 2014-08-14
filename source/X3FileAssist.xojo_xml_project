@@ -5156,11 +5156,19 @@
    <SourceLine>Dim convexArea As Double</SourceLine>
    <SourceLine>Dim iMinusOne As Integer</SourceLine>
    <SourceLine>Dim iPlusOne As Integer</SourceLine>
-   <SourceLine>Dim noConcaveVectorsInside As Boolean</SourceLine>
+   <SourceLine>Dim vertexInside As Boolean</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim v0 As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim v1 As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim v2 As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim dot00 As Double</SourceLine>
+   <SourceLine>Dim dot01 As Double</SourceLine>
+   <SourceLine>Dim dot02 As Double</SourceLine>
+   <SourceLine>Dim dot11 As Double</SourceLine>
+   <SourceLine>Dim dot12 As Double</SourceLine>
+   <SourceLine>Dim invDenom As Double</SourceLine>
+   <SourceLine>Dim u As Double</SourceLine>
+   <SourceLine>Dim v As Double</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// reduce project 3D poloygon to a 2D polygon to simplify calculations</SourceLine>
    <SourceLine></SourceLine>
@@ -5212,43 +5220,42 @@
    <SourceLine>v1 = new X3Vector(coords2D(i).X - coords2D(iMinusOne).X, coords2D(i).Y - coords2D(iMinusOne).Y, 0)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>j = 0</SourceLine>
-   <SourceLine>noConcaveVectorsInside = true</SourceLine>
-   <SourceLine>while (j &lt;= VIndex.Ubound) and noConcaveVectorsInside</SourceLine>
+   <SourceLine>vertexInside = false</SourceLine>
+   <SourceLine>while (j &lt;= VIndex.Ubound) and not vertexInside</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if (j &lt;&gt; iMinusOne) and (j &lt;&gt; i) and (j &lt;&gt; iPlusOne) then</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// see if this point is inside the triangle</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>v2 = new X3Vector(coords2D(j).X - coords2D(iMinusOne).X, coords2D(j).Y - coords2D(iMinusOne).Y, 0)</SourceLine>
-   <SourceLine>break</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Compute dot products</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dot00 =  v0.DotProduct(v0)</SourceLine>
+   <SourceLine>dot01 = v0.DotProduct(v1)</SourceLine>
+   <SourceLine>dot02 = v0.DotProduct(v2)</SourceLine>
+   <SourceLine>dot11 = v1.DotProduct(v1)</SourceLine>
+   <SourceLine>dot12 = v1.DotProduct(v2)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Compute barycentric coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>invDenom = 1 / (dot00 * dot11 - dot01 * dot01)</SourceLine>
+   <SourceLine>u = (dot11 * dot02 - dot01 * dot12) * invDenom</SourceLine>
+   <SourceLine>v = (dot00 * dot12 - dot01 * dot02) * invDenom</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Check if point is in triangle</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>vertexInside = ((u &gt;= 0) and (v &gt;= 0) and ((u + v) &lt; 1))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// todo: see if vertex is concave</SourceLine>
+   <SourceLine>// note: not sure if this is required?</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>j = j + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'// Compute vectors</SourceLine>
-   <SourceLine>'v0 = C - A</SourceLine>
-   <SourceLine>'v1 = B - A</SourceLine>
-   <SourceLine>'v2 = P - A</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'// Compute dot products</SourceLine>
-   <SourceLine>'dot00 = dot(v0, v0)</SourceLine>
-   <SourceLine>'dot01 = dot(v0, v1)</SourceLine>
-   <SourceLine>'dot02 = dot(v0, v2)</SourceLine>
-   <SourceLine>'dot11 = dot(v1, v1)</SourceLine>
-   <SourceLine>'dot12 = dot(v1, v2)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'// Compute barycentric coordinates</SourceLine>
-   <SourceLine>'invDenom = 1 / (dot00 * dot11 - dot01 * dot01)</SourceLine>
-   <SourceLine>'u = (dot11 * dot02 - dot01 * dot12) * invDenom</SourceLine>
-   <SourceLine>'v = (dot00 * dot12 - dot01 * dot02) * invDenom</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'// Check if point is in triangle</SourceLine>
-   <SourceLine>'return (u &gt;= 0) &amp;&amp; (v &gt;= 0) &amp;&amp; (u + v &lt; 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>noConcaveVectorsInside = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if noConcaveVectorsInside then</SourceLine>
+   <SourceLine>if not vertexInside then</SourceLine>
    <SourceLine>' yes, so we found an ear</SourceLine>
    <SourceLine>foundEar = true</SourceLine>
    <SourceLine>end if</SourceLine>
