@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -823,17 +823,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height">32</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -841,54 +841,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top">21</PropertyVal>
-  <PropertyVal Name="Width">425</PropertyVal>
-  <PropertyVal Name="Height">222</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">222</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top">21</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -896,39 +896,39 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width">425</PropertyVal>
-  <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -3353,7 +3353,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="519759871">
+<block type="Module" ID="1709426687">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -3368,8 +3368,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub renderPolygon(poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
@@ -3523,8 +3522,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_CreateSprite(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
@@ -3578,8 +3576,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_EnableLight(lightIndex As Integer, light As X3Core.X3Light)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_POSITION, light.Position.GetMemoryBlock ' set position</SourceLine>
    <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_AMBIENT, light.Ambient.GetMemoryBlock ' set ambience</SourceLine>
@@ -3605,8 +3602,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_Initialize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' enable depth buffer to ensure objects in distance is not drawn over objects closer to us</SourceLine>
    <SourceLine></SourceLine>
@@ -3652,8 +3648,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_LoadRGBATexture(RGBABitmap As MemoryBlock, width As Integer, height As Integer) As Integer</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim idMB As MemoryBlock</SourceLine>
    <SourceLine>Dim oglName As Integer</SourceLine>
@@ -3694,8 +3689,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -3739,8 +3733,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderModel(model As X3Core.X3Model)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -4080,8 +4073,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RotateWithXY(q As X3Quaternion, xAngle As Double, yAngle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As new X3Quaternion</SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
@@ -4129,8 +4121,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetMaterial(material As X3Core.X3Material)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim matMB As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
@@ -4173,8 +4164,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetPerspective(x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 0.01, zFar As Double = 100)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glViewport x, y, width, height ' set the viewport rectangle</SourceLine>
    <SourceLine></SourceLine>
@@ -4207,8 +4197,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetRotation(rotation As X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim angle As Double ' Euler angle of rotation</SourceLine>
    <SourceLine></SourceLine>
@@ -4233,8 +4222,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_Str(d As Double) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if (d \ 1) = d then // whole number?</SourceLine>
    <SourceLine>return Str(d, "-0")</SourceLine>
@@ -4258,8 +4246,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PickPolygon(model As X3Core.X3Model, x As Integer, y As Integer) As X3Core.X3Polygon</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -4377,8 +4364,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -4700,8 +4686,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
@@ -4762,8 +4747,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' apply the perspective settings of the camera</SourceLine>
    <SourceLine></SourceLine>
@@ -4794,8 +4778,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_Snapshot(x As Integer, y As Integer, width As Integer, height As Integer) As Picture</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim pixelData As New MemoryBlock(width * height * 4)</SourceLine>
    <SourceLine>Dim result As Picture</SourceLine>
@@ -4843,8 +4826,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_DisableAllLights()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHT0</SourceLine>
    <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHT1</SourceLine>
@@ -5188,9 +5170,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1811662847">
+<block type="Module" ID="2033188863">
  <ObjName>X3Camera</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5889,9 +5871,284 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="844298239">
+<block type="Module" ID="475674623">
+ <ObjName>X3Canvas</ObjName>
+ <ObjContainerID>1709426687</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>OpenGLSurface</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <HookInstance>
+  <ItemName>Open</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Open()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Me.MakeCurrent()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_Initialize</SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHTING</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <HookInstance>
+  <ItemName>Render</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function Render() As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Me.MakeCurrent()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glClearColor(1, 1, 1, 1) ' set the background color</SourceLine>
+   <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_RenderScene Graphics.Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <HookInstance>
+  <ItemName>Resized</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Resized()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Me.MakeCurrent()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Graphics.Scene.SetViewport 0, 0, Me.Width, Me.Height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Redim Graphics.Scene.Model(-1)</SourceLine>
+   <SourceLine>RaiseEvent Paint(Graphics)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <Method>
+  <ItemName>Constructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Constructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// Calling the overridden superclass constructor.</SourceLine>
+   <SourceLine>Super.Constructor</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Graphics = new X3Core.X3Graphics(Me)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>4096</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Hook>
+  <ItemName>Paint</ItemName>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemFlags>33</ItemFlags>
+  <SystemFlags>0</SystemFlags>
+  <ItemParams>g As X3Core.X3Graphics</ItemParams>
+  <ItemResult></ItemResult>
+ </Hook>
+ <Property>
+  <ItemName>Graphics</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Graphics As X3Core.X3Graphics</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Graphics As X3Core.X3Graphics</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+   <EditorType>String</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+   <EditorType>String</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Width</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>128</PropertyValue>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Height</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>128</PropertyValue>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LockLeft</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LockTop</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LockRight</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LockBottom</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabPanelIndex</ObjName>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabIndex</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabStop</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>InitialParent</ObjName>
+   <PropertyGroup>Position</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Visible</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Appearance</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HelpTag</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Appearance</PropertyGroup>
+   <ItemType>String</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>AutoDeactivate</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Appearance</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Enabled</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Appearance</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ColorBits</ObjName>
+   <Visible>1</Visible>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>DepthBits</ObjName>
+   <Visible>1</Visible>
+   <ItemType>Integer</ItemType>
+   <EditorType>Integer</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>DoubleBuffer</ObjName>
+   <Visible>1</Visible>
+   <ItemType>Boolean</ItemType>
+   <EditorType>Boolean</EditorType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="Module" ID="668540927">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5904,8 +6161,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim vec as new X3Core.X3Vector(X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
@@ -5927,8 +6183,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initX As Double, initY As Double, initZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure vector with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -5953,8 +6208,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetMemoryBlock() As MemoryBlock</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim mblock As new MemoryBlock(16)</SourceLine>
    <SourceLine></SourceLine>
@@ -5983,8 +6237,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Normalize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim m As Double ' magnitude of vector</SourceLine>
    <SourceLine></SourceLine>
@@ -6015,8 +6268,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Rotate(quat As X3Core.X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim rotX As Double</SourceLine>
    <SourceLine>Dim rotY As Double</SourceLine>
@@ -6051,8 +6303,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Multiply(scalar As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' multiply the vector with the given scalar value</SourceLine>
    <SourceLine></SourceLine>
@@ -6077,8 +6328,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Add(vec As X3Core.X3Vector)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' add the given vector to this vector</SourceLine>
    <SourceLine></SourceLine>
@@ -6103,8 +6353,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function DotProduct(vec As X3Core.X3Vector) As Double</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Double</SourceLine>
    <SourceLine></SourceLine>
@@ -6128,10 +6377,6 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub CrossProduct(vec As X3Core.X3Vector)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>Dim cpX As Double</SourceLine>
    <SourceLine>Dim cpY As Double</SourceLine>
    <SourceLine>Dim cpZ As Double</SourceLine>
@@ -6165,10 +6410,6 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function PerpendicularVector() As X3Core.X3Vector</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>Dim result As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if X &lt;&gt; 0 then</SourceLine>
@@ -6282,9 +6523,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="893951999">
+<block type="Module" ID="1505748991">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6512,9 +6753,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="375250943">
+<block type="Module" ID="601819135">
  <ObjName>X3Graphics</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6526,6 +6767,138 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DrawPicture(image As Picture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>model = DrawPicture(image, x, y, w1, h1, sx, sy, w2, h2)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>image As Picture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Constructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Constructor(canvas As X3Canvas)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mCanvas = canvas // store reference to X3Canvas control</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// intialize scene object</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene = new X3Core.X3Scene()</SourceLine>
+   <SourceLine>Scene.Camera.Append new X3Camera()</SourceLine>
+   <SourceLine>Scene.CameraIndex = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene.ActiveCamera.DollyOut 1.2 // dolly the camare out a bit so that we can see the drawing</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>calcPic = new Picture(1, 1, 24) // Picture object used for calculations</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>canvas As X3Canvas</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>mapX</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function mapX(x As Integer) As Double</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = x - (mCanvas.Width / 2)</SourceLine>
+   <SourceLine>result = result / mCanvas.Height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Integer</ItemParams>
+  <ItemResult>Double</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>mapY</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function mapY(y As Integer) As Double</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = (mCanvas.Height / 2) - y</SourceLine>
+   <SourceLine>result = result / (mCanvas.Height)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>y As Integer</ItemParams>
+  <ItemResult>Double</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>FillRect</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub FillRect(x As Integer, y As Integer, width As Integer, height As Integer)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>model = FillRect(x, y, width, height)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DrawPicture</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function DrawPicture(image As Picture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
@@ -6622,98 +6995,16 @@
    <SourceLine></SourceLine>
    <SourceLine>Scene.Model.Append model // add model to scene</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
+   <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>image As Picture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>Constructor</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Constructor(canvas As X3Canvas)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>mCanvas = canvas // store reference to X3Canvas control</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>// intialize scene object</SourceLine>
-   <SourceLine>Scene = new X3Core.X3Scene()</SourceLine>
-   <SourceLine>Scene.Camera.Append new X3Camera()</SourceLine>
-   <SourceLine>Scene.CameraIndex = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Scene.ActiveCamera.DollyOut 1.2</SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>canvas As X3Canvas</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>mapX</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function mapX(x As Integer) As Double</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = x - (mCanvas.Width / 2)</SourceLine>
-   <SourceLine>result = result / mCanvas.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>x As Integer</ItemParams>
-  <ItemResult>Double</ItemResult>
- </Method>
- <Method>
-  <ItemName>mapY</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function mapY(y As Integer) As Double</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = (mCanvas.Height / 2) - y</SourceLine>
-   <SourceLine>result = result / (mCanvas.Height)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>y As Integer</ItemParams>
-  <ItemResult>Double</ItemResult>
+  <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
   <ItemName>FillRect</ItemName>
@@ -6721,7 +7012,7 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub FillRect(x As Integer, y As Integer, width As Integer, height As Integer)</SourceLine>
+   <SourceLine>Function FillRect(x As Integer, y As Integer, width As Integer, height As Integer) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
@@ -6772,6 +7063,9 @@
    <SourceLine>poly.VIndex.Append 3</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>poly.CIndex = 0 // point to color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// set UV coordinates</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>poly.UVIndex.Append 0</SourceLine>
    <SourceLine>poly.UVIndex.Append 1</SourceLine>
    <SourceLine>poly.UVIndex.Append 2</SourceLine>
@@ -6782,7 +7076,31 @@
    <SourceLine></SourceLine>
    <SourceLine>Scene.Model.Append model // add model to scene</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>FillPolygon</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub FillPolygon(points() As Integer)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>model = FillPolygon(points)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -6790,8 +7108,272 @@
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
+  <ItemParams>points() As Integer</ItemParams>
   <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>FillPolygon</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function FillPolygon(points() As Integer) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim poly As new X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim x As Double</SourceLine>
+   <SourceLine>Dim y As Double</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim pointCount As Integer</SourceLine>
+   <SourceLine>Dim xSum As Double</SourceLine>
+   <SourceLine>Dim ySum As Double</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim totVerts As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.ColorPal.Append new X3Core.X3Color(ForeColor)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pointCount = (points.Ubound \ 2)</SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>xSum = 0</SourceLine>
+   <SourceLine>ySum = 0</SourceLine>
+   <SourceLine>while i &lt; pointCount</SourceLine>
+   <SourceLine>x = mapX(points(1 + i * 2))</SourceLine>
+   <SourceLine>y = mapY(points(2 + i * 2))</SourceLine>
+   <SourceLine>xSum = xSum + x</SourceLine>
+   <SourceLine>ySum = ySum + y</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x, y, 0)</SourceLine>
+   <SourceLine>poly.VIndex.Append i</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// center polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>totVerts = model.Vertex.Ubound + 1</SourceLine>
+   <SourceLine>midX = xSum / totVerts</SourceLine>
+   <SourceLine>midY = ySum / totVerts</SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>model.Vertex(i).X = model.Vertex(i).X - midX</SourceLine>
+   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y - midY</SourceLine>
+   <SourceLine>next  i</SourceLine>
+   <SourceLine>model.Position.X = midX</SourceLine>
+   <SourceLine>model.Position.Y = midY</SourceLine>
+   <SourceLine>model.Position.Z = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.CIndex = 0 // point to color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.AppendPolygon poly</SourceLine>
+   <SourceLine>poly.CalculateNormal() // update polygon normal</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' if the polygon is facing away from us, we need need to reverse the vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Normal(poly.NIndex).Z &lt; 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' first remove the existing vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt; pointCount</SourceLine>
+   <SourceLine>model.Vertex.Remove(model.Vertex.Ubound)</SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' add the vertices in reversed order</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = pointCount - 1</SourceLine>
+   <SourceLine>xSum = 0</SourceLine>
+   <SourceLine>ySum = 0</SourceLine>
+   <SourceLine>while i &gt;= 0</SourceLine>
+   <SourceLine>x = mapX(points(1 + i * 2))</SourceLine>
+   <SourceLine>y = mapY(points(2 + i * 2))</SourceLine>
+   <SourceLine>xSum = xSum + x</SourceLine>
+   <SourceLine>ySum = ySum + y</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x, y, 0)</SourceLine>
+   <SourceLine>i = i - 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// center polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = xSum / totVerts</SourceLine>
+   <SourceLine>midY = ySum / totVerts</SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>model.Vertex(i).X = model.Vertex(i).X - midX</SourceLine>
+   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y - midY</SourceLine>
+   <SourceLine>next  i</SourceLine>
+   <SourceLine>model.Position.X = midX</SourceLine>
+   <SourceLine>model.Position.Y = midY</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.CalculateNormal() ' calculate the normal of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene.Model.Append model // add model to scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>points() As Integer</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DrawString</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DrawString(str As String, x As Integer, y As Integer, width As Integer = 0, condense As Boolean = False)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>model = DrawString(str, x, y, width, condense)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>str As String, x As Integer, y As Integer, width As Integer = 0, condense As Boolean = False</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DrawString</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function DrawString(str As String, x As Integer, y As Integer, width As Integer = 0, condense As Boolean = False) As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim poly As new X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim image As Picture</SourceLine>
+   <SourceLine>Dim mask As Picture</SourceLine>
+   <SourceLine>Dim x1 As Double</SourceLine>
+   <SourceLine>Dim y1 As Double</SourceLine>
+   <SourceLine>Dim x2 As Double</SourceLine>
+   <SourceLine>Dim y2 As Double</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>calcPic.Graphics.Bold = Bold</SourceLine>
+   <SourceLine>calcPic.Graphics.Italic = Italic</SourceLine>
+   <SourceLine>calcPic.Graphics.TextFont = TextFont</SourceLine>
+   <SourceLine>calcPic.Graphics.TextSize = TextSize</SourceLine>
+   <SourceLine>calcPic.Graphics.TextUnit = TextUnit</SourceLine>
+   <SourceLine>calcPic.Graphics.Underline = Underline</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if width &gt; 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if calcPic.Graphics.StringWidth(str) &gt; width then</SourceLine>
+   <SourceLine>if condense then</SourceLine>
+   <SourceLine>image = new Picture(width, calcPic.Graphics.StringHeight("Ay", width), 24)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>image = new Picture(width, calcPic.Graphics.StringHeight(str, width), 24)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>image = new Picture(calcPic.Graphics.StringWidth(str), calcPic.Graphics.StringHeight(str, width), 24)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>image = new Picture(calcPic.Graphics.StringWidth(str), calcPic.Graphics.StringHeight(str, width), 24)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mask = new Picture(image.Width, image.Height, 24)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>image.Graphics.Bold = Bold</SourceLine>
+   <SourceLine>image.Graphics.Italic = Italic</SourceLine>
+   <SourceLine>image.Graphics.TextFont = TextFont</SourceLine>
+   <SourceLine>image.Graphics.TextSize = TextSize</SourceLine>
+   <SourceLine>image.Graphics.TextUnit = TextUnit</SourceLine>
+   <SourceLine>image.Graphics.Underline = Underline</SourceLine>
+   <SourceLine>image.Graphics.ForeColor = ForeColor</SourceLine>
+   <SourceLine>image.Graphics.DrawString str, 0, calcPic.Graphics.TextAscent, width, condense</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>mask.Graphics.Bold = Bold</SourceLine>
+   <SourceLine>mask.Graphics.Italic = Italic</SourceLine>
+   <SourceLine>mask.Graphics.TextFont = TextFont</SourceLine>
+   <SourceLine>mask.Graphics.TextSize = TextSize</SourceLine>
+   <SourceLine>mask.Graphics.TextUnit = TextUnit</SourceLine>
+   <SourceLine>mask.Graphics.Underline = Underline</SourceLine>
+   <SourceLine>mask.Graphics.ForeColor = rgb(0, 0, 0, ForeColor.Alpha)</SourceLine>
+   <SourceLine>mask.Graphics.DrawString str, 0, calcPic.Graphics.TextAscent, width, condense</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>image.Mask = mask</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>x1 = MapX(x)</SourceLine>
+   <SourceLine>y1 = MapY(y - calcPic.Graphics.TextAscent)</SourceLine>
+   <SourceLine>x2 = MapX(x + image.Width)</SourceLine>
+   <SourceLine>y2 = MapY(y - calcPic.Graphics.TextAscent + image.Height)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = (x2 - x1) / 2</SourceLine>
+   <SourceLine>midY = (y2 - y1) / 2</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Position.X = x1 + midX</SourceLine>
+   <SourceLine>model.Position.Y = y1 + midY</SourceLine>
+   <SourceLine>model.Position.Z = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>x1 = x1 - model.Position.X</SourceLine>
+   <SourceLine>y1 = y1 - model.Position.Y</SourceLine>
+   <SourceLine>x2 = x2 - model.Position.X</SourceLine>
+   <SourceLine>y2 = y2 - model.Position.Y</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y1, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y2, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y2, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y1, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add uv-coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(0, 0)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(0, 1)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(1, 1)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(1, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add texture (created from image)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Texture.Append new X3Core.X3Texture(image)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// create polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.VIndex.Append 0</SourceLine>
+   <SourceLine>poly.VIndex.Append 1</SourceLine>
+   <SourceLine>poly.VIndex.Append 2</SourceLine>
+   <SourceLine>poly.VIndex.Append 3</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.TIndex = 0 // point to image texture</SourceLine>
+   <SourceLine>poly.UVIndex.Append 0</SourceLine>
+   <SourceLine>poly.UVIndex.Append 1</SourceLine>
+   <SourceLine>poly.UVIndex.Append 2</SourceLine>
+   <SourceLine>poly.UVIndex.Append 3</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.AppendPolygon poly</SourceLine>
+   <SourceLine>poly.CalculateNormal() // update polygon normal</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene.Model.Append model // add model to scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>str As String, x As Integer, y As Integer, width As Integer = 0, condense As Boolean = False</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Property>
   <ItemName>mCanvas</ItemName>
@@ -6896,6 +7478,328 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
+ <Property>
+  <ItemName>TextFont</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>TextFont As String</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>TextFont As String</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Bold</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Bold As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Bold As Boolean = False</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Italic</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Italic As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Italic As Boolean = False</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Underline</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Underline As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Underline As Boolean = False</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>TextSize</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>TextSize As Single</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>TextSize As Single</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>TextUnit</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>TextUnit As FontUnits</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>TextUnit As FontUnits</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>calcPic</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>calcPic As Picture</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>calcPic As Picture</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>TextAscent</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>TextAscent As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>TextAscent As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>Dim g As Graphics</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>g = calcPic.Graphics</SourceLine>
+   <SourceLine>g.Bold = Bold</SourceLine>
+   <SourceLine>g.Italic = Italic</SourceLine>
+   <SourceLine>g.TextFont = TextFont</SourceLine>
+   <SourceLine>g.TextSize = TextSize</SourceLine>
+   <SourceLine>g.TextUnit = TextUnit</SourceLine>
+   <SourceLine>g.Underline = Underline</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return g.TextAscent</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>AntiAlias</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>AntiAlias As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>AntiAlias As Boolean = True</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Copies</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Copies As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Copies As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>FirstPage</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>FirstPage As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>FirstPage As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return 0</SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>LastPage</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>LastPage As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>LastPage As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>PenHeight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>PenHeight As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>PenHeight As Integer = 1</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>PenWidth</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>PenWidth As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>PenWidth As Integer = 1</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>PrintingCancelled</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>PrintingCancelled As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>PrintingCancelled As Boolean</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>TextHeight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>TextHeight As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>TextHeight As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>Dim g As Graphics</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>g = calcPic.Graphics</SourceLine>
+   <SourceLine>g.Bold = Bold</SourceLine>
+   <SourceLine>g.Italic = Italic</SourceLine>
+   <SourceLine>g.TextFont = TextFont</SourceLine>
+   <SourceLine>g.TextSize = TextSize</SourceLine>
+   <SourceLine>g.TextUnit = TextUnit</SourceLine>
+   <SourceLine>g.Underline = Underline</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return g.TextHeight</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Name</ObjName>
@@ -6940,11 +7844,94 @@
    <PropertyGroup>Behavior</PropertyGroup>
    <ItemType>Integer</ItemType>
   </ViewProperty>
+  <ViewProperty>
+   <ObjName>ForeColor</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>&amp;c000000</PropertyValue>
+   <ItemType>Color</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TextFont</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>String</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Bold</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Italic</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Underline</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TextSize</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Single</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TextAscent</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>AntiAlias</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Copies</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>FirstPage</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LastPage</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>PenHeight</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>1</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>PenWidth</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>1</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>PrintingCancelled</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TextHeight</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="763633663">
+<block type="Module" ID="1305133055">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6957,8 +7944,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub CalculateNormal()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
@@ -7025,8 +8011,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Polygon</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim poly As new X3Core.X3Polygon(ParentModel)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -7069,8 +8054,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -7089,8 +8073,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(parent As X3Core.X3Model)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim n As new X3Core.X3Vector(0, 0, 0)</SourceLine>
    <SourceLine></SourceLine>
@@ -7115,8 +8098,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(parent As X3Core.X3Model, normalX As Double, normalY As Double, normalZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim n As new X3Core.X3Vector(normalX, normalY, normalZ)</SourceLine>
    <SourceLine></SourceLine>
@@ -7141,8 +8123,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetCenter() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim xTot As Double</SourceLine>
    <SourceLine>Dim yTot As Double</SourceLine>
@@ -7181,8 +8162,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim s As X3Core.X3Sprite</SourceLine>
    <SourceLine></SourceLine>
@@ -7215,8 +8195,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Triangulate()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -7420,8 +8399,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function CalculateNormal() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
@@ -7485,8 +8463,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetXYProjectionCoords() As X3Core.X3Vector()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coords() As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -7901,9 +8878,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1610592255">
+<block type="Module" ID="227643391">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8057,9 +9034,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="886085631">
+<block type="Module" ID="1768865791">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8072,8 +9049,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub AppendPolygon(poly As X3Core.X3Polygon)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim firstUVIndex As Integer</SourceLine>
@@ -8113,8 +9089,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -8181,8 +9156,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Position = new X3Core.X3Vector(0, 0, 0) ' instantiate the default position at the origin</SourceLine>
    <SourceLine>Rotation = new X3Core.X3Quaternion() ' instantiate a default rotation quaternion</SourceLine>
@@ -8210,8 +9184,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -8236,8 +9209,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Center(pos As X3Core.X3Vector = nil)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim maxX As Double</SourceLine>
@@ -8311,8 +9283,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Unitize(pos As X3Core.X3Vector = nil)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -8378,8 +9349,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub UpdateBoundingBox()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative. </SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -8420,8 +9390,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Triangulate()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -8697,9 +9666,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2134499327">
+<block type="Module" ID="1286410239">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8712,8 +9681,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -8732,8 +9701,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(texture As Picture)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim x As Integer</SourceLine>
    <SourceLine>Dim y As Integer</SourceLine>
@@ -8811,8 +9779,6 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Destructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim texturePtr As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
@@ -8979,9 +9945,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="766357503">
+<block type="Module" ID="1317777407">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8994,8 +9960,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3UVCoordinate</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3UVCoordinate(U, V)</SourceLine>
    <SourceLine></SourceLine>
@@ -9018,8 +9983,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initU As Double, initV As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure coordinate with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -9110,9 +10074,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1832531967">
+<block type="Module" ID="236042239">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9125,8 +10089,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Quaternion</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim quat As new X3Core.X3Quaternion(W, X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
@@ -9148,8 +10111,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' initialize quaternion with a zero rotation</SourceLine>
    <SourceLine></SourceLine>
@@ -9175,8 +10137,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initW As Double, initX As Double, initY As Double, initZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure quaternion with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -9202,8 +10163,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub FromEulerRotation(x As Double, y As Double, z As Double, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' IMPORTANT: vector needs to be normalized prior to this call</SourceLine>
    <SourceLine></SourceLine>
@@ -9237,8 +10197,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Multiply(q As X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim resultX As Double</SourceLine>
    <SourceLine>Dim resultY As Double</SourceLine>
@@ -9276,8 +10235,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Normalize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim m As Double ' magnitude of quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9309,8 +10267,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Pitch(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9340,8 +10297,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Roll(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9371,8 +10327,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Yaw(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9400,8 +10355,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RotateAroundAxis(axis As X3Core.X3Vector, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Core.X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9432,8 +10386,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Assign(quat As X3Core.X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' assign given quaternion value to self</SourceLine>
    <SourceLine></SourceLine>
@@ -9460,8 +10413,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(fromVec As X3Core.X3Vector, toVec As X3Core.X3Vector)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpFrom As X3Core.X3Vector ' temporary vector used in calculations</SourceLine>
    <SourceLine>Dim tmpTo As X3Core.X3Vector</SourceLine>
@@ -9502,8 +10454,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub FromEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' IMPORTANT: axis needs to be normalized prior to this call</SourceLine>
    <SourceLine></SourceLine>
@@ -9525,10 +10476,6 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(axis As X3Core.X3Vector, angle As Double)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>FromEulerRotation axis, angle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -9652,9 +10599,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1133436927">
+<block type="Module" ID="236152831">
  <ObjName>X3Scene</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9667,8 +10614,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.DollyIn(distance)</SourceLine>
@@ -9691,8 +10637,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.DollyOut(distance)</SourceLine>
@@ -9718,8 +10663,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PedestalUp(distance)</SourceLine>
@@ -9743,8 +10687,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PedestalDown(distance)</SourceLine>
@@ -9769,8 +10712,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TruckLeft(distance)</SourceLine>
@@ -9795,8 +10737,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TruckRight(distance)</SourceLine>
@@ -9822,8 +10763,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PanLeft(angle)</SourceLine>
@@ -9848,8 +10788,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanRight(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PanRight(angle)</SourceLine>
@@ -9874,8 +10813,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TurnDollyLeft(angle, lockCamera)</SourceLine>
@@ -9900,8 +10838,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TurnDollyRight(angle, lockCamera)</SourceLine>
@@ -9926,8 +10863,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltCameraUp(angle)</SourceLine>
@@ -9953,8 +10889,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltCameraDown(angle)</SourceLine>
@@ -9980,8 +10915,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraRight(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.RollCameraRight(angle)</SourceLine>
@@ -10007,8 +10941,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraLeft(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.RollCameraLeft(angle)</SourceLine>
@@ -10034,8 +10967,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub ResetCamera()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.ResetCamera()</SourceLine>
@@ -10058,8 +10990,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub SetViewport(x As Double, y As Double, width As Double, height As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i as Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -10090,8 +11021,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltDollyDown(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltDollyDown(angle)</SourceLine>
@@ -10117,8 +11047,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltDollyUp(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltDollyUp(angle)</SourceLine>
@@ -10305,9 +11234,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1135960063">
+<block type="Module" ID="1669210111">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10320,8 +11249,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Material</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim mat As new X3Core.X3Material</SourceLine>
    <SourceLine></SourceLine>
@@ -10349,8 +11277,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Ambient = new X3Color(0.2, 0.2, 0.2)</SourceLine>
    <SourceLine>Diffuse = new X3Color(0.8, 0.8, 0.8)</SourceLine>
@@ -10463,9 +11390,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2144268287">
+<block type="Module" ID="339146751">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10478,8 +11405,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Sprite</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim sprite As New X3Core.X3Sprite</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -10508,8 +11434,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -10531,8 +11456,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initSheet As Picture)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>SpriteSheet = new X3Core.X3Texture(initSheet)</SourceLine>
    <SourceLine></SourceLine>
@@ -10553,8 +11477,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim colCount As Integer</SourceLine>
@@ -10662,9 +11585,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2102001663">
+<block type="Module" ID="1999990783">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10677,8 +11600,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3SpriteCoordinate</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3SpriteCoordinate(U1, V1, U2, V2)</SourceLine>
    <SourceLine></SourceLine>
@@ -10701,8 +11623,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initU1 As Double, initV1 As Double, initU2 As Double, initV2 As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure coordinates with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -10832,9 +11753,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1897129983">
+<block type="Module" ID="1389946879">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -13273,9 +14194,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2121050111">
+<block type="Module" ID="808452095">
  <ObjName>X3BoundingBox</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
+ <ObjContainerID>1709426687</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -13586,290 +14507,15 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2003605503">
- <ObjName>X3Canvas</ObjName>
- <ObjContainerID>519759871</ObjContainerID>
- <IsClass>1</IsClass>
- <Superclass>OpenGLSurface</Superclass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <Compatibility></Compatibility>
- <HookInstance>
-  <ItemName>Open</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Open()</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Me.MakeCurrent()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_Initialize</SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHTING</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
- </HookInstance>
- <HookInstance>
-  <ItemName>Render</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function Render() As Boolean</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Me.MakeCurrent()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glClearColor(1, 1, 1, 1) ' set the background color</SourceLine>
-   <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_RenderScene Graphics.Scene</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
- </HookInstance>
- <HookInstance>
-  <ItemName>Resized</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Resized()</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Me.MakeCurrent()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Graphics.Scene.SetViewport 0, 0, Me.Width, Me.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Redim Graphics.Scene.Model(-1)</SourceLine>
-   <SourceLine>RaiseEvent Paint(Graphics)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
- </HookInstance>
- <Method>
-  <ItemName>Constructor</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Constructor()</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>// Calling the overridden superclass constructor.</SourceLine>
-   <SourceLine>Super.Constructor</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Graphics = new X3Core.X3Graphics(Me)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>4096</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams></ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Hook>
-  <ItemName>Paint</ItemName>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemFlags>33</ItemFlags>
-  <SystemFlags>0</SystemFlags>
-  <ItemParams>g As X3Core.X3Graphics</ItemParams>
-  <ItemResult></ItemResult>
- </Hook>
- <Property>
-  <ItemName>Graphics</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Graphics As X3Core.X3Graphics</SourceLine>
-   <SourceLine></SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>Graphics As X3Core.X3Graphics</ItemDeclaration>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
- </Property>
- <ViewBehavior>
-  <ViewProperty>
-   <ObjName>Name</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-   <EditorType>String</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Index</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Super</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-   <EditorType>String</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Left</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Top</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Width</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>128</PropertyValue>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Height</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>128</PropertyValue>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>LockLeft</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>LockTop</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>LockRight</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>LockBottom</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>TabPanelIndex</ObjName>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>TabIndex</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>TabStop</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>True</PropertyValue>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>InitialParent</ObjName>
-   <PropertyGroup>Position</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Visible</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Appearance</PropertyGroup>
-   <PropertyValue>True</PropertyValue>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>HelpTag</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Appearance</PropertyGroup>
-   <ItemType>String</ItemType>
-   <EditorType>MultiLineEditor</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>AutoDeactivate</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Appearance</PropertyGroup>
-   <PropertyValue>True</PropertyValue>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Enabled</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Appearance</PropertyGroup>
-   <PropertyValue>True</PropertyValue>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>ColorBits</ObjName>
-   <Visible>1</Visible>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>DepthBits</ObjName>
-   <Visible>1</Visible>
-   <ItemType>Integer</ItemType>
-   <EditorType>Integer</EditorType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>DoubleBuffer</ObjName>
-   <Visible>1</Visible>
-   <ItemType>Boolean</ItemType>
-   <EditorType>Boolean</EditorType>
-  </ViewProperty>
- </ViewBehavior>
-</block>
 <block type="UIState" ID="0">
  <StudioWindowState>
   <Editors>
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Canvas</EditorLocation>
+    <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>2003605503</EditingPartID>
+    <EditingPartID>1709426687</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
