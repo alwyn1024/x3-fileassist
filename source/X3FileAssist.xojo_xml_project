@@ -3139,6 +3139,9 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; texture.BGRABitmap.Size</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>// TODO: improved texture loading flips BGRA upside down</SourceLine>
+   <SourceLine>// revise this algorithm accordingly</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>pixel = ShiftRight(texture.BGRABitmap.UInt8Value(i + 2), 3, 8) and &amp;b00011111 // blue</SourceLine>
    <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.BGRABitmap.UInt8Value(i + 1), 3, 8) and &amp;b00011111, 5, 16) // green</SourceLine>
    <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.BGRABitmap.UInt8Value(i), 3, 8) and &amp;b00011111, 10, 16) // red</SourceLine>
@@ -15028,9 +15031,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_ModelToJSON</EditorLocation>
+    <EditorLocation>FileAssist.qdWriteRGB16</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>51726335</EditingPartID>
+    <EditingPartID>1035139071</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
