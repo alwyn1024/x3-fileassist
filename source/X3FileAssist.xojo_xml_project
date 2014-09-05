@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>28816</BuildFlags>
+ <BuildFlags>20624</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -823,17 +823,17 @@
  <Control>
   <ControlClass>ToolbarMain</ControlClass>
   <ItemName>ToolbarMain</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height">32</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">ToolbarMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -841,54 +841,54 @@
  <Control>
   <ControlClass>Listbox</ControlClass>
   <ItemName>Listbox</ItemName>
-  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top">21</PropertyVal>
-  <PropertyVal Name="Width">425</PropertyVal>
-  <PropertyVal Name="Height">222</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
-  <PropertyVal Name="HasHeading">False</PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
-  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
-  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
-  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Hierarchical">False</PropertyVal>
-  <PropertyVal Name="EnableDrag">False</PropertyVal>
-  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
-  <PropertyVal Name="RequiresSelection">False</PropertyVal>
-  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
-  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="AutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="ColumnsResizable">True</PropertyVal>
+  <PropertyVal Name="SelectionType"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="EnableDragReorder">False</PropertyVal>
+  <PropertyVal Name="EnableDrag">False</PropertyVal>
+  <PropertyVal Name="Hierarchical">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="_ScrollOffset"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="_ScrollWidth"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="DefaultRowHeight"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesVertical"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="GridLinesHorizontal"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="ScrollBarVertical">False</PropertyVal>
+  <PropertyVal Name="ScrollbarHorizontal">False</PropertyVal>
+  <PropertyVal Name="HeadingIndex"><Hex bytes="2">2D31</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="HasHeading">False</PropertyVal>
+  <PropertyVal Name="ColumnWidths">30% 70%</PropertyVal>
+  <PropertyVal Name="ColumnCount"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">222</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top">21</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lstModelInfo</PropertyVal>
   <PropertyVal Name="Super">Listbox</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -896,39 +896,39 @@
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Name">lblFilename</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width">425</PropertyVal>
-  <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">425</PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lblFilename</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -1202,7 +1202,7 @@
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
    <SourceLine>pngFile = modelFile.Parent.Child(textureFilename + Str(i + 1) + ".png")</SourceLine>
-   <SourceLine>writeTexturePNG pngFile, model.Texture(i)</SourceLine>
+   <SourceLine>model.Texture(i).TextureImage.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' ***** MTL File ****************************</SourceLine>
@@ -1620,57 +1620,6 @@
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>matFile As FolderItem, matLib As Dictionary, model As X3Core.X3Model</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>writeTexturePNG2</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub writeTexturePNG2(pngFile As FolderItem, texture As X3Core.X3Texture)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim pic As New Picture(texture.Width, texture.Height, 32)</SourceLine>
-   <SourceLine>Dim x As Integer</SourceLine>
-   <SourceLine>Dim y As Integer</SourceLine>
-   <SourceLine>Dim offset As Integer</SourceLine>
-   <SourceLine>Dim w As Integer</SourceLine>
-   <SourceLine>Dim h As Integer</SourceLine>
-   <SourceLine>Dim alpha As Byte</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' loop through all the pixels of the picture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>h = texture.Height - 1</SourceLine>
-   <SourceLine>w = texture.Width - 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for y = 0 to h</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for x = 0 to w</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(x, h - y) = RGB(texture.RGBABitmap.Byte(offset), texture.RGBABitmap.Byte(offset + 1), texture.RGBABitmap.Byte(offset + 2))</SourceLine>
-   <SourceLine>alpha = 255 - texture.RGBABitmap.Byte(offset + 3)</SourceLine>
-   <SourceLine>pic.Mask.RGBSurface.Pixel(x, h - y) = RGB(alpha, alpha, alpha)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next x</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next y</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>pngFile As FolderItem, texture As X3Core.X3Texture</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Method>
@@ -3188,11 +3137,11 @@
    <SourceLine>Redim sLine(-1)</SourceLine>
    <SourceLine>sLine.Append "0x"</SourceLine>
    <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt; texture.RGBABitmap.Size</SourceLine>
+   <SourceLine>while i &lt; texture.BGRABitmap.Size</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>pixel = ShiftRight(texture.RGBABitmap.UInt8Value(i), 3, 8) and &amp;b00011111 // blue</SourceLine>
-   <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.RGBABitmap.UInt8Value(i + 1), 3, 8) and &amp;b00011111, 5, 16) // green</SourceLine>
-   <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.RGBABitmap.UInt8Value(i + 2), 3, 8) and &amp;b00011111, 10, 16) // red</SourceLine>
+   <SourceLine>pixel = ShiftRight(texture.BGRABitmap.UInt8Value(i + 2), 3, 8) and &amp;b00011111 // blue</SourceLine>
+   <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.BGRABitmap.UInt8Value(i + 1), 3, 8) and &amp;b00011111, 5, 16) // green</SourceLine>
+   <SourceLine>pixel = pixel + ShiftLeft(ShiftRight(texture.BGRABitmap.UInt8Value(i), 3, 8) and &amp;b00011111, 10, 16) // red</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>sLine.Append Right("0000" + Hex(pixel), 4)</SourceLine>
    <SourceLine></SourceLine>
@@ -3217,61 +3166,6 @@
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>tout As TextOutputStream, texture As X3Core.X3Texture</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>writeTexturePNG</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub writeTexturePNG(pngFile As FolderItem, texture As X3Core.X3Texture)</SourceLine>
-   <SourceLine>'' www.Xojo3D.com</SourceLine>
-   <SourceLine>'' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'Dim pic As New Picture(texture.Width, texture.Height, 32)</SourceLine>
-   <SourceLine>'Dim x As Integer</SourceLine>
-   <SourceLine>'Dim y As Integer</SourceLine>
-   <SourceLine>'Dim offset As Integer</SourceLine>
-   <SourceLine>'Dim w As Integer</SourceLine>
-   <SourceLine>'Dim h As Integer</SourceLine>
-   <SourceLine>'Dim alpha As Byte</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' loop through all the pixels of the picture</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'offset = 0</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'h = texture.Height - 1</SourceLine>
-   <SourceLine>'w = texture.Width - 1</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for y = 0 to h</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'for x = 0 to w</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'pic.RGBSurface.Pixel(x, h - y) = RGB(texture.RGBABitmap.Byte(offset), texture.RGBABitmap.Byte(offset + 1), texture.RGBABitmap.Byte(offset + 2))</SourceLine>
-   <SourceLine>'alpha = 255 - texture.RGBABitmap.Byte(offset + 3)</SourceLine>
-   <SourceLine>'pic.Mask.RGBSurface.Pixel(x, h - y) = RGB(alpha, alpha, alpha)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'next x</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'next y</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'pic.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim pic As Picture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic = X3_PictureFromTexture(texture)</SourceLine>
-   <SourceLine>pic.Save(pngFile, Picture.SaveAsPNG)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>pngFile As FolderItem, texture As X3Core.X3Texture</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -3408,7 +3302,7 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="303802367">
+<block type="Module" ID="51726335">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -3686,17 +3580,16 @@
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
-   <SourceLine>'' alwaysbusycorner.wordpress.com</SourceLine>
-   <SourceLine>'' Some fun programming projects and technology news.</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' flip images right side up</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'OpenGL.glMatrixMode(OpenGL.GL_TEXTURE)</SourceLine>
-   <SourceLine>'OpenGL.glLoadIdentity()</SourceLine>
-   <SourceLine>'OpenGL.glScalef(1.0, -1.0, 1.0)</SourceLine>
-   <SourceLine>'OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW)</SourceLine>
+   <SourceLine>' flip images right side up</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glMatrixMode(OpenGL.GL_TEXTURE)</SourceLine>
+   <SourceLine>OpenGL.glLoadIdentity()</SourceLine>
+   <SourceLine>OpenGL.glScalef(1.0, -1.0, 1.0)</SourceLine>
+   <SourceLine>OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -3738,13 +3631,13 @@
    <SourceLine></SourceLine>
    <SourceLine>' now we load the image bitmap</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
+   <SourceLine>'OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
-   <SourceLine>'' alwaysbusycorner.wordpress.com</SourceLine>
-   <SourceLine>'' Some fun programming projects and technology news.</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, OpenGL.GL_RGBA, Width, Height, 0, OpenGL.GL_BGRA, OpenGL.GL_UNSIGNED_BYTE,  RGBABitmap)</SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, OpenGL.GL_RGBA, Width, Height, 0, OpenGL.GL_BGRA, OpenGL.GL_UNSIGNED_BYTE,  RGBABitmap)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return oglName</SourceLine>
    <SourceLine></SourceLine>
@@ -3875,7 +3768,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
    <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.BGRABitmap, texture.Width, texture.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, texture.OGLName) ' bind to the polygon's texture</SourceLine>
@@ -3968,7 +3861,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
    <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.BGRABitmap, texture.Width, texture.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Texture(poly.TIndex).OGLName) ' bind to the polygon's texture</SourceLine>
@@ -4062,7 +3955,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' load spritesheet into OpenGL memory</SourceLine>
    <SourceLine>if model.Sprite(poly.SIndex).SpriteSheet.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadBGRATexture(model.Sprite(poly.SIndex).SpriteSheet.RGBABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
+   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadBGRATexture(model.Sprite(poly.SIndex).SpriteSheet.BGRABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Sprite(poly.SIndex).SpriteSheet.OGLName) ' bind to the polygon's texture</SourceLine>
@@ -4697,8 +4590,7 @@
    <SourceLine>modelJSON.Append ","</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>pic = X3_PictureFromTexture(text)</SourceLine>
-   <SourceLine>modelJSON.Append """" + EncodeBase64(pic.GetData(Picture.FormatPNG), 0) + """"</SourceLine>
+   <SourceLine>modelJSON.Append """" + EncodeBase64(text.TextureImage.GetData(Picture.FormatPNG), 0) + """"</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
@@ -4825,12 +4717,12 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_Snapshot(x As Integer, y As Integer, width As Integer, height As Integer) As Picture</SourceLine>
+   <SourceLine>Function X3_Snapshot(surface As OpenGLSurface, x As Integer, y As Integer, width As Integer, height As Integer) As Picture</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim pixelData As New MemoryBlock(width * height * 4)</SourceLine>
+   <SourceLine>Dim pixelData As New MemoryBlock(width * height * 3)</SourceLine>
    <SourceLine>Dim result As Picture</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -4838,10 +4730,13 @@
    <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
    <SourceLine>Dim pixelOffset As Integer</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glReadPixels(x, y, width, height, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
+   <SourceLine>surface.MakeCurrent()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glReadBuffer OpenGL.GL_FRONT</SourceLine>
+   <SourceLine>OpenGL.glReadPixels(x, y, width, height, OpenGL.GL_RGB, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
    <SourceLine>pixelData.LittleEndian = True</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>result = new Picture(width, height)</SourceLine>
+   <SourceLine>result = new Picture(width, height, 32)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>rgbMain = result.RGBSurface</SourceLine>
    <SourceLine></SourceLine>
@@ -4850,7 +4745,7 @@
    <SourceLine>while j &lt; height</SourceLine>
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; width</SourceLine>
-   <SourceLine>pixelOffset = ((heightMinOne - j) * width + i) * 4</SourceLine>
+   <SourceLine>pixelOffset = ((heightMinOne - j) * width + i) * 3</SourceLine>
    <SourceLine>rgbMain.Pixel(i, j) = RGB(pixelData.Byte(pixelOffset), pixelData.Byte(pixelOffset +1), pixelData.Byte(pixelOffset +2))</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
@@ -4865,7 +4760,7 @@
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
+  <ItemParams>surface As OpenGLSurface, x As Integer, y As Integer, width As Integer, height As Integer</ItemParams>
   <ItemResult>Picture</ItemResult>
  </Method>
  <Method>
@@ -4896,56 +4791,6 @@
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_PictureFromTexture</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim pixIndex As Integer</SourceLine>
-   <SourceLine>Dim h As Integer</SourceLine>
-   <SourceLine>Dim w As Integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>w = text.Width</SourceLine>
-   <SourceLine>h = text.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pixIndex = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>j = 0</SourceLine>
-   <SourceLine>while j &lt; h</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt; w</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(i, j) = RGB(text.RGBABitmap.UInt8Value(pixIndex), text.RGBABitmap.UInt8Value(pixIndex + 1), text.RGBABitmap.UInt8Value(pixIndex + 2), text.RGBABitmap.UInt8Value(pixIndex + 3))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pixIndex = pixIndex + 4</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>j = j + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return pic</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>text As X3Core.X3Texture</ItemParams>
-  <ItemResult>Picture</ItemResult>
  </Method>
  <Method>
   <ItemName>X3_AppFolder</ItemName>
@@ -5366,9 +5211,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1878337535">
+<block type="Module" ID="453705727">
  <ObjName>X3Camera</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6093,9 +5938,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1744130047">
+<block type="Module" ID="1657380863">
  <ObjName>X3Canvas</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <Superclass>OpenGLSurface</Superclass>
  <ItemFlags>1</ItemFlags>
@@ -6415,9 +6260,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="295174143">
+<block type="Module" ID="981565439">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6808,9 +6653,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1542572031">
+<block type="Module" ID="2115106815">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7063,9 +6908,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="424316927">
+<block type="Module" ID="938588159">
  <ObjName>X3Graphics</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8406,9 +8251,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1849487359">
+<block type="Module" ID="290222079">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9383,9 +9228,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2034128895">
+<block type="Module" ID="1263355903">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9539,9 +9384,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1340508159">
+<block type="Module" ID="2005524479">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10212,9 +10057,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1375133695">
+<block type="Module" ID="314040319">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10252,86 +10097,98 @@
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim x As Integer</SourceLine>
-   <SourceLine>Dim y As Integer</SourceLine>
-   <SourceLine>Dim offset As Integer</SourceLine>
-   <SourceLine>Dim textCol As Color</SourceLine>
-   <SourceLine>Dim textMaskCol As Color</SourceLine>
-   <SourceLine>Dim w As Integer</SourceLine>
-   <SourceLine>Dim h As Integer</SourceLine>
-   <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
-   <SourceLine>Dim rgbMask As RGBSurface</SourceLine>
-   <SourceLine>Dim RGBABitmapPtr As Ptr</SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Transparent = false</SourceLine>
+   <SourceLine>Dim mb as MemoryBlock</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Self.Transparent = transparent</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' convert pictures to raw formats</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Width = texture.Width</SourceLine>
    <SourceLine>Height = texture.Height</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>RGBABitmap = new MemoryBlock(Height * Width * 4) ' create a MemoryBlock for the OpenGL RGBA format</SourceLine>
-   <SourceLine>RGBABitmapPtr = RGBABitmap</SourceLine>
+   <SourceLine>' Fix to support masked 3bpp pictures courtesy of Will Shank from ezgl.</SourceLine>
+   <SourceLine>' ezgl.tumblr.com/</SourceLine>
+   <SourceLine>' Graphics, audio, vectors and moving stuff.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>' loop through all the pixels of the picture</SourceLine>
+   <SourceLine> // fix 3 bytes per pixel to 4 bytes per pixel</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>offset = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>h = Height - 1</SourceLine>
-   <SourceLine>w = Width - 1</SourceLine>
-   <SourceLine>rgbMain = texture.RGBSurface</SourceLine>
-   <SourceLine>rgbMask = texture.Mask.RGBSurface</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for y = 0 to h</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for x = 0 to w</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' read the values of the current pixel</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>textCol = rgbMain.Pixel(x,y) ' get the color of the current pixel</SourceLine>
-   <SourceLine>textMaskCol = rgbMask.Pixel(x, y) ' get the mask (alpha) color of the current pixel</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' store the color and alpha values into our OpenGL texture bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset) = textCol.Red</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 1) = textCol.Green</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 2) = textCol.Blue</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 3) = 255 - textMaskCol.Red</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if RGBABitmapPtr.Byte(offset + 3) &lt; 255 then</SourceLine>
-   <SourceLine>Transparent = true</SourceLine>
+   <SourceLine>if not texture.HasAlphaChannel then</SourceLine>
+   <SourceLine>call texture.Mask </SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
+   <SourceLine>' get the pixel data, but as it is in BMP uncompressed format it's flipped upside down and in BGRA format</SourceLine>
+   <SourceLine>' the first 54 bytes are the header, so remove them. the rest is BGRA data</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>next x</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next y</SourceLine>
+   <SourceLine>mb = texture.GetData(Picture.FormatBMP)</SourceLine>
+   <SourceLine>BGRABitmap = mb.StringValue(54, Height * Width * 4)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>TextureImage = texture</SourceLine>
    <SourceLine>OGLName = 0</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
-   <SourceLine>'' alwaysbusycorner.wordpress.com</SourceLine>
-   <SourceLine>'' Some fun programming projects and technology news.</SourceLine>
+   <SourceLine>'Dim x As Integer</SourceLine>
+   <SourceLine>'Dim y As Integer</SourceLine>
+   <SourceLine>'Dim offset As Integer</SourceLine>
+   <SourceLine>'Dim textCol As Color</SourceLine>
+   <SourceLine>'Dim textMaskCol As Color</SourceLine>
+   <SourceLine>'Dim w As Integer</SourceLine>
+   <SourceLine>'Dim h As Integer</SourceLine>
+   <SourceLine>'Dim rgbMain As RGBSurface</SourceLine>
+   <SourceLine>'Dim rgbMask As RGBSurface</SourceLine>
+   <SourceLine>'Dim RGBABitmapPtr As Ptr</SourceLine>
    <SourceLine>'</SourceLine>
-   <SourceLine>'Dim mb as MemoryBlock</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'Self.Transparent = transparent</SourceLine>
+   <SourceLine>'Transparent = false</SourceLine>
    <SourceLine>'</SourceLine>
    <SourceLine>'' convert pictures to raw formats</SourceLine>
    <SourceLine>'</SourceLine>
    <SourceLine>'Width = texture.Width</SourceLine>
    <SourceLine>'Height = texture.Height</SourceLine>
    <SourceLine>'</SourceLine>
-   <SourceLine>'' get the pixel data, but as it is in BMP uncompressed format it's flipped upside down and in BGRA format</SourceLine>
-   <SourceLine>'' the first 54 bytes are the header, so remove them. the rest is BGRA data</SourceLine>
+   <SourceLine>'RGBABitmap = new MemoryBlock(Height * Width * 4) ' create a MemoryBlock for the OpenGL RGBA format</SourceLine>
+   <SourceLine>'RGBABitmapPtr = RGBABitmap</SourceLine>
    <SourceLine>'</SourceLine>
-   <SourceLine>'mb = texture.GetData(Picture.FormatBMP)</SourceLine>
-   <SourceLine>'BGRABitmap = mb.StringValue(54, Height * Width * 4)</SourceLine>
+   <SourceLine>'' loop through all the pixels of the picture</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'offset = 0</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'h = Height - 1</SourceLine>
+   <SourceLine>'w = Width - 1</SourceLine>
+   <SourceLine>'rgbMain = texture.RGBSurface</SourceLine>
+   <SourceLine>'rgbMask = texture.Mask.RGBSurface</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'for y = 0 to h</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'for x = 0 to w</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' read the values of the current pixel</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'textCol = rgbMain.Pixel(x,y) ' get the color of the current pixel</SourceLine>
+   <SourceLine>'textMaskCol = rgbMask.Pixel(x, y) ' get the mask (alpha) color of the current pixel</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' store the color and alpha values into our OpenGL texture bitmap</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'RGBABitmapPtr.Byte(offset) = textCol.Red</SourceLine>
+   <SourceLine>'RGBABitmapPtr.Byte(offset + 1) = textCol.Green</SourceLine>
+   <SourceLine>'RGBABitmapPtr.Byte(offset + 2) = textCol.Blue</SourceLine>
+   <SourceLine>'RGBABitmapPtr.Byte(offset + 3) = 255 - textMaskCol.Red</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if RGBABitmapPtr.Byte(offset + 3) &lt; 255 then</SourceLine>
+   <SourceLine>'Transparent = true</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'next x</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'next y</SourceLine>
    <SourceLine>'</SourceLine>
    <SourceLine>'TextureImage = texture</SourceLine>
    <SourceLine>'OGLName = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -10399,16 +10256,16 @@
   <IsShared>0</IsShared>
  </Property>
  <Property>
-  <ItemName>RGBABitmap</ItemName>
+  <ItemName>BGRABitmap</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>RGBABitmap As MemoryBlock</SourceLine>
+   <SourceLine>BGRABitmap As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>RGBABitmap As MemoryBlock</ItemDeclaration>
+  <ItemDeclaration>BGRABitmap As MemoryBlock</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -10516,9 +10373,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1007316991">
+<block type="Module" ID="277493759">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10647,9 +10504,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1704468479">
+<block type="Module" ID="1180553215">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -11189,9 +11046,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="147988479">
+<block type="Module" ID="1562535935">
  <ObjName>X3Scene</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -11879,9 +11736,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2055380991">
+<block type="Module" ID="1903542271">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -12037,9 +11894,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1841106943">
+<block type="Module" ID="1639383039">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -12234,9 +12091,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="775804927">
+<block type="Module" ID="156469247">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -12404,9 +12261,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="563398655">
+<block type="Module" ID="1838661631">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -14852,9 +14709,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="303718399">
+<block type="Module" ID="1115195391">
  <ObjName>X3BoundingBox</ObjName>
- <ObjContainerID>303802367</ObjContainerID>
+ <ObjContainerID>51726335</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -15171,9 +15028,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core</EditorLocation>
+    <EditorLocation>X3Core.X3_ModelToJSON</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>303802367</EditingPartID>
+    <EditingPartID>51726335</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
